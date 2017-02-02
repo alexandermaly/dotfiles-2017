@@ -54,7 +54,7 @@ hs.hotkey.bind(hyper3, "y", function() arrangewindow(0.025,0.025,0.95,0.95) end)
 hs.hotkey.bind(hyper3, "f", function() arrangewindow(0,0,1,1) end)
 --
 
-hs.hotkey.bind(hyper2, "d", function()
+hs.hotkey.bind(hyper3angle, "d", function()
   hs.settings.dateFormat="%Y-%m-%d"
   local dateNow = os.date(hs.settings.dateFormat)
   hs.eventtap.keyStrokes(dateNow)
