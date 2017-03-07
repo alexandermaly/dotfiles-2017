@@ -66,6 +66,14 @@ hs.hotkey.bind(hyper3split, "d", function()
   hs.eventtap.keyStrokes(timeNow)
 end)
 
+hs.hotkey.bind(hyper3split, "f", function()
+  hs.eventtap.keyStrokes("@alxandr.fastmail.fm")
+end)
+
+hs.hotkey.bind(hyper3split, "e", function()
+  hs.eventtap.keyStrokes("maly@eightinc.com")
+end)
+
 --pop next screen
 hs.hotkey.bind(hyper3, "x", function()
   --hs.notify.new({title="NextScreen", informativeText="next"}):send()
