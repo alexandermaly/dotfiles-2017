@@ -1,0 +1,660 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//DE" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" >
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <style type="text/css">
+    p    {margin:  5pt 0 0 0; font:        0.8em/1.5em Verdana;}
+    p.p1 {margin: 20pt 0 0 0; font: italic 0.8em/1.5em Verdana; text-transform: uppercase;}
+    p.p2 {margin: 20pt 0 0 0; font: bold   0.8em/1.5em Verdana;}
+    p.p3 {margin: 40pt 0 0 0; font: bold   1.2em/2.0em Verdana; color: red;}
+    ul   {list-style-type: disc;}
+    li   {margin:  0   0 0 0; font:        0.8em/1.5em Verdana;}
+  </style>
+</head><body>
+  <p class="p1"><b>This is the hotfix update 18.048 for Cinema 4D and BodyPaint 3D R18.</b></p>
+  <p>This update is highly recommended for all R18 users. It can be applied to all Cinema 4D and BodyPaint 3D versions of Release 18.</p>
+
+
+
+  <p class="p3">New Improvements in This Release</p>
+
+    <ul>
+      <li>Support for Ryzen CPUs added and fixed the related issue with Mesa (Software OpenGL)</li>
+      <li>Basic support added for files saved with Substance Designer 6</li>
+      <li>Mesa support for macOS 10.12.4 and higher enabled, was already enabled for 10.11, 10.10, 10.9</li>
+      <li>Fixed an issue of preview images of Content Library items not being created on OS X 10.12</li>
+      <li>Fixed an OpenGL stability issue</li>
+    </ul>
+
+
+
+  <p class="p3">Older Improvements in Previous Updates</p>
+
+  <p class="p1">Hotfix Update 18.041</p>
+    <ul>
+      <li>This update fixes an "Incorrect file structure" issue that can appear in rare cases with MoGraph setups.<br />
+      In case you have one of these rare setups and have an affected file, please contact the MAXON support. We will help you recover your data.<br />
+      For all others, this updated is highly recommended to avoid faulty files.</li>
+    </ul>
+  <p class="p1">Animation</p>
+    <ul>
+      <li>Fixed an issue with Key Interpolation tab in the project settings</li>
+      <li>Fixed an issue with drag &amp; drop of motion clips between motion layers</li>
+    </ul>
+  <p class="p1">BodyPaint 3D</p>
+    <ul>
+      <li>Fixed a stability issue with BodyPaint 3D</li>
+    </ul>
+  <p class="p1">C++ API</p>
+    <ul>
+      <li>GeClipMap::GetFontDescription() now returns the correct value</li>
+      <li>PythonLibrary::InitConstant() now returns the correct value</li>
+    </ul>
+  <p class="p1">Camera</p>
+    <ul>
+      <li>Fixed an issue with focus distance picker</li>
+      <li>Fixed an issue with camera crane orientation</li>
+    </ul>
+  <p class="p1">Camera Reconstruction</p>
+    <ul>
+      <li>Fixed an issue with Camera Mapping tag</li>
+    </ul>
+  <p class="p1">Character Animation</p>
+    <ul>
+      <li>Fixed an issue with Morph Deformer Base Pose</li>
+      <li>Fixed an issue with Visual Selector not scaling dropped icons</li>
+      <li>Fixed a stability issue in the character animation IK system</li>
+      <li>Fixed an issue with calculated offset of Parent constraint</li>
+      <li>Fixed an issue with joint selection and the Weights Manager</li>
+      <li>Fixed an issue with blending weights</li>
+      <li>Fixed an issue with falloffs of multiple Pose Morph Deformers</li>
+      <li>Fixed an issue with renaming poses</li>
+      <li>Fixed an issue with Parent Constraint and Frozen Coordinates</li>
+      <li>Fixed an issue with undo of deleted Morph tag</li>
+      <li>Fixed a refresh issue with selection only</li>
+      <li>Fixed an issue with weight painting on selected joint</li>
+      <li>Fixed an issue with Parent Constraint Record Optimized</li>
+      <li>Fixed an issue with stepping Keys of Parent Constraints</li>
+      <li>Fixed an issue with CMotion parameters of previous versions</li>
+      <li>Fixed an issue with smoothing weights</li>
+      <li>Fixed an issue with Constraints rotation order</li>
+      <li>Fixed an issue with CMotion Parameter Position display in User Interface</li>
+      <li>Fixed an issue with normalizing weights to 100% in Weights Manager</li>
+      <li>Fixed an issue with Python code not being called in the Character Component tag</li>
+      <li>Fixed an issue with mixing Point Level Animations with Pose Morph</li>
+      <li>Fixed an issue with falloffs of multiple Pose Morph Deformers</li>
+    </ul>
+  <p class="p1">Cloth</p>
+    <ul>
+      <li>Fixed an issue with the Cloth Collider tag</li>
+      <li>Fixed an issue with the Iterations parameter when importing cloth objects</li>
+    </ul>
+  <p class="p1">Color Chooser</p>
+    <ul>
+      <li>Corrected a naming consistency issue with the Color Chooser's color swatches</li>
+      <li>Color Chooser can now also pick screen colors on scaled high-resolution screens on Windows</li>
+      <li>Fixed an issue with the naming of re-imported color swatch groups</li>
+      <li>Fixed an issue when cancelling the process of saving a color swatch group</li>
+    </ul>
+  <p class="p1">Content Browser</p>
+    <ul>
+      <li>Fixed an issue with the Content Library loading too slowly</li>
+    </ul>
+  <p class="p1">Demo Version</p>
+    <ul>
+      <li>Fixed an issue with render settings in the demo version</li>
+    </ul>
+  <p class="p1">Deformer</p>
+    <ul>
+      <li>Fixed an issue with a Bevel Deformer</li>
+      <li>Fixed an issue with UV/VU modes of the Surface Deformer</li>
+      <li>Fixed an issue with Bevel Deformer</li>
+    </ul>
+  <p class="p1">Dynamics</p>
+    <ul>
+      <li>Fixed a stability issue with Dynamics when high number of objects is used</li>
+    </ul>
+  <p class="p1">Exchange (General)</p>
+    <ul>
+      <li>Fixed an issue with exporting COLLADA and reflectance</li>
+      <li>Fixed an issue with DDS images on macOS 10.12</li>
+      <li>Fixed an issue with BodyPaint 3D/Maya Exchange</li>
+      <li>Fixed several issues with Update Merge</li>
+      <li>Fixed a performance issue with the Substance plugin</li>
+      <li>Fixed an issue with Substance plugin that caused artefacts</li>
+      <li>Fixed an issue with DPX format support</li>
+      <li>Fixed an issue with DWG format support</li>
+      <li>Fixed an issue with VRML format support</li>
+      <li>Fixed an issue with Substance</li>
+      <li>Fixed an issue with texture animation</li>
+      <li>Fixed an issue with DDS header support</li>
+      <li>Fixed an issue with 'Send project back' for exchange</li>
+      <li>Fixed an issue with the Maya BodyPaint 3D Plugin and added Maya 2017 BodyPaint 3D support</li>
+    </ul>
+  <p class="p1">Exchange (Alembic)</p>
+    <ul>
+      <li>Fixed an issue with Hair object on export</li>
+      <li>Fixed an issue with Subdivision Surface object on export</li>
+      <li>Fixed an stability issue with Subdivision Surface object on import</li>
+      <li>Fixed an issue with Camera Deformer used with exported camera</li>
+      <li>Fixed an issue with exporting animations driven by effectors</li>
+      <li>Fixed an issue with incorrect Normals</li>
+      <li>Fixed an issue with export via Python script</li>
+      <li>Alembic Vertex Color tags can now be read in XPresso</li>
+      <li>Fixed an issue with Alembic Export not supporting the Connect Generator correctly</li>
+      <li>Fixed an issue with Alembic Export that caused Flipping Rotation values on animations where the negative values changed to positive values. 3&deg; to &minus;1&deg; became 3&deg; to 359&deg;</li>
+      <li>Fixed an issue with Alembic Ogawa export not supporting multiple particle groups</li>
+    </ul>
+  <p class="p1">Exchange (FBX)</p>
+    <ul>
+      <li>Fixed an issue with saving FBX file when exporting a compositing project file via the render settings</li>
+      <li>Fixed an issue with FBX export of animated material color</li>
+      <li>Fixed a stability issue with FBX export</li>
+      <li>Fixed an issue with FBX export/import of Subdivision Surfaces</li>
+      <li>Fixed an issue with FBX export of scenes with an empty Subdivision Surfaces Weight tag</li>
+      <li>Fixed an issue with FBX and reflectance</li>
+      <li>Fixed an issue with FBX and nested Takes</li>
+      <li>Fixed an issue with FBX export of scenes with Subdivision Surfaces Weight tags</li>
+      <li>Fixed an issue with Takes without animation in the scene</li>
+      <li>Fixed an issue with Normals on import</li>
+      <li>Fixed an issue with sub-takes</li>
+      <li>Fixed an issue with Subdiv weighting</li>
+      <li>Fixed an issue with the Symmetry object in combination with export</li>
+      <li>Fixed an issue with Null objects in combination with export</li>
+      <li>Fixed an issue with splines in combination with export</li>
+    </ul>
+  <p class="p1">Exchange (OBJ)</p>
+    <ul>
+      <li>Fixed a stability issue with Alembic particles coming from Houdini</li>
+      <li>Fixed an issue with false additional meshes on OBJ import</li>
+      <li>Fixed an issue with incorrect Normals on rotating objects</li>
+      <li>Fixed an issue with incorrect Normals when using the Boole object</li>
+      <li>Fixed an issue with incorrect Normals when using the Subdivision Surface object</li>
+      <li>Fixed an issue with incorrect Normals when using the Particle Emitter object</li>
+      <li>Fixed an issue with Deformers on export</li>
+      <li>Fixed an issue with Symmetry object on export</li>
+      <li>Fixed an issue with Metaball object on export</li>
+      <li>Fixed an issue with OBJ and MoGraph Support</li>
+    </ul>
+  <p class="p1">Hair</p>
+    <ul>
+      <li>Fixed an issue with Hair UVs</li>
+      <li>Fixed an issue with Hair multi-pass support</li>
+      <li>Fixed an issue with Hair object settings</li>
+    </ul>
+  <p class="p1">Houdini Engine</p>
+    <ul>
+      <li>Updated Houdini Engine to version 15.5.632</li>
+      <li>Fixed a performance issue with Houdini Engine</li>
+      <li>Upgrade from 15.0.313 to a newer H15 build (15.5.480)</li>
+    </ul>
+  <p class="p1">Import</p>
+    <ul>
+      <li>Fixed an issue with Update Merge dialog and modal dialogs on macOS</li>
+    </ul>
+  <p class="p1">Interface</p>
+    <ul>
+      <li>Fixed an issue with Text Spline</li>
+      <li>Fixed an issue with Color Chooser interface</li>
+      <li>Fixed an issue with Viewport</li>
+      <li>Fixed an issue with wrong version number in the title bar</li>
+      <li>Fixed an issue with MoText used in XRef</li>
+      <li>Fixed an issue with MoText and kerning</li>
+      <li>Fixed an issue with Material Manager</li>
+      <li>Fixed an issue with scrolling</li>
+      <li>Fixed a stability issue Powerslider and Fill command</li>
+      <li>Fixed an issue with missing tabs in the Attribute Manager</li>
+      <li>Fixed an issue with saving non-default positions of the Object Manager window</li>
+      <li>Fixed some issues with the interface</li>
+      <li>Fixed an issue with kerning</li>
+      <li>Fixed an issue with shortcuts in the Material Manager</li>
+      <li>Fixed an issue with the User Interface Font on MAC OSX</li>
+    </ul>
+  <p class="p1">License Server and Licensing</p>
+    <ul>
+      <li>Fixed an issue with RLM runtime license</li>
+      <li>Fixed an issue with License Server</li>
+      <li>Fixed an issue with the RLM license server</li>
+      <li>Fixed an issue with RLM server shutdown</li>
+      <li>Fixed smaller issues with the licensing system</li>
+    </ul>
+  <p class="p1">Material</p>
+    <ul>
+      <li>Fixed an issue with Reflectance Layer</li>
+      <li>Fixed an issue with the Thin Film shader and transparency</li>
+      <li>Fixed a stability issue with Reflectance user interface</li>
+      <li>Fixed an issue with the preview of gradients in material channels</li>
+      <li>Fixed a stability issue when using more than one Proximal shader</li>
+      <li>Fixed an issue with the UV scaling parameter of the Variation shader</li>
+      <li>Fixed an issue with the reflectance properties of materials when merging scene files</li>
+      <li>Fixed an issue with too long loading times for the Viewport preview of complex textures</li>
+      <li>Fixed an issue with the preview size of grass materials</li>
+      <li>Fixed an issue with the file name extension when saving materials</li>
+    </ul>
+  <p class="p1">Modeling</p>
+    <ul>
+      <li>Fixed several issues with Plane Cut tool and Gizmo handle rotation</li>
+      <li>Fixed an issue with the Bevel Deformer</li>
+      <li>Fixed several stability issues with the Loop Cut tool</li>
+      <li>Fixed several issues with Line Cut tool and undo</li>
+      <li>Fixed an issue with Line Cut tool and Spline Cut highlighting</li>
+      <li>Fixed several issues with Line Cut tool control points</li>
+      <li>Fixed an issue with Line Cut tool and missing cuts</li>
+      <li>Fixed an issue with the Plane Cut tool on small geometry</li>
+      <li>Fixed a stability issue with Ctrl+dragging of Line Cut tool control points</li>
+      <li>Fixed an issue with the Bevel tool and partial rounding</li>
+      <li>Fixed an issue with the Plane Cut tool gizmo</li>
+      <li>Fixed an issue with the Line Cut tool and complex cuts creation</li>
+      <li>Fixed an issue with the Line Cut tool and moving control points</li>
+      <li>Fixed an issue with the Plane Cut tool gizmo and Auto Snap</li>
+      <li>Fixed an issue with the Line Cut tool control points and clipping settings</li>
+      <li>Fixed an issue with Line Cut tool snapping</li>
+      <li>Fixed an issue with saving scenes with SDS weights</li>
+      <li>Fixed an issue with the Plane Cut tool and workplane</li>
+      <li>Fixed an issue with the Line Cut tool when performing several cuts from similar points on the mesh</li>
+      <li>Fixed several issues with Line Cut tool and temporary cut</li>
+      <li>Fixed an issue with the Plane Cut tool on small geometry</li>
+      <li>Fixed an issue with Line Cut tool and N-gons</li>
+      <li>Fixed an issue with the Line Cut tool and camera navigation</li>
+      <li>Fixed an issue with Plane Cut Tool Highlighting</li>
+      <li>Fixed an issue with the disconnected Line Cut tool control points</li>
+      <li>Fixed a stability issue with the Line Cut tool</li>
+      <li>Fixed an issue with Line Cut Tool and view clipping</li>
+      <li>Fixed an issue with Spline Mask</li>
+      <li>Fixed an issue with Line Cut tool when cutting from a view within an object</li>
+      <li>Fixed an issue with Line Cut tool and view clipping</li>
+      <li>Fixed an issue with Line Cut tool preview cut</li>
+      <li>Fixed an issue with Spline Mask and converting splines</li>
+      <li>Fixed an issue with Bevel tool when beveling points</li>
+      <li>Fixed a stability issue with Plane Cut tool and multiple objects</li>
+      <li>Fixed an issue with component display in OpenSubDiv</li>
+      <li>Fixed a stability issue with Line Cut tool when splines are used for cutting</li>
+      <li>Fixed an issue with Loop Cut tool and loop range</li>
+      <li>Fixd an issue with Line Cut tool and dynamic guides</li>
+      <li>Fixed an issue with Knife tools and Viewport Icons</li>
+      <li>Fixed an issue with Line Cut tool and Spline Cut tool and re-using splines</li>
+      <li>Fixed several issues with Line Cut tool and undo/redo</li>
+      <li>Fixed several issues with Line Cut tool and spline cut highlighting</li>
+      <li>Fixed an issue with Line Cut tool and generated splines</li>
+      <li>Fixed an issue with Line Cut tool and Select Cuts option</li>
+      <li>Fixed a stability issue with Line Cut tool and Spline Cut</li>
+      <li>Fixed an issue with Bevel Tool and Ending option</li>
+      <li>Fixed an issue with Poly Pen undo</li>
+      <li>Fixed an issue with Line Cut tool and spline cut projection</li>
+      <li>Fixed an issue with Line Cut tool temporary cut and Ctrl+dragging</li>
+      <li>Fixed an issue with Bevel tool and Fixed Distance</li>
+      <li>Fixed a stability issue with Plane Cut tool and preview cut movement</li>
+      <li>Fixed an issue with Line Cut tool and Split mode</li>
+      <li>Fixed an issue with Bevel tool leading to distorted results</li>
+      <li>Fixed an issue with Line Cut tool in orthographic Views</li>
+      <li>Fixed an issue with Loop Cut tool and Preserve Curvature preview</li>
+      <li>Fixed an issue with the Line Cut tool and falsely created edges</li>
+      <li>Fixed a stability issue with the loop cut tool</li>
+      <li>Fixed several stability issues with the line cut tool</li>
+      <li>Fixed an issue with false control points of the line cut tool</li>
+      <li>Fixed an interface issue with the plane cut tool</li>
+      <li>Fixed an issue with the line cut tool that lead to destroyed meshes</li>
+      <li>Fixed an issue with disappearing control knots in the line cut tool</li>
+      <li>Fixed an issue with undo in kerning User Interface</li>
+      <li>Improved handling of multiple selected objects when null objects are involved for some modeling tools</li>
+      <li>Fixed an issue with deformed input splines and Spline Mask</li>
+      <li>Fixed an issue with Spline Pen stability</li>
+      <li>Fixed an issue with Spline Boole commands</li>
+      <li>Fixed an issue with Spline tool's cut positions</li>
+      <li>Fixed an issue with component visibility and OpenSubdiv</li>
+      <li>Fixed an issue with Metaball's 'Solid' option</li>
+      <li>Fixed an issue with surface preservation of Loop Cutter</li>
+      <li>Fixed an issue with Line Cutter intersection points</li>
+      <li>Fixed an issue with Plane Cut gizmo</li>
+      <li>Fixed an issue with handle highlighting in Plane Cutter</li>
+      <li>Fixed an issue with Loop Cutter in Path mode</li>
+      <li>Fixed an issue with Loop Cutter User Interface</li>
+      <li>Fixed an issue with highlighting in Plane Cutter</li>
+      <li>Fixed an issue with Plane Cutter handling</li>
+      <li>Fixed an issue with Scheme Color preferences</li>
+      <li>Fixed an issue with Plane Cutter and hierarchies</li>
+      <li>Improvements of memory usage of Open SubDiv adaptive mode</li>
+      <li>Fixed an issue with Plane Cutter handling</li>
+      <li>Fixed a Line Cutter issue when cutting on small geometry</li>
+      <li>Added a Line Cut option for preserving N-gon curvature</li>
+      <li>Fixed an issue with Line Cutter highlighting</li>
+      <li>Fixed an issue with visible only line cuts</li>
+      <li>Fixed an issue with Plane Cutter handles</li>
+      <li>Fixed an issue with Line Cutter</li>
+      <li>Fixed an issue with Spline Mask</li>
+      <li>Fixed an issue with Vertex Normals</li>
+      <li>Fixed an issue with Polygon Pen</li>
+      <li>Fixed an issue with Poly Pen cuts</li>
+      <li>Fixed a speed issue with Line Cut</li>
+      <li>Fixed an issue with Line Cut undo</li>
+      <li>Fixed an issue with Symmetry object</li>
+      <li>Fixed an issue with Spline Cut</li>
+      <li>Fixed an issue with the Spline Mask hierarchy</li>
+      <li>Fixed an issue with the Line Cut tool when using shift+click on edge</li>
+      <li>Fixed an issue with Viewport interaction of cuts</li>
+      <li>Fixed an issue with undo after using the Line Cut tool</li>
+      <li>Fixed an issue with edge loop selection by double-click</li>
+      <li>Fixed an issue with the Loop/Path Cut tool in Use Edge mode</li>
+      <li>Fixed an issue with slider of the Loop Cut tool</li>
+      <li>Fixed an issue with yellow control points of the Line Cut tool</li>
+      <li>Fixed an issue with the function of the Preserve Curvature Option of the Loop/Path Cut tool</li>
+      <li>Fixed an issue with the function of the Bool object</li>
+      <li>Fixed an issue with performance by using the bool object</li>
+      <li>Fixed an issue with default parameter of cycloid object</li>
+      <li>Fixed an issue with Phong Break selection out of bounds</li>
+      <li>Fixed an issue with the Plane Cut manipulator</li>
+      <li>Fixed an issue with the Symmetrical Cut option of the Loop/Path Cut tool</li>
+      <li>Fixed a stability issue with bad SubDivision Surface weight data</li>
+      <li>Fixed an issue with Line Cut and Spline Cut function</li>
+      <li>Fixed an issue with the Line Cut tool when manipulating the control points</li>
+      <li>Fixed an issue with the Line Cut tool by using a spline to cut</li>
+      <li>Fixed an issue with the Line Cut tool when cutting multiple objects</li>
+      <li>Fixed an issue with the Line Cut tool when Shift+click on a cut line</li>
+      <li>Fixed an issue with Loop Cut and Preserve Curvature</li>
+    </ul>
+  <p class="p1">MoGraph</p>
+    <ul>
+      <li>Fixed an issue with keyframe animated lights as MoGraph clones</li>
+      <li>Fixed an issue with position inaccuracy of the Camera shader</li>
+      <li>Fixed an issue with MoText and undo</li>
+      <li>Fixed an issue with missing units in Push Apart interface</li>
+      <li>Fixed an issue with empty dropdown list for clones</li>
+      <li>Fixed an issue with Cloner object and light intensity when lights are made Child objects of the Cloner object</li>
+      <li>Fixed an issue with MoSelection painting</li>
+      <li>Fixed an issue with cloned lights and time offset</li>
+      <li>Fixed an issue with incorrect Matrix numeration</li>
+      <li>Fixed an issue with wrong scaling sizes using Cloner Enable Scaling to Polygon</li>
+      <li>Fixed an issue with naming of multiple MoGraph Selection tags</li>
+      <li>Fixed an issue with nested Voronoi Fractures and MoGraph selections</li>
+      <li>Fixed an issue with Delay Effector and MoGraph Weight Paintbrush</li>
+      <li>Fixed an issue with Delay Effector and MoGraph Selection</li>
+      <li>Fixed an issue with Voronoi Fracture and images as Point Generator source</li>
+      <li>Fixed an issue with Voronoi Fracture aligning points with shader</li>
+      <li>Fixed a stability issue with Voronoi Fracture and Sample Mode set to Surface</li>
+      <li>Fixed an issue with Voronoi Fracture and polygon center as creation mode</li>
+      <li>Fixed an issue with Voronoi Fracture Selection tags</li>
+      <li>Fixed an issue  with Voronoi Fracture and Sort Result</li>
+      <li>Fixed an issue with animated Voronoi Fracture</li>
+      <li>Fixed a stability issue adding Cloner objects</li>
+      <li>Fixed an issue with Voroni Fracture not using axis of polygon islands</li>
+      <li>Fixed an issue with Voroni Fracture not using polygon islands</li>
+      <li>Fixed an issue with very large Voronoi Fracture objects</li>
+      <li>Fixed an issue with Voronoi Fracture changing the shape of fractured parts</li>
+      <li>Fixed an issue with default settings in combination with Rigid Body</li>
+      <li>Fixed an issue with hollow objects</li>
+      <li>Fixed an issue with display of Clone attributes</li>
+      <li>Fixed an issue with point generators</li>
+      <li>Fixed an issue in combination with CMotion</li>
+      <li>Fixed a refresh issue in combination with MoText</li>
+      <li>Fixed cosmetic issues (among others with CMotion, the Point Generator and bounding boxes)</li>
+      <li>Fixed an issue with unclean meshes</li>
+      <li>Fixed an issue with material assignment</li>
+      <li>Fixed an issue with material order</li>
+      <li>Fixed an issue with normals</li>
+      <li>Fixed a performance issue with undo and Fracturing</li>
+      <li>Fixed an issue with Fracturing refresh</li>
+      <li>Fixed an issue with Splines as source</li>
+      <li>Fixed an issue in combination with MoInstance</li>
+      <li>Fixed an issue in combination with Cloner object</li>
+      <li>Fixed an issue with incorrect mesh being generated</li>
+      <li>Fixed an issue of Fracture in combination with Voronoi Fracture</li>
+      <li>Fixed an issue with hidden geometry</li>
+      <li>Fixed an issue with Matrix object as source</li>
+      <li>Fixed an issue with nested Voronoi Fracture</li>
+      <li>Fixed an issue of Fracture in combination with Thinking Particles</li>
+      <li>Fixed an issue with refresh</li>
+      <li>Fixed an issue with MoGraph cache</li>
+      <li>Fixed a double command entry</li>
+      <li>Fixed a stability issue</li>
+      <li>Fixed an issue in combination with Phong tag</li>
+      <li>Fixed an issue with Point Selection tag</li>
+      <li>Fixed an issue with incorrect mesh being generated</li>
+      <li>Fixed an issue with reversed normals</li>
+      <li>Fixed an issue with selection tags</li>
+      <li>Fixed an issue with refresh</li>
+      <li>Fixed an issue with Voronoi Fracture Sample Precision setting</li>
+      <li>Fixed an issue with Voronoi Fracture naming of two input fields</li>
+      <li>Added an Idea to Voronoi Fracture for additional points with duplicate sources</li>
+      <li>Fixed an issue with fragments offsets</li>
+      <li>Fixed an issue with Voronoi Fracture Point Generator and linear color space</li>
+      <li>Fixed an issue with Voronoi update of painting MoGraph weights</li>
+      <li>Fixed an issue with Water Shader used for Fracture Voronoi</li>
+      <li>Fixed an issue with artifacts using a spline as source of Voronoi Fracture</li>
+      <li>Fixed an issue with XRay on Fracture Voronoi source objects</li>
+      <li>Fixed an issue with Voronoi Fracture and wrong Normals</li>
+      <li>Fixed an issue with Voronoi Fracture with Splines as source</li>
+      <li>Fixed an issue with Bevel tool on multiple objects</li>
+      <li>Fixed an issue with the Kerning End value</li>
+      <li>Fixed an issue with multiple MoGraph selections</li>
+      <li>Fixed an issue with Matrix/Tracer and Swap command</li>
+      <li>Fixed an issue with the naming of the MoGraph Weight node in XPresso</li>
+      <li>Fixed an issue with Matrix in Object mode and Distribution in Edge mode</li>
+      <li>Fixed an issue with cloner and different scaling in R17 and R18</li>
+      <li>Fixed an issue with Align Clone actualization using a Matrix with Deformer as child</li>
+      <li>Fixed an issue with Honeycomb orientation and precision</li>
+      <li>Fixed an issue with offset and scaling</li>
+      <li>Fixed an issue with MoGraph Weight tag response after double clicking the tag</li>
+      <li>Fixed an issue with Honeycomb precision</li>
+      <li>Fixed an issue with display of the cloner handles</li>
+      <li>Fixed an issue with the MoGraph Grid Array</li>
+      <li>Fixed an issue with MoGraph Cache import</li>
+    </ul>
+  <p class="p1">Motion Tracker</p>
+    <ul>
+      <li>Fixed an issue with the Object Tracker that kept it from solving when parts of the frame range had too few tracks</li>
+      <li>Fixed an issue with the Lock View on Track(s) mode in the Motion Tracker</li>
+      <li>Fixed a stability issue with the Motion Tracker</li>
+      <li>Fixed an issue with Track creation the Motion Tracker that caused an offset</li>
+      <li>Fixed an issue with Viewport update</li>
+      <li>Fixed a performance issue</li>
+      <li>Fixed an issue with vector handles</li>
+      <li>Fixed an issue with error handling in scene loading</li>
+      <li>Fixed an issue with activation of Interface tab</li>
+      <li>Fixed an issue with zoom</li>
+      <li>Fixed an issue with 'Lock View on Tracks' when selecting another tracker</li>
+      <li>Fixed an issue with pattern and search size</li>
+      <li>Fixed a double command entry</li>
+    </ul>
+  <p class="p1">Objects</p>
+    <ul>
+      <li>Fixed a Phong issue with the Figure object</li>
+      <li>Fixed an issue with ObjectData particle modifier</li>
+      <li>Fixed an issue with kerning of the Text object</li>
+      <li>Fixed an issue with the handle of the Figure object</li>
+      <li>Fixed an issue with Subdivision Surface &ndash; OpenSubdiv Catmull-Clark (Adaptive)</li>
+      <li>Fixed an issue with the Physical Sky object &ndash; display of the moon</li>
+      <li>Fixed an issue with the move tool while dragging</li>
+    </ul>
+  <p class="p1">Online Updater</p>
+    <ul>
+      <li>Fixed an issue with missing images in the Updater</li>
+    </ul>
+  <p class="p1">OpenGL</p>
+    <ul>
+      <li>Fixed an issue with Tessellation mode</li>
+      <li>Fixed a stability issue with Material Preview</li>
+      <li>Fixed an issue with Viewport Tesselation</li>
+      <li>Fixed an issue with OpenSubDiv shader compiling</li>
+      <li>Fixed an issue with OpenGL Reflection</li>
+      <li>Fixed an issue with Tesselation performance</li>
+      <li>Fixed an issue with MESA</li>
+      <li>Fixed an issue with OpenGL strings</li>
+      <li>Fixed an issue with OpenGL performance</li>
+      <li>Fixed an issue with Viewport Reflections</li>
+      <li>Fixed an issue with Viewport Specular</li>
+      <li>Fixed an issue with OpenGL Tesselation scaling</li>
+    </ul>
+  <p class="p1">Python</p>
+    <ul>
+      <li>Fixed an issue with Drag &amp; Drop</li>
+      <li>Fixed an issue with GetTakeSelection()</li>
+      <li>Fixed an issue with BaseObject.EvaluateSynchronizedRotation()</li>
+      <li>Fixed an issue with Description.GetParameter()</li>
+      <li>Fixed an issue with InitBakeTexture()</li>
+      <li>Fixed an issue with CreateSubstanceShader()</li>
+      <li>Fixed an issue with CallUVCommand()</li>
+      <li>Fixed some stability issue with Python</li>
+      <li>Fixed an issue with BaseList2D.SetLayerObject()</li>
+      <li>Fixed an issue with HyperFile.WriteFloat32()</li>
+      <li>Fixed an issue with TextureTag.GetMaterial()</li>
+      <li>Fixed an issue with InitRenderStruct</li>
+    </ul>
+  <p class="p1">Powerslider</p>
+    <ul>
+      <li>Fixed a performance issue caused by missing texture libraries</li>
+      <li>Fixed several stability issues with the Powerslider</li>
+    </ul>
+  <p class="p1">Renderer</p>
+    <ul>
+      <li>Fixed an issue with Color channel affecting Alpha channel</li>
+      <li>Fixed several issues with artefacts in Soft Shadows</li>
+      <li>Fixed an issue with Specular Multi-Pass</li>
+      <li>Fixed an issue with progress bar during rendering</li>
+      <li>Fixed an issue with artefacts appearing when using Hair, Irradiance Cache and Physical Renderer</li>
+      <li>Fixed an issue with render preview</li>
+      <li>Fixed an issue with visible Area lights shape</li>
+      <li>Fixed an issue with Watermark and radiosity maps</li>
+      <li>Fixed an issue with Reflectance and Picture Viewer Rendering</li>
+      <li>Fixed an issue with GI artefacts and Physical Renderer</li>
+      <li>Fixed an issue with rendering Fog</li>
+      <li>Fixed an issue with Shadow Catcher Reflection</li>
+      <li>Fixed an issue with artefacts in Watermark</li>
+    </ul>
+  <p class="p1">Sculpting</p>
+    <ul>
+      <li>Fixed an issue with mesh Projection on high-resolution meshes</li>
+      <li>Fixed an issue with sculpting on very dense meshes</li>
+      <li>Fixed an issue with sculpting tools on low-resolution mesh</li>
+      <li>Fixed an issue with baking RGB Tangent displacement maps without Round Geometry and Use Top Level</li>
+      <li>Fixed an issue with baking RGB Tangent displacement maps</li>
+      <li>Fixed an issue with baking displacement map from sculpt</li>
+      <li>Fixed an issue with bad UV Layout</li>
+    </ul>
+  <p class="p1">Sketch and Toon</p>
+    <ul>
+      <li>Fixed an issue with Strokes pattern</li>
+      <li>Fixed a stability issue with Commander</li>
+      <li>Fixed an issue with visibility of outlines</li>
+      <li>Fixed an issue with time offset</li>
+      <li>Fixed a crash on Sketch and Toon</li>
+    </ul>
+  <p class="p1">Take System</p>
+    <ul>
+      <li>Fixed a stability issue with Take System camera</li>
+      <li>Fixed an issue with Take System export</li>
+      <li>Fixed an issue with lost Take System material links</li>
+      <li>Fixed an issue with Take System material polygon selection</li>
+      <li>Fixed an issue with Take System</li>
+    </ul>
+  <p class="p1">Team Render</p>
+    <ul>
+      <li>Fixed an issue with Team Render messages</li>
+      <li>Fixed a stability issue with Stop Rendering in Picture Viewer</li>
+      <li>Fixed a stability issue with rendering at high resolution</li>
+      <li>Fixed a stability issue with Rendering character animation</li>
+      <li>Fixed a stability issue with Stop Rendering in Render Queue</li>
+      <li>Fixed an issue with Team Render/Render Queue</li>
+      <li>Fixed an issue with Team Render Server and FAQ</li>
+      <li>Fixed an issue with Render Queue/Team Render and log file</li>
+      <li>Fixed an issue with Render Queue/Team Render</li>
+      <li>Fixed an issue with Team Render</li>
+    </ul>
+  <p class="p1">Team Render Server</p>
+    <ul>
+      <li>Fixed an issue with reordering jobs in web interface</li>
+      <li>Fixed an issue with wrong time displayed in web interface</li>
+      <li>Fixed an issue with job priority of Render Clients</li>
+      <li>Fixed an issue with failed render jobs</li>
+      <li>Fixed an issue with reordering jobs in web interface</li>
+      <li>Fixed an issue with opening Team Render Server/Team Render Client</li>
+      <li>Fixed an issue with Team Render Server/Team Render Client window</li>
+      <li>Fixed an issue with Team Render Server/Webinterface</li>
+      <li>Fixed an issue with Team Render Server/Webinterface and FAQ</li>
+      <li>Fixed an issue with Team Render Server/Webinterface &ndash; description</li>
+      <li>Fixed an issue with Team Render Server/Webinterface &ndash; job handling</li>
+      <li>Fixed an issue with completing the rendering of animations</li>
+    </ul>
+  <p class="p1">Texture Manager</p>
+    <ul>
+      <li>Fixed missing context menu entries in the Texture Manager</li>
+      <li>Fixed missing default directory for the Relink function of the Texture Manager</li>
+      <li>Added support for textures of 3rd-party renderer</li>
+      <li>Enhanced the functionality of the context menu in the Texture Manager</li>
+      <li>Fixed an issue with backslash at the end of path names</li>
+      <li>Fixed an issue with the redo function after clearing textures in the Texture Manager</li>
+      <li>Defined a highlight color to point out the current focus element in a selection list in the Texture Manager</li>
+      <li>Fixed an error in the menu structure of the Texture Manager</li>
+      <li>Fixed an error in the Texture Manager, which allowed renaming the "No Layer" tag</li>
+      <li>Fixed an error in the way the Texture Manager displays the frame range of animated textures</li>
+      <li>Fixed a flicker of the preview image in the Texture Manager</li>
+      <li>Fixed an issue with globalizing/localizing texture file paths in the Texture Manager</li>
+    </ul>
+  <p class="p1">Timeline</p>
+    <ul>
+      <li>Fixed several issues with Bubble Help in the Timeline</li>
+      <li>Fixed an issue with Timeline &ndash; treeview drag &amp; drop</li>
+    </ul>
+  <p class="p1">UV Tools</p>
+    <ul>
+      <li>Fixed an issue with UV Peeler helper lines</li>
+      <li>Fixed an issue with UV projection on Subdivision Surfaces</li>
+    </ul>
+  <p class="p1">Vertex Color</p>
+    <ul>
+      <li>Fixed several issues with Vertex Map shader OpenGL display</li>
+      <li>Fixed a stability issue with vertex colors and the Connect command</li>
+      <li>Fixed an issue with Paint mode being lost in Paint tool</li>
+      <li>Fixed an issue with Explosion Deformer</li>
+      <li>Fixed an issue with Shatter Deformer</li>
+      <li>Fixed an issue with Pressure default setting</li>
+      <li>Fixed an issue with Vertex Map Shader used in Alpha channel</li>
+      <li>Fixed an issue with painting on points clouds</li>
+      <li>Fixed an issue applying Vertex Color on child objects of symmetry objects</li>
+      <li>Fixed an issue with vertex colors displayed wrong in different viewport views</li>
+    </ul>
+  <p class="p1">Viewport</p>
+    <ul>
+      <li>Fixed an issue with Viewport refresh</li>
+      <li>Fixed an issue with Tessellation</li>
+      <li>Fixed a stability issue with the Viewport</li>
+      <li>Fixed an issue with wrong shading in Viewport</li>
+      <li>Fixed an issue with Viewport filter</li>
+      <li>Fixed an issue with updating Reflectance preview in Viewport</li>
+      <li>Fixed an issue displaying maps, loaded in several Reflectance Layers in Viewport</li>
+      <li>Fixed an issue displaying maps, loaded in Reflectance Specular in Viewport</li>
+      <li>Fixed an issue displaying maps, loaded in Reflectance Fresnel in Viewport</li>
+      <li>Fixed an issue selecting objects in parallel view</li>
+      <li>Fixed an issue with moving, scaling and rotating in Viewport when multiple objects are selected</li>
+      <li>Fixed an issue displaying objects with reflectance and reversed normals</li>
+      <li>Fixed an issue with decreasing performance after replacing materials</li>
+      <li>Fixed an issue with decreasing performance caused by material projection</li>
+    </ul>
+  <p class="p1">XPresso</p>
+    <ul>
+      <li>Fixed an issue with XPresso tags</li>
+      <li>Fixed an issue with the spline GUI</li>
+      <li>Fixed an issue with Matrix2HPB node</li>
+      <li>Fixed an issue with XPresso Node Layout</li>
+      <li>Fixed an issue with renaming of XPresso nodes</li>
+      <li>Fixed an issue with XGroups</li>
+      <li>Fixed an issue with X-Pool presets</li>
+      <li>Fixed a refresh issue with XPresso</li>
+      <li>Fixed an issue with XPresso Math node</li>
+      <li>Fixed an issue with XPresso strings</li>
+      <li>Fixed an issue with Xpresso Post effect node</li>
+      <li>Fixed an issue with XPresso Python node</li>
+    </ul>
+  <p class="p1">Other</p>
+    <ul>
+      <li>Fixed an issue with moving Point Light and flickering shadows</li>
+      <li>Fixed an issue with particle baking</li>
+      <li>Fixed a stability issue when saving scenes with assets on OS X that include non-existing Windows paths</li>
+      <li>Fixed an issue with the Standard Emitter</li>
+      <li>Fixed an issue with watermarks</li>
+      <li>Fixed a Cinema 4D loading issue on Mac Intel Skylake machines</li>
+    </ul>
+
+  <p>&nbsp;</p>
+</body></html>

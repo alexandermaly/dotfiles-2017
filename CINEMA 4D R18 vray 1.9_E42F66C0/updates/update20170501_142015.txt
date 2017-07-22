@@ -1,0 +1,480 @@
+14:20:14  1.05.2017 : Start installation
+14:20:14  1.05.2017 : Calculating space
+14:20:15  1.05.2017 : Copying installer files
+14:20:15  1.05.2017 : Installing to directory 
+14:20:15  1.05.2017 : Restarting Application
+14:20:23  1.05.2017 : Updating files
+14:20:23  1.05.2017 : Installing package CINEMA 4D / BodyPaint 3D R18.048 Update
+14:20:23  1.05.2017 : Installing ----frameworks/cinema.framework/source/description/xvertexcolor.h
+14:20:23  1.05.2017 : Installing ----resource/modules/teamrender/webserver/htdocs/fonts/.metadata_never_index
+14:20:23  1.05.2017 : Installing Exchange Plugins/maya/OSX/maya 2017/to_plugins/64Bit/BodypaintExchange.bundle
+14:20:23  1.05.2017 : Installing Exchange Plugins/maya/OSX/maya 2017/to_scripts/BodypaintExchangeLoadPlugin.mel
+14:20:23  1.05.2017 : Installing Exchange Plugins/maya/OSX/maya 2017/to_scripts/BodypaintExchangeUI.mel
+14:20:23  1.05.2017 : Installing Exchange Plugins/maya/OSX/maya 2017/to_scripts/usersetup.mel
+14:20:23  1.05.2017 : Installing Exchange Plugins/maya/Win/maya 2017/to_plugins/PC64Bit/BodypaintExchange.mll
+14:20:23  1.05.2017 : Installing Exchange Plugins/maya/Win/maya 2017/to_scripts/BodypaintExchangeLoadPlugin.mel
+14:20:23  1.05.2017 : Installing Exchange Plugins/maya/Win/maya 2017/to_scripts/BodypaintExchangeUI.mel
+14:20:23  1.05.2017 : Installing Exchange Plugins/maya/Win/maya 2017/to_scripts/usersetup.mel
+14:20:23  1.05.2017 : Installing frameworks/cinema.framework/project/cinema.framework.vcxproj
+14:20:23  1.05.2017 : Installing frameworks/cinema.framework/project/cinema.framework.vcxproj.filters
+14:20:23  1.05.2017 : Installing frameworks/cinema.framework/project/cinema.framework.xcodeproj/project.pbxproj
+14:20:23  1.05.2017 : Installing frameworks/cinema.framework/source/c4d_basedocument.h
+14:20:23  1.05.2017 : Installing frameworks/cinema.framework/source/c4d_basedraw.h
+14:20:23  1.05.2017 : Installing frameworks/cinema.framework/source/c4d_baseeffectordata.h
+14:20:23  1.05.2017 : Installing frameworks/cinema.framework/source/c4d_baselist.h
+14:20:23  1.05.2017 : Installing frameworks/cinema.framework/source/c4d_basematerial.h
+14:20:23  1.05.2017 : Installing frameworks/cinema.framework/source/c4d_baseobject.cpp
+14:20:23  1.05.2017 : Installing frameworks/cinema.framework/source/c4d_baseobject.h
+14:20:23  1.05.2017 : Installing frameworks/cinema.framework/source/c4d_basetag.h
+14:20:23  1.05.2017 : Installing frameworks/cinema.framework/source/c4d_canimation.h
+14:20:23  1.05.2017 : Installing frameworks/cinema.framework/source/c4d_ctrackdata.h
+14:20:23  1.05.2017 : Installing frameworks/cinema.framework/source/c4d_customgui/customgui_datetime.h
+14:20:23  1.05.2017 : Installing frameworks/cinema.framework/source/c4d_customgui/customgui_inexclude.h
+14:20:23  1.05.2017 : Installing frameworks/cinema.framework/source/c4d_customgui/customgui_listview.h
+14:20:23  1.05.2017 : Installing frameworks/cinema.framework/source/c4d_falloffdata.h
+14:20:23  1.05.2017 : Installing frameworks/cinema.framework/source/c4d_general.h
+14:20:23  1.05.2017 : Installing frameworks/cinema.framework/source/c4d_gl.h
+14:20:23  1.05.2017 : Installing frameworks/cinema.framework/source/c4d_gui.h
+14:20:23  1.05.2017 : Installing frameworks/cinema.framework/source/c4d_gv/c4d_graphview_def.h
+14:20:23  1.05.2017 : Installing frameworks/cinema.framework/source/c4d_libs/lib_birender.h
+14:20:23  1.05.2017 : Installing frameworks/cinema.framework/source/c4d_libs/lib_clipmap.cpp
+14:20:23  1.05.2017 : Installing frameworks/cinema.framework/source/c4d_libs/lib_colorchooser.h
+14:20:23  1.05.2017 : Installing frameworks/cinema.framework/source/c4d_libs/lib_description.h
+14:20:23  1.05.2017 : Installing frameworks/cinema.framework/source/c4d_libs/lib_motiontracker.cpp
+14:20:23  1.05.2017 : Installing frameworks/cinema.framework/source/c4d_libs/lib_motiontracker.h
+14:20:23  1.05.2017 : Installing frameworks/cinema.framework/source/c4d_libs/lib_net.cpp
+14:20:23  1.05.2017 : Installing frameworks/cinema.framework/source/c4d_libs/lib_net.h
+14:20:23  1.05.2017 : Installing frameworks/cinema.framework/source/c4d_libs/lib_snd.h
+14:20:23  1.05.2017 : Installing frameworks/cinema.framework/source/c4d_libs/lib_substance.cpp
+14:20:23  1.05.2017 : Installing frameworks/cinema.framework/source/c4d_libs/lib_substance.h
+14:20:23  1.05.2017 : Installing frameworks/cinema.framework/source/c4d_libs/lib_takesystem.h
+14:20:23  1.05.2017 : Installing frameworks/cinema.framework/source/c4d_libs/lib_token.h
+14:20:23  1.05.2017 : Installing frameworks/cinema.framework/source/c4d_libs/lib_voronoifracture.cpp
+14:20:23  1.05.2017 : Installing frameworks/cinema.framework/source/c4d_libs/lib_voronoifracture.h
+14:20:23  1.05.2017 : Installing frameworks/cinema.framework/source/c4d_materialdata.h
+14:20:23  1.05.2017 : Installing frameworks/cinema.framework/source/c4d_misc/utilities/apibasemath.h
+14:20:23  1.05.2017 : Installing frameworks/cinema.framework/source/c4d_network.h
+14:20:23  1.05.2017 : Installing frameworks/cinema.framework/source/c4d_quaternion.h
+14:20:23  1.05.2017 : Installing frameworks/cinema.framework/source/c4d_raytrace.h
+14:20:23  1.05.2017 : Installing frameworks/cinema.framework/source/c4d_reflection.h
+14:20:23  1.05.2017 : Installing frameworks/cinema.framework/source/c4d_string.h
+14:20:23  1.05.2017 : Installing frameworks/cinema.framework/source/c4d_thread.h
+14:20:23  1.05.2017 : Installing frameworks/cinema.framework/source/c4d_tooldata.h
+14:20:23  1.05.2017 : Installing frameworks/cinema.framework/source/c4d_tools.h
+14:20:23  1.05.2017 : Installing frameworks/cinema.framework/source/description/clothtag.h
+14:20:23  1.05.2017 : Installing frameworks/cinema.framework/source/description/drendersettings.h
+14:20:23  1.05.2017 : Installing frameworks/cinema.framework/source/description/ocamorphdeformer.h
+14:20:23  1.05.2017 : Installing frameworks/cinema.framework/source/description/ofigure.h
+14:20:23  1.05.2017 : Installing frameworks/cinema.framework/source/description/Ohoudinigenerator.h
+14:20:23  1.05.2017 : Installing frameworks/cinema.framework/source/description/olight.h
+14:20:23  1.05.2017 : Installing frameworks/cinema.framework/source/description/omograph_fracturevoronoi.h
+14:20:23  1.05.2017 : Installing frameworks/cinema.framework/source/description/opointcreator_panel.h
+14:20:23  1.05.2017 : Installing frameworks/cinema.framework/source/description/prefshoudini.h
+14:20:23  1.05.2017 : Installing frameworks/cinema.framework/source/description/prefssubstance.h
+14:20:23  1.05.2017 : Installing frameworks/cinema.framework/source/description/tcawcycle.h
+14:20:23  1.05.2017 : Installing frameworks/cinema.framework/source/description/tlworld.h
+14:20:23  1.05.2017 : Installing frameworks/cinema.framework/source/description/toolknifeline.h
+14:20:23  1.05.2017 : Installing frameworks/cinema.framework/source/description/toolknifeplane.h
+14:20:23  1.05.2017 : Installing frameworks/cinema.framework/source/ge_dynamicarray.h
+14:20:23  1.05.2017 : Installing frameworks/cinema.framework/source/ge_lmatrix.h
+14:20:23  1.05.2017 : Installing frameworks/cinema.framework/source/ge_math.h
+14:20:23  1.05.2017 : Installing frameworks/cinema.framework/source/ge_matrix.h
+14:20:23  1.05.2017 : Installing frameworks/cinema.framework/source/ge_prepass.h
+14:20:23  1.05.2017 : Installing frameworks/cinema.framework/source/gui.h
+14:20:23  1.05.2017 : Installing frameworks/cinema.framework/source/modelingids.h
+14:20:23  1.05.2017 : Installing frameworks/cinema.framework/source/operatingsystem.h
+14:20:23  1.05.2017 : Installing frameworks/settings/IntelBase.props
+14:20:23  1.05.2017 : Installing library/characters/adv_biped.c4d
+14:20:23  1.05.2017 : Installing library/xnode/System Presets.xgr
+14:20:23  1.05.2017 : Installing plugins/cinema4dsdk/cinema4dsdk.xcodeproj/project.pbxproj
+14:20:23  1.05.2017 : Installing plugins/cinema4dsdk/source/gui/asynctest.cpp
+14:20:23  1.05.2017 : Installing plugins/cinema4dsdk/source/other/commandlinerender.cpp
+14:20:23  1.05.2017 : Installing resource/build.txt
+14:20:23  1.05.2017 : Installing resource/coffeesymbols.h
+14:20:23  1.05.2017 : Installing resource/coffeesymbols_old.h
+14:20:23  1.05.2017 : Installing resource/config.txt
+14:20:23  1.05.2017 : Installing resource/gui.cob
+14:20:23  1.05.2017 : Installing resource/modules/addons/build.txt
+14:20:23  1.05.2017 : Installing resource/modules/advanced render/build.txt
+14:20:23  1.05.2017 : Installing resource/modules/alembic/build.txt
+14:20:23  1.05.2017 : Installing resource/modules/archigrass/build.txt
+14:20:23  1.05.2017 : Installing resource/modules/archigrass/description/marchigrass.res
+14:20:23  1.05.2017 : Installing resource/modules/bitmapfilter/build.txt
+14:20:23  1.05.2017 : Installing resource/modules/bpexchange/build.txt
+14:20:23  1.05.2017 : Installing resource/modules/browser/build.txt
+14:20:23  1.05.2017 : Installing resource/modules/c4dplugin/build.txt
+14:20:23  1.05.2017 : Installing resource/modules/c4dplugin/c4d_symbols.h
+14:20:23  1.05.2017 : Installing resource/modules/c4dplugin/description/ckvalue.res
+14:20:23  1.05.2017 : Installing resource/modules/c4dplugin/description/olight.h
+14:20:23  1.05.2017 : Installing resource/modules/c4dplugin/description/olight.res
+14:20:23  1.05.2017 : Installing resource/modules/c4dplugin/description/xbitmap.res
+14:20:23  1.05.2017 : Installing resource/modules/c4dplugin/strings_us/c4d_strings.str
+14:20:23  1.05.2017 : Installing resource/modules/c4dplugin/strings_us/description/olight.str
+14:20:23  1.05.2017 : Installing resource/modules/c4dplugin/strings_us/description/vppreviewhardware.str
+14:20:23  1.05.2017 : Installing resource/modules/c4dplugin/strings_us/description/vppreviewsoftware.str
+14:20:23  1.05.2017 : Installing resource/modules/c4dplugin/strings_us/html/demo1.html
+14:20:23  1.05.2017 : Installing resource/modules/c4dplugin/strings_us/html/demo2.html
+14:20:23  1.05.2017 : Installing resource/modules/c4dplugin/strings_us/html/demo3.html
+14:20:23  1.05.2017 : Installing resource/modules/c4dplugin/strings_us/html/demo4.html
+14:20:23  1.05.2017 : Installing resource/modules/c4dplugin/strings_us/html/lite.html
+14:20:23  1.05.2017 : Installing resource/modules/c4dplugin/strings_us/html/lite2.html
+14:20:23  1.05.2017 : Installing resource/modules/c4dplugin/strings_us/html/lite3.html
+14:20:23  1.05.2017 : Installing resource/modules/c4dplugin/strings_us/html/student1.html
+14:20:23  1.05.2017 : Installing resource/modules/c4dplugin/strings_us/html/student2.html
+14:20:23  1.05.2017 : Installing resource/modules/c4dplugin/strings_us/html/student3.html
+14:20:23  1.05.2017 : Installing resource/modules/c4dplugin/strings_us/html/student4.html
+14:20:23  1.05.2017 : Installing resource/modules/ca/build.txt
+14:20:23  1.05.2017 : Installing resource/modules/ca/description/ocacamdeformer.res
+14:20:23  1.05.2017 : Installing resource/modules/ca/description/ocamorphdeformer.h
+14:20:23  1.05.2017 : Installing resource/modules/ca/description/ocamorphdeformer.res
+14:20:23  1.05.2017 : Installing resource/modules/ca/description/tcawcycle.h
+14:20:23  1.05.2017 : Installing resource/modules/ca/strings_us/c4d_strings.str
+14:20:23  1.05.2017 : Installing resource/modules/ca/strings_us/description/ocamorphdeformer.str
+14:20:23  1.05.2017 : Installing resource/modules/ca/strings_us/description/toolbrushbase.str
+14:20:23  1.05.2017 : Installing resource/modules/ca2/build.txt
+14:20:23  1.05.2017 : Installing resource/modules/cineman/build.txt
+14:20:23  1.05.2017 : Installing resource/modules/clothilde/build.txt
+14:20:23  1.05.2017 : Installing resource/modules/clothilde/description/clothtag.h
+14:20:23  1.05.2017 : Installing resource/modules/clothilde/strings_us/description/clothtag.str
+14:20:23  1.05.2017 : Installing resource/modules/collada14/build.txt
+14:20:23  1.05.2017 : Installing resource/modules/collada15/build.txt
+14:20:23  1.05.2017 : Installing resource/modules/colorchoosergui/build.txt
+14:20:23  1.05.2017 : Installing resource/modules/colorchoosergui/c4d_symbols.h
+14:20:23  1.05.2017 : Installing resource/modules/colorchoosergui/strings_us/c4d_strings.str
+14:20:23  1.05.2017 : Installing resource/modules/compositing/build.txt
+14:20:23  1.05.2017 : Installing resource/modules/dwg/build.txt
+14:20:23  1.05.2017 : Installing resource/modules/dwgobjects/build.txt
+14:20:23  1.05.2017 : Installing resource/modules/dynamics/build.txt
+14:20:23  1.05.2017 : Installing resource/modules/exchanges/build.txt
+14:20:23  1.05.2017 : Installing resource/modules/expressiontag/build.txt
+14:20:23  1.05.2017 : Installing resource/modules/expressiontag/strings_us/description/gvcomment.str
+14:20:23  1.05.2017 : Installing resource/modules/fbx/build.txt
+14:20:23  1.05.2017 : Installing resource/modules/fbx/description/Ffbximport.res
+14:20:23  1.05.2017 : Installing resource/modules/hair/build.txt
+14:20:23  1.05.2017 : Installing resource/modules/houdiniconfig/build.txt
+14:20:23  1.05.2017 : Installing resource/modules/houdiniconfig/description/prefshoudini.h
+14:20:23  1.05.2017 : Installing resource/modules/houdiniconfig/description/prefshoudini.res
+14:20:23  1.05.2017 : Installing resource/modules/houdiniconfig/strings_us/description/prefshoudini.str
+14:20:23  1.05.2017 : Installing resource/modules/houdiniengine/build.txt
+14:20:23  1.05.2017 : Installing resource/modules/houdiniengine/description/Ohoudinigenerator.h
+14:20:23  1.05.2017 : Installing resource/modules/houdiniengine/description/Ohoudinigenerator.res
+14:20:23  1.05.2017 : Installing resource/modules/houdiniengine/strings_us/c4d_strings.str
+14:20:23  1.05.2017 : Installing resource/modules/houdiniengine/strings_us/description/ohoudinigenerator.str
+14:20:23  1.05.2017 : Installing resource/modules/iges/build.txt
+14:20:23  1.05.2017 : Installing resource/modules/io_obj/build.txt
+14:20:23  1.05.2017 : Installing resource/modules/i_skp/build.txt
+14:20:23  1.05.2017 : Installing resource/modules/licenseserver/build.txt
+14:20:23  1.05.2017 : Installing resource/modules/metrics/build.txt
+14:20:23  1.05.2017 : Installing resource/modules/mocca/build.txt
+14:20:23  1.05.2017 : Installing resource/modules/model/build.txt
+14:20:23  1.05.2017 : Installing resource/modules/model/description/toolknifeline.h
+14:20:23  1.05.2017 : Installing resource/modules/model/description/toolknifeline.res
+14:20:23  1.05.2017 : Installing resource/modules/model/description/toolknifeplane.h
+14:20:23  1.05.2017 : Installing resource/modules/model/description/toolknifeplane.res
+14:20:23  1.05.2017 : Installing resource/modules/model/strings_us/description/toolknifeline.str
+14:20:23  1.05.2017 : Installing resource/modules/model/strings_us/description/toolknifepath.str
+14:20:23  1.05.2017 : Installing resource/modules/model/strings_us/description/toolknifeplane.str
+14:20:23  1.05.2017 : Installing resource/modules/mograph/build.txt
+14:20:23  1.05.2017 : Installing resource/modules/mograph/description/oepushapart.res
+14:20:23  1.05.2017 : Installing resource/modules/mograph/description/oereeffector.res
+14:20:23  1.05.2017 : Installing resource/modules/mograph/description/omograph_fracturevoronoi.h
+14:20:23  1.05.2017 : Installing resource/modules/mograph/description/omograph_fracturevoronoi.res
+14:20:23  1.05.2017 : Installing resource/modules/mograph/description/opointcreator_panel.h
+14:20:23  1.05.2017 : Installing resource/modules/mograph/description/opointcreator_panel.res
+14:20:23  1.05.2017 : Installing resource/modules/mograph/strings_us/c4d_strings.str
+14:20:23  1.05.2017 : Installing resource/modules/mograph/strings_us/description/oereeffector.str
+14:20:23  1.05.2017 : Installing resource/modules/mograph/strings_us/description/omograph_fracturevoronoi.str
+14:20:23  1.05.2017 : Installing resource/modules/mograph/strings_us/description/opointcreator_panel.str
+14:20:23  1.05.2017 : Installing resource/modules/mograph/strings_us/description/tfracturevoronoi.str
+14:20:23  1.05.2017 : Installing resource/modules/mograph/strings_us/description/tmgselection.str
+14:20:23  1.05.2017 : Installing resource/modules/mograph/strings_us/description/tool_mgselect.str
+14:20:23  1.05.2017 : Installing resource/modules/motioncam/build.txt
+14:20:23  1.05.2017 : Installing resource/modules/motiontracker/build.txt
+14:20:23  1.05.2017 : Installing resource/modules/motiontracker/description/omotiontracker.res
+14:20:23  1.05.2017 : Installing resource/modules/motiontracker/strings_us/c4d_strings.str
+14:20:23  1.05.2017 : Installing resource/modules/newman/build.txt
+14:20:23  1.05.2017 : Installing resource/modules/newman/description/pvfilter.res
+14:20:23  1.05.2017 : Installing resource/modules/newman/description/tlworld.h
+14:20:23  1.05.2017 : Installing resource/modules/newman/description/tlworld.res
+14:20:23  1.05.2017 : Installing resource/modules/newman/strings_us/c4d_strings.str
+14:20:23  1.05.2017 : Installing resource/modules/newman/strings_us/description/tlworld.str
+14:20:23  1.05.2017 : Installing resource/modules/objects/build.txt
+14:20:23  1.05.2017 : Installing resource/modules/objects/description/ofigure.h
+14:20:23  1.05.2017 : Installing resource/modules/objects/description/osds.res
+14:20:23  1.05.2017 : Installing resource/modules/objects/strings_us/c4d_strings.str
+14:20:23  1.05.2017 : Installing resource/modules/objects/strings_us/description/tgrouppriority.str
+14:20:23  1.05.2017 : Installing resource/modules/objects/strings_us/description/tsds.str
+14:20:23  1.05.2017 : Installing resource/modules/okino/build.txt
+14:20:23  1.05.2017 : Installing resource/modules/onlinehelp/build.txt
+14:20:23  1.05.2017 : Installing resource/modules/onlinehelp/strings_us/html/303.html
+14:20:23  1.05.2017 : Installing resource/modules/onlineupdater/build.txt
+14:20:23  1.05.2017 : Installing resource/modules/openexr/build.txt
+14:20:23  1.05.2017 : Installing resource/modules/python/build.txt
+14:20:23  1.05.2017 : Installing resource/modules/relaxuv/build.txt
+14:20:23  1.05.2017 : Installing resource/modules/sculpt/build.txt
+14:20:23  1.05.2017 : Installing resource/modules/sculptbrushes/build.txt
+14:20:23  1.05.2017 : Installing resource/modules/shader/build.txt
+14:20:23  1.05.2017 : Installing resource/modules/sketch/build.txt
+14:20:23  1.05.2017 : Installing resource/modules/sky/build.txt
+14:20:23  1.05.2017 : Installing resource/modules/sla/build.txt
+14:20:23  1.05.2017 : Installing resource/modules/spacemouse/build.txt
+14:20:23  1.05.2017 : Installing resource/modules/substance/build.txt
+14:20:23  1.05.2017 : Installing resource/modules/substance/description/prefssubstance.h
+14:20:23  1.05.2017 : Installing resource/modules/substance/description/prefssubstance.res
+14:20:23  1.05.2017 : Installing resource/modules/substance/libs/win32-msvc2013-64/release_md/substance_d3d10pc_blend.dll
+14:20:23  1.05.2017 : Installing resource/modules/substance/libs/win32-msvc2013-64/release_md/substance_d3d11pc_blend.dll
+14:20:23  1.05.2017 : Installing resource/modules/substance/libs/win32-msvc2013-64/release_md/substance_sse2_blend.dll
+14:20:23  1.05.2017 : Installing resource/modules/substance/strings_us/description/prefssubstance.str
+14:20:23  1.05.2017 : Installing resource/modules/teamrender/build.txt
+14:20:23  1.05.2017 : Installing resource/modules/teamrender/c4d_symbols.h
+14:20:23  1.05.2017 : Installing resource/modules/teamrender/strings_us/c4d_strings.str
+14:20:23  1.05.2017 : Installing resource/modules/teamrender/webserver/htdocs/config/faq.json
+14:20:23  1.05.2017 : Installing resource/modules/teamrender/webserver/htdocs/index.html
+14:20:23  1.05.2017 : Installing resource/modules/teamrender/webserver/htdocs/js/trwi.js
+14:20:23  1.05.2017 : Installing resource/modules/teamrender/webserver/htdocs/js/trwi.min.js
+14:20:23  1.05.2017 : Installing resource/modules/teamrender/webserver/htdocs/js/trwi.min.js.map
+14:20:23  1.05.2017 : Installing resource/modules/teamrender/webserver/webserver.pyp
+14:20:23  1.05.2017 : Installing resource/modules/texturemanager/build.txt
+14:20:23  1.05.2017 : Installing resource/modules/thinking particles/build.txt
+14:20:23  1.05.2017 : Installing resource/modules/tpoperators/build.txt
+14:20:23  1.05.2017 : Installing resource/modules/walkthrough/build.txt
+14:20:23  1.05.2017 : Installing resource/modules/xpressocore/build.txt
+14:20:23  1.05.2017 : Installing resource/modules/xtensions/build.txt
+14:20:23  1.05.2017 : Installing resource/modules/xtensions/c4d_symbols.h
+14:20:23  1.05.2017 : Installing resource/modules/xtensions/description/drendersettings.h
+14:20:23  1.05.2017 : Installing resource/modules/xtensions/iray.tif
+14:20:23  1.05.2017 : Installing resource/modules/xtensions/strings_us/c4d_strings.str
+14:20:23  1.05.2017 : Installing resource/version.h
+14:20:24  1.05.2017 : Installing package Application Binaries
+14:20:24  1.05.2017 : Installing ----resource/modules/python/Python.osx.framework/.DS_Store
+14:20:24  1.05.2017 : Installing ----resource/modules/python/Python.osx.framework/include/.DS_Store
+14:20:24  1.05.2017 : Installing ----resource/modules/python/Python.osx.framework/lib/.DS_Store
+14:20:24  1.05.2017 : Installing ----resource/modules/python/Python.osx.framework/lib/python2.7/.DS_Store
+14:20:24  1.05.2017 : Installing modules/addons.dylib
+14:20:24  1.05.2017 : Installing modules/advanced render.dylib
+14:20:24  1.05.2017 : Installing modules/alembic.dylib
+14:20:24  1.05.2017 : Installing modules/archigrass.dylib
+14:20:24  1.05.2017 : Installing modules/bitmapfilter.dylib
+14:20:24  1.05.2017 : Installing modules/bpexchange.dylib
+14:20:24  1.05.2017 : Installing modules/browser.dylib
+14:20:24  1.05.2017 : Installing modules/c4dplugin.xlib
+14:20:24  1.05.2017 : Installing modules/ca.dylib
+14:20:24  1.05.2017 : Installing modules/ca2.dylib
+14:20:24  1.05.2017 : Installing modules/cineman.dylib
+14:20:24  1.05.2017 : Installing modules/clothilde.dylib
+14:20:24  1.05.2017 : Installing modules/collada14.dylib
+14:20:24  1.05.2017 : Installing modules/collada15.dylib
+14:20:24  1.05.2017 : Installing modules/colorchoosergui.dylib
+14:20:24  1.05.2017 : Installing modules/compositing.dylib
+14:20:24  1.05.2017 : Installing modules/crashhandler.module.xlib
+14:20:24  1.05.2017 : Installing modules/crypt.module.xlib
+14:20:24  1.05.2017 : Installing modules/drawport_general.module.xlib
+14:20:24  1.05.2017 : Installing modules/drawport_opengl.module.xlib
+14:20:24  1.05.2017 : Installing modules/drawport_selector.module.xlib
+14:20:24  1.05.2017 : Installing modules/dwg.dylib
+14:20:25  1.05.2017 : Installing modules/dwgobjects.dylib
+14:20:25  1.05.2017 : Installing modules/dynamics.dylib
+14:20:25  1.05.2017 : Installing modules/exchanges.dylib
+14:20:25  1.05.2017 : Installing modules/expressiontag.dylib
+14:20:25  1.05.2017 : Installing modules/fbx.dylib
+14:20:25  1.05.2017 : Installing modules/glclvk_trace.module.xlib
+14:20:25  1.05.2017 : Installing modules/gui.module.xlib
+14:20:25  1.05.2017 : Installing modules/hair.dylib
+14:20:25  1.05.2017 : Installing modules/houdiniconfig.dylib
+14:20:25  1.05.2017 : Installing modules/houdiniengine.dylib
+14:20:25  1.05.2017 : Installing modules/iges.dylib
+14:20:25  1.05.2017 : Installing modules/image.module.xlib
+14:20:25  1.05.2017 : Installing modules/io_obj.dylib
+14:20:25  1.05.2017 : Installing modules/i_skp.dylib
+14:20:25  1.05.2017 : Installing modules/licenseserver.dylib
+14:20:25  1.05.2017 : Installing modules/math.module.xlib
+14:20:25  1.05.2017 : Installing modules/mesh.module.xlib
+14:20:25  1.05.2017 : Installing modules/metrics.dylib
+14:20:25  1.05.2017 : Installing modules/misc.module.xlib
+14:20:25  1.05.2017 : Installing modules/mocca.dylib
+14:20:25  1.05.2017 : Installing modules/model.dylib
+14:20:25  1.05.2017 : Installing modules/mograph.dylib
+14:20:25  1.05.2017 : Installing modules/motioncam.dylib
+14:20:25  1.05.2017 : Installing modules/motiontracker.dylib
+14:20:25  1.05.2017 : Installing modules/network.module.xlib
+14:20:25  1.05.2017 : Installing modules/newman.dylib
+14:20:26  1.05.2017 : Installing modules/objects.dylib
+14:20:26  1.05.2017 : Installing modules/onlinehelp.dylib
+14:20:26  1.05.2017 : Installing modules/onlineupdater.dylib
+14:20:26  1.05.2017 : Installing modules/opencl.module.xlib
+14:20:26  1.05.2017 : Installing modules/openexr.dylib
+14:20:26  1.05.2017 : Installing modules/opensubdiv.module.xlib
+14:20:26  1.05.2017 : Installing modules/python.dylib
+14:20:26  1.05.2017 : Installing modules/relaxuv.dylib
+14:20:26  1.05.2017 : Installing modules/render.module.xlib
+14:20:26  1.05.2017 : Installing modules/sculpt.dylib
+14:20:26  1.05.2017 : Installing modules/sculptbrushes.dylib
+14:20:26  1.05.2017 : Installing modules/shader.dylib
+14:20:26  1.05.2017 : Installing modules/shaderbase.module.xlib
+14:20:26  1.05.2017 : Installing modules/sketch.dylib
+14:20:26  1.05.2017 : Installing modules/sky.dylib
+14:20:26  1.05.2017 : Installing modules/sla.dylib
+14:20:26  1.05.2017 : Installing modules/spacemouse.dylib
+14:20:26  1.05.2017 : Installing modules/substance.dylib
+14:20:26  1.05.2017 : Installing modules/teamrender.dylib
+14:20:26  1.05.2017 : Installing modules/texturemanager.dylib
+14:20:26  1.05.2017 : Installing modules/thinking particles.dylib
+14:20:26  1.05.2017 : Installing modules/tpoperators.dylib
+14:20:26  1.05.2017 : Installing modules/triangulation.module.xlib
+14:20:26  1.05.2017 : Installing modules/walkthrough.dylib
+14:20:26  1.05.2017 : Installing modules/xpressocore.dylib
+14:20:26  1.05.2017 : Installing modules/xtensions.dylib
+14:20:26  1.05.2017 : Installing resource/libs/osx/CINEMA 4D QT Agent.app/Contents/Info.plist
+14:20:26  1.05.2017 : Installing resource/libs/osx/CINEMA 4D QT Agent.app/Contents/MacOS/CINEMA 4D QT Agent
+14:20:26  1.05.2017 : Installing resource/libs/osx/CINEMA 4D QT Agent.app/Contents/PkgInfo
+14:20:26  1.05.2017 : Installing resource/libs/osx/CINEMA 4D QT Agent.app/Contents/_CodeSignature/CodeResources
+14:20:26  1.05.2017 : Installing resource/libs/osx/mesa/libosmesa.dylib
+14:20:26  1.05.2017 : Installing resource/modules/substance/libs/macx-clang-64/release/libsubstance_ogl2_blend.dylib
+14:20:26  1.05.2017 : Installing resource/modules/substance/libs/macx-clang-64/release/libsubstance_sse2_blend.dylib
+14:20:26  1.05.2017 : Installing package BodyPaint 3D
+14:20:26  1.05.2017 : Installing BodyPaint 3D.app/Contents/Info.plist
+14:20:26  1.05.2017 : Installing BodyPaint 3D.app/Contents/Library/QuickLook/CINEMA 4D.qlgenerator/Contents/Info.plist
+14:20:26  1.05.2017 : Installing BodyPaint 3D.app/Contents/Library/QuickLook/CINEMA 4D.qlgenerator/Contents/MacOS/CINEMA 4D
+14:20:26  1.05.2017 : Installing BodyPaint 3D.app/Contents/Library/QuickLook/CINEMA 4D.qlgenerator/Contents/Resources/bg.png
+14:20:26  1.05.2017 : Installing BodyPaint 3D.app/Contents/Library/QuickLook/CINEMA 4D.qlgenerator/Contents/Resources/c4dlogo.png
+14:20:26  1.05.2017 : Installing BodyPaint 3D.app/Contents/Library/QuickLook/CINEMA 4D.qlgenerator/Contents/Resources/cs.lproj/Localizable.strings
+14:20:26  1.05.2017 : Installing BodyPaint 3D.app/Contents/Library/QuickLook/CINEMA 4D.qlgenerator/Contents/Resources/de.lproj/Localizable.strings
+14:20:26  1.05.2017 : Installing BodyPaint 3D.app/Contents/Library/QuickLook/CINEMA 4D.qlgenerator/Contents/Resources/en.lproj/Localizable.strings
+14:20:26  1.05.2017 : Installing BodyPaint 3D.app/Contents/Library/QuickLook/CINEMA 4D.qlgenerator/Contents/Resources/es.lproj/Localizable.strings
+14:20:26  1.05.2017 : Installing BodyPaint 3D.app/Contents/Library/QuickLook/CINEMA 4D.qlgenerator/Contents/Resources/fr.lproj/Localizable.strings
+14:20:26  1.05.2017 : Installing BodyPaint 3D.app/Contents/Library/QuickLook/CINEMA 4D.qlgenerator/Contents/Resources/it.lproj/Localizable.strings
+14:20:26  1.05.2017 : Installing BodyPaint 3D.app/Contents/Library/QuickLook/CINEMA 4D.qlgenerator/Contents/Resources/ja.lproj/Localizable.strings
+14:20:26  1.05.2017 : Installing BodyPaint 3D.app/Contents/Library/QuickLook/CINEMA 4D.qlgenerator/Contents/Resources/ko.lproj/Localizable.strings
+14:20:26  1.05.2017 : Installing BodyPaint 3D.app/Contents/Library/QuickLook/CINEMA 4D.qlgenerator/Contents/Resources/pl.lproj/Localizable.strings
+14:20:26  1.05.2017 : Installing BodyPaint 3D.app/Contents/Library/QuickLook/CINEMA 4D.qlgenerator/Contents/Resources/ru.lproj/Localizable.strings
+14:20:26  1.05.2017 : Installing BodyPaint 3D.app/Contents/Library/QuickLook/CINEMA 4D.qlgenerator/Contents/Resources/template.html
+14:20:26  1.05.2017 : Installing BodyPaint 3D.app/Contents/Library/QuickLook/CINEMA 4D.qlgenerator/Contents/Resources/zh-CN.lproj/Localizable.strings
+14:20:26  1.05.2017 : Installing BodyPaint 3D.app/Contents/MacOS/BodyPaint 3D
+14:20:26  1.05.2017 : Installing BodyPaint 3D.app/Contents/PkgInfo
+14:20:26  1.05.2017 : Installing BodyPaint 3D.app/Contents/Resources/c4dapp.icns
+14:20:26  1.05.2017 : Installing BodyPaint 3D.app/Contents/Resources/c4ddoc.icns
+14:20:26  1.05.2017 : Installing BodyPaint 3D.app/Contents/Resources/mainmenu.nib
+14:20:26  1.05.2017 : Installing BodyPaint 3D.app/Contents/_CodeSignature/CodeResources
+14:20:26  1.05.2017 : Installing package CINEMA 4D Broadcast
+14:20:26  1.05.2017 : Installing CINEMA 4D.app/Contents/Info.plist
+14:20:26  1.05.2017 : Installing CINEMA 4D.app/Contents/Library/QuickLook/CINEMA 4D.qlgenerator/Contents/Info.plist
+14:20:26  1.05.2017 : Installing CINEMA 4D.app/Contents/Library/QuickLook/CINEMA 4D.qlgenerator/Contents/MacOS/CINEMA 4D
+14:20:27  1.05.2017 : Installing CINEMA 4D.app/Contents/Library/QuickLook/CINEMA 4D.qlgenerator/Contents/Resources/bg.png
+14:20:27  1.05.2017 : Installing CINEMA 4D.app/Contents/Library/QuickLook/CINEMA 4D.qlgenerator/Contents/Resources/c4dlogo.png
+14:20:27  1.05.2017 : Installing CINEMA 4D.app/Contents/Library/QuickLook/CINEMA 4D.qlgenerator/Contents/Resources/cs.lproj/Localizable.strings
+14:20:27  1.05.2017 : Installing CINEMA 4D.app/Contents/Library/QuickLook/CINEMA 4D.qlgenerator/Contents/Resources/de.lproj/Localizable.strings
+14:20:27  1.05.2017 : Installing CINEMA 4D.app/Contents/Library/QuickLook/CINEMA 4D.qlgenerator/Contents/Resources/en.lproj/Localizable.strings
+14:20:27  1.05.2017 : Installing CINEMA 4D.app/Contents/Library/QuickLook/CINEMA 4D.qlgenerator/Contents/Resources/es.lproj/Localizable.strings
+14:20:27  1.05.2017 : Installing CINEMA 4D.app/Contents/Library/QuickLook/CINEMA 4D.qlgenerator/Contents/Resources/fr.lproj/Localizable.strings
+14:20:27  1.05.2017 : Installing CINEMA 4D.app/Contents/Library/QuickLook/CINEMA 4D.qlgenerator/Contents/Resources/it.lproj/Localizable.strings
+14:20:27  1.05.2017 : Installing CINEMA 4D.app/Contents/Library/QuickLook/CINEMA 4D.qlgenerator/Contents/Resources/ja.lproj/Localizable.strings
+14:20:27  1.05.2017 : Installing CINEMA 4D.app/Contents/Library/QuickLook/CINEMA 4D.qlgenerator/Contents/Resources/ko.lproj/Localizable.strings
+14:20:27  1.05.2017 : Installing CINEMA 4D.app/Contents/Library/QuickLook/CINEMA 4D.qlgenerator/Contents/Resources/pl.lproj/Localizable.strings
+14:20:27  1.05.2017 : Installing CINEMA 4D.app/Contents/Library/QuickLook/CINEMA 4D.qlgenerator/Contents/Resources/ru.lproj/Localizable.strings
+14:20:27  1.05.2017 : Installing CINEMA 4D.app/Contents/Library/QuickLook/CINEMA 4D.qlgenerator/Contents/Resources/template.html
+14:20:27  1.05.2017 : Installing CINEMA 4D.app/Contents/Library/QuickLook/CINEMA 4D.qlgenerator/Contents/Resources/zh-CN.lproj/Localizable.strings
+14:20:27  1.05.2017 : Installing CINEMA 4D.app/Contents/MacOS/CINEMA 4D
+14:20:27  1.05.2017 : Installing CINEMA 4D.app/Contents/PkgInfo
+14:20:27  1.05.2017 : Installing CINEMA 4D.app/Contents/Resources/c4dapp.icns
+14:20:27  1.05.2017 : Installing CINEMA 4D.app/Contents/Resources/c4ddoc.icns
+14:20:27  1.05.2017 : Installing CINEMA 4D.app/Contents/Resources/mainmenu.nib
+14:20:27  1.05.2017 : Installing CINEMA 4D.app/Contents/_CodeSignature/CodeResources
+14:20:27  1.05.2017 : Installing package CINEMA 4D Prime
+14:20:27  1.05.2017 : Installing CINEMA 4D.app/Contents/Info.plist
+14:20:27  1.05.2017 : Installing CINEMA 4D.app/Contents/Library/QuickLook/CINEMA 4D.qlgenerator/Contents/Info.plist
+14:20:27  1.05.2017 : Installing CINEMA 4D.app/Contents/Library/QuickLook/CINEMA 4D.qlgenerator/Contents/MacOS/CINEMA 4D
+14:20:27  1.05.2017 : Installing CINEMA 4D.app/Contents/Library/QuickLook/CINEMA 4D.qlgenerator/Contents/Resources/bg.png
+14:20:27  1.05.2017 : Installing CINEMA 4D.app/Contents/Library/QuickLook/CINEMA 4D.qlgenerator/Contents/Resources/c4dlogo.png
+14:20:27  1.05.2017 : Installing CINEMA 4D.app/Contents/Library/QuickLook/CINEMA 4D.qlgenerator/Contents/Resources/cs.lproj/Localizable.strings
+14:20:27  1.05.2017 : Installing CINEMA 4D.app/Contents/Library/QuickLook/CINEMA 4D.qlgenerator/Contents/Resources/de.lproj/Localizable.strings
+14:20:27  1.05.2017 : Installing CINEMA 4D.app/Contents/Library/QuickLook/CINEMA 4D.qlgenerator/Contents/Resources/en.lproj/Localizable.strings
+14:20:27  1.05.2017 : Installing CINEMA 4D.app/Contents/Library/QuickLook/CINEMA 4D.qlgenerator/Contents/Resources/es.lproj/Localizable.strings
+14:20:27  1.05.2017 : Installing CINEMA 4D.app/Contents/Library/QuickLook/CINEMA 4D.qlgenerator/Contents/Resources/fr.lproj/Localizable.strings
+14:20:27  1.05.2017 : Installing CINEMA 4D.app/Contents/Library/QuickLook/CINEMA 4D.qlgenerator/Contents/Resources/it.lproj/Localizable.strings
+14:20:27  1.05.2017 : Installing CINEMA 4D.app/Contents/Library/QuickLook/CINEMA 4D.qlgenerator/Contents/Resources/ja.lproj/Localizable.strings
+14:20:27  1.05.2017 : Installing CINEMA 4D.app/Contents/Library/QuickLook/CINEMA 4D.qlgenerator/Contents/Resources/ko.lproj/Localizable.strings
+14:20:27  1.05.2017 : Installing CINEMA 4D.app/Contents/Library/QuickLook/CINEMA 4D.qlgenerator/Contents/Resources/pl.lproj/Localizable.strings
+14:20:27  1.05.2017 : Installing CINEMA 4D.app/Contents/Library/QuickLook/CINEMA 4D.qlgenerator/Contents/Resources/ru.lproj/Localizable.strings
+14:20:27  1.05.2017 : Installing CINEMA 4D.app/Contents/Library/QuickLook/CINEMA 4D.qlgenerator/Contents/Resources/template.html
+14:20:27  1.05.2017 : Installing CINEMA 4D.app/Contents/Library/QuickLook/CINEMA 4D.qlgenerator/Contents/Resources/zh-CN.lproj/Localizable.strings
+14:20:27  1.05.2017 : Installing CINEMA 4D.app/Contents/MacOS/CINEMA 4D
+14:20:27  1.05.2017 : Installing CINEMA 4D.app/Contents/PkgInfo
+14:20:27  1.05.2017 : Installing CINEMA 4D.app/Contents/Resources/c4dapp.icns
+14:20:27  1.05.2017 : Installing CINEMA 4D.app/Contents/Resources/c4ddoc.icns
+14:20:27  1.05.2017 : Installing CINEMA 4D.app/Contents/Resources/mainmenu.nib
+14:20:27  1.05.2017 : Installing CINEMA 4D.app/Contents/_CodeSignature/CodeResources
+14:20:27  1.05.2017 : Installing package CINEMA 4D Studio
+14:20:27  1.05.2017 : Installing CINEMA 4D.app/Contents/Info.plist
+14:20:27  1.05.2017 : Installing CINEMA 4D.app/Contents/Library/QuickLook/CINEMA 4D.qlgenerator/Contents/Info.plist
+14:20:27  1.05.2017 : Installing CINEMA 4D.app/Contents/Library/QuickLook/CINEMA 4D.qlgenerator/Contents/MacOS/CINEMA 4D
+14:20:27  1.05.2017 : Installing CINEMA 4D.app/Contents/Library/QuickLook/CINEMA 4D.qlgenerator/Contents/Resources/bg.png
+14:20:27  1.05.2017 : Installing CINEMA 4D.app/Contents/Library/QuickLook/CINEMA 4D.qlgenerator/Contents/Resources/c4dlogo.png
+14:20:27  1.05.2017 : Installing CINEMA 4D.app/Contents/Library/QuickLook/CINEMA 4D.qlgenerator/Contents/Resources/cs.lproj/Localizable.strings
+14:20:27  1.05.2017 : Installing CINEMA 4D.app/Contents/Library/QuickLook/CINEMA 4D.qlgenerator/Contents/Resources/de.lproj/Localizable.strings
+14:20:27  1.05.2017 : Installing CINEMA 4D.app/Contents/Library/QuickLook/CINEMA 4D.qlgenerator/Contents/Resources/en.lproj/Localizable.strings
+14:20:27  1.05.2017 : Installing CINEMA 4D.app/Contents/Library/QuickLook/CINEMA 4D.qlgenerator/Contents/Resources/es.lproj/Localizable.strings
+14:20:27  1.05.2017 : Installing CINEMA 4D.app/Contents/Library/QuickLook/CINEMA 4D.qlgenerator/Contents/Resources/fr.lproj/Localizable.strings
+14:20:27  1.05.2017 : Installing CINEMA 4D.app/Contents/Library/QuickLook/CINEMA 4D.qlgenerator/Contents/Resources/it.lproj/Localizable.strings
+14:20:27  1.05.2017 : Installing CINEMA 4D.app/Contents/Library/QuickLook/CINEMA 4D.qlgenerator/Contents/Resources/ja.lproj/Localizable.strings
+14:20:27  1.05.2017 : Installing CINEMA 4D.app/Contents/Library/QuickLook/CINEMA 4D.qlgenerator/Contents/Resources/ko.lproj/Localizable.strings
+14:20:27  1.05.2017 : Installing CINEMA 4D.app/Contents/Library/QuickLook/CINEMA 4D.qlgenerator/Contents/Resources/pl.lproj/Localizable.strings
+14:20:27  1.05.2017 : Installing CINEMA 4D.app/Contents/Library/QuickLook/CINEMA 4D.qlgenerator/Contents/Resources/ru.lproj/Localizable.strings
+14:20:27  1.05.2017 : Installing CINEMA 4D.app/Contents/Library/QuickLook/CINEMA 4D.qlgenerator/Contents/Resources/template.html
+14:20:27  1.05.2017 : Installing CINEMA 4D.app/Contents/Library/QuickLook/CINEMA 4D.qlgenerator/Contents/Resources/zh-CN.lproj/Localizable.strings
+14:20:27  1.05.2017 : Installing CINEMA 4D.app/Contents/MacOS/CINEMA 4D
+14:20:27  1.05.2017 : Installing CINEMA 4D.app/Contents/PkgInfo
+14:20:27  1.05.2017 : Installing CINEMA 4D.app/Contents/Resources/c4dapp.icns
+14:20:27  1.05.2017 : Installing CINEMA 4D.app/Contents/Resources/c4ddoc.icns
+14:20:27  1.05.2017 : Installing CINEMA 4D.app/Contents/Resources/mainmenu.nib
+14:20:27  1.05.2017 : Installing CINEMA 4D.app/Contents/_CodeSignature/CodeResources
+14:20:27  1.05.2017 : Installing package CINEMA 4D TeamRender Client
+14:20:27  1.05.2017 : Installing CINEMA 4D TeamRender Client.app/Contents/Info.plist
+14:20:27  1.05.2017 : Installing CINEMA 4D TeamRender Client.app/Contents/MacOS/CINEMA 4D TeamRender Client
+14:20:27  1.05.2017 : Installing CINEMA 4D TeamRender Client.app/Contents/PkgInfo
+14:20:27  1.05.2017 : Installing CINEMA 4D TeamRender Client.app/Contents/Resources/c4dapp.icns
+14:20:27  1.05.2017 : Installing CINEMA 4D TeamRender Client.app/Contents/Resources/c4ddoc.icns
+14:20:27  1.05.2017 : Installing CINEMA 4D TeamRender Client.app/Contents/Resources/mainmenu.nib
+14:20:27  1.05.2017 : Installing CINEMA 4D TeamRender Client.app/Contents/_CodeSignature/CodeResources
+14:20:27  1.05.2017 : Installing package CINEMA 4D TeamRender Server
+14:20:27  1.05.2017 : Installing CINEMA 4D TeamRender Server.app/Contents/Info.plist
+14:20:27  1.05.2017 : Installing CINEMA 4D TeamRender Server.app/Contents/MacOS/CINEMA 4D TeamRender Server
+14:20:27  1.05.2017 : Installing CINEMA 4D TeamRender Server.app/Contents/PkgInfo
+14:20:27  1.05.2017 : Installing CINEMA 4D TeamRender Server.app/Contents/Resources/c4dapp.icns
+14:20:27  1.05.2017 : Installing CINEMA 4D TeamRender Server.app/Contents/Resources/c4ddoc.icns
+14:20:27  1.05.2017 : Installing CINEMA 4D TeamRender Server.app/Contents/Resources/mainmenu.nib
+14:20:27  1.05.2017 : Installing CINEMA 4D TeamRender Server.app/Contents/_CodeSignature/CodeResources
+14:20:27  1.05.2017 : Installing package CINEMA 4D Visualize
+14:20:27  1.05.2017 : Installing CINEMA 4D.app/Contents/Info.plist
+14:20:27  1.05.2017 : Installing CINEMA 4D.app/Contents/Library/QuickLook/CINEMA 4D.qlgenerator/Contents/Info.plist
+14:20:27  1.05.2017 : Installing CINEMA 4D.app/Contents/Library/QuickLook/CINEMA 4D.qlgenerator/Contents/MacOS/CINEMA 4D
+14:20:27  1.05.2017 : Installing CINEMA 4D.app/Contents/Library/QuickLook/CINEMA 4D.qlgenerator/Contents/Resources/bg.png
+14:20:27  1.05.2017 : Installing CINEMA 4D.app/Contents/Library/QuickLook/CINEMA 4D.qlgenerator/Contents/Resources/c4dlogo.png
+14:20:27  1.05.2017 : Installing CINEMA 4D.app/Contents/Library/QuickLook/CINEMA 4D.qlgenerator/Contents/Resources/cs.lproj/Localizable.strings
+14:20:27  1.05.2017 : Installing CINEMA 4D.app/Contents/Library/QuickLook/CINEMA 4D.qlgenerator/Contents/Resources/de.lproj/Localizable.strings
+14:20:27  1.05.2017 : Installing CINEMA 4D.app/Contents/Library/QuickLook/CINEMA 4D.qlgenerator/Contents/Resources/en.lproj/Localizable.strings
+14:20:27  1.05.2017 : Installing CINEMA 4D.app/Contents/Library/QuickLook/CINEMA 4D.qlgenerator/Contents/Resources/es.lproj/Localizable.strings
+14:20:27  1.05.2017 : Installing CINEMA 4D.app/Contents/Library/QuickLook/CINEMA 4D.qlgenerator/Contents/Resources/fr.lproj/Localizable.strings
+14:20:27  1.05.2017 : Installing CINEMA 4D.app/Contents/Library/QuickLook/CINEMA 4D.qlgenerator/Contents/Resources/it.lproj/Localizable.strings
+14:20:27  1.05.2017 : Installing CINEMA 4D.app/Contents/Library/QuickLook/CINEMA 4D.qlgenerator/Contents/Resources/ja.lproj/Localizable.strings
+14:20:27  1.05.2017 : Installing CINEMA 4D.app/Contents/Library/QuickLook/CINEMA 4D.qlgenerator/Contents/Resources/ko.lproj/Localizable.strings
+14:20:27  1.05.2017 : Installing CINEMA 4D.app/Contents/Library/QuickLook/CINEMA 4D.qlgenerator/Contents/Resources/pl.lproj/Localizable.strings
+14:20:27  1.05.2017 : Installing CINEMA 4D.app/Contents/Library/QuickLook/CINEMA 4D.qlgenerator/Contents/Resources/ru.lproj/Localizable.strings
+14:20:27  1.05.2017 : Installing CINEMA 4D.app/Contents/Library/QuickLook/CINEMA 4D.qlgenerator/Contents/Resources/template.html
+14:20:27  1.05.2017 : Installing CINEMA 4D.app/Contents/Library/QuickLook/CINEMA 4D.qlgenerator/Contents/Resources/zh-CN.lproj/Localizable.strings
+14:20:27  1.05.2017 : Installing CINEMA 4D.app/Contents/MacOS/CINEMA 4D
+14:20:27  1.05.2017 : Installing CINEMA 4D.app/Contents/PkgInfo
+14:20:27  1.05.2017 : Installing CINEMA 4D.app/Contents/Resources/c4dapp.icns
+14:20:27  1.05.2017 : Installing CINEMA 4D.app/Contents/Resources/c4ddoc.icns
+14:20:27  1.05.2017 : Installing CINEMA 4D.app/Contents/Resources/mainmenu.nib
+14:20:27  1.05.2017 : Installing CINEMA 4D.app/Contents/_CodeSignature/CodeResources
+14:20:27  1.05.2017 : Installing package Commandline
+14:20:27  1.05.2017 : Installing Commandline.app/Contents/Info.plist
+14:20:27  1.05.2017 : Installing Commandline.app/Contents/MacOS/Commandline
+14:20:27  1.05.2017 : Installing Commandline.app/Contents/PkgInfo
+14:20:27  1.05.2017 : Installing Commandline.app/Contents/Resources/c4dapp.icns
+14:20:28  1.05.2017 : Installing Commandline.app/Contents/Resources/c4ddoc.icns
+14:20:28  1.05.2017 : Installing Commandline.app/Contents/Resources/mainmenu.nib
+14:20:28  1.05.2017 : Installing Commandline.app/Contents/_CodeSignature/CodeResources
+14:20:28  1.05.2017 : End installation
+14:20:28  1.05.2017 : Installation successful
+14:20:28  1.05.2017 : Restarting Application CINEMA 4D.app
