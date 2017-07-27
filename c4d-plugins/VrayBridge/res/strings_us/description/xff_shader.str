@@ -1,0 +1,19 @@
+STRINGTABLE XFF_SHADER
+{
+	XFF_SHADER "FF Shader";
+	
+	FASTFUR_ROOTCOLOR		"Root Color";
+	FASTFUR_TIPCOLOR		"Tip Color";
+	FASTFUR_SPECULARCOLOR	"Specular Color";
+	FASTFUR_MIXCOLOR		"Mix value";
+	
+	KA				"Ambient Multiplier";
+	KD				"Diffuse Multiplier";
+	KS				"Specular Multiplier";
+	
+	FASTFUR_DERIVECOLOR		"inherited Color";
+	
+	ROUGHNESS		"Roughness";
+	
+	
+}

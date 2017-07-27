@@ -1,0 +1,21 @@
+#ifndef _tVrayCameraDomeTag_H_
+#define _tVrayCameraDomeTag_H_
+
+#define  ID_VRAYCAMERADOMETAG	1021891
+
+enum
+{
+	VRAYCAMERADOME_PROPERTIES = 800,
+
+	VRAYCAMERADOME_FOV		= 1000,
+	VRAYCAMERADOME_FLIPX	= 1001,
+	VRAYCAMERADOME_FLIPY	= 1002,
+
+	VRAYCAMERADOME_TITLEBAR		= 1500,
+
+};	
+	 
+#endif
+
+
+

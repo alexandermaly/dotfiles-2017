@@ -1,0 +1,57 @@
+STRINGTABLE OMpNode
+{
+	OMpNode "MultiPass Node";
+
+
+	
+	MPNODE_TYPE 		"Channel Type";
+	MPNODE_ISENABLED	"";
+
+
+	
+	VRAYRE_ALIAS		"Alias";
+
+	
+	VRAYRE_COLORMAPPING	"Apply Color Mapping";
+	VRAYRE_AA		"Consider For Antialiasing";
+	VRAYRE_FILTERING	"Filtering";
+
+
+		VRAYRE_OBJID	"ID";
+	VRAYRE_REDID		"RedID";
+
+	VRAYRE_GREENID		"Green ID";
+	VRAYRE_BLUEID		"BlueID";
+	VRAYRE_USEMATID		"Use MatID";
+
+
+	
+	VRAYRE_TEXALIGN		"Text Alignment";
+
+
+	
+	VRAYRE_MAXVEL		"Max Velocity";
+	VRAYRE_MAXVELLAST	"Max Velocity Last Frame";
+	VRAYRE_CLAMPVEL		"Clamp Velocity";
+	VRAYRE_IGNOREZ		"Ignore Z";
+
+
+	
+	VRAYRE_DEPTHBLK		"Depth Black";
+	VRAYRE_DEPTHWHT		"Depth White";
+    VRAYRE_DEPTHINV     "Invert";
+	VRAYRE_DEPTHFROMCAM	"Depth From Camera";
+	VRAYRE_DEPTHCLAMP	"Depth Clamp";
+
+
+	
+	VRAYRE_AFFECTMATTE	"Affect Matte Objects";
+
+	
+	VRAYRE_TEXMAP		"Texture to Extract";
+	
+	VRAYRE_POSPASSSPACE		"Space";
+	VRAYRE_POSPASSSPACE_0	"World";
+	VRAYRE_POSPASSSPACE_1	"Camera";
+	VRAYRE_POSPASSSPACE_2	"Object";
+}

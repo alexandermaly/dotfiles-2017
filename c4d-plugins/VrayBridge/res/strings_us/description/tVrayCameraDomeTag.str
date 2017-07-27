@@ -1,0 +1,11 @@
+STRINGTABLE tVrayCameraDomeTag
+{
+	tVrayCameraDomeTag		"VrayCameraDome";
+	
+	VRAYCAMERADOME_PROPERTIES "Parameters";
+	
+	VRAYCAMERADOME_FOV		"Field of View";
+	VRAYCAMERADOME_FLIPX	"Flip X";
+	VRAYCAMERADOME_FLIPY	"Flip Y";
+	
+}

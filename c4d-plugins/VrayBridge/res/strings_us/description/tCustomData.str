@@ -1,0 +1,36 @@
+STRINGTABLE tCustomData
+{
+	tCustomData			"Attribute Tag Aix";
+	CDT_TYPE			"Data Type";
+	CDT_ATTRIBUTE		"Attribute for";
+			CDTA_0		"Points";
+			CDTA_1		"Polygons";
+			CDTA_2		"Polygon Vertices";
+			CDTA_3		"Per Spline Segment";
+			CDTA_4		"Per Object";
+
+	CDT_INDEX			"Index";
+
+	CDT_CONVERT_TO_VMAP		"To Vertex Map(s)";
+	CDT_CONVERT_FROM_VMAP	"From Vertex Map(s)";
+
+	CDT_CONVERT_TO_NTAG		"To Normal Tag";
+	CDT_CONVERT_FROM_NTAG	"From Normal Tag";
+
+	CDT_VALUE_COLOR		"Value";
+	CDT_VALUE_LONG		"Value";
+	CDT_VALUE_REAL		"Value";	
+	CDT_VALUE_VECTOR	"Value";
+	CDT_VALUE_MATRIX	"Value";
+	CDT_VALUE_STRING	"Value";
+	CDT_VALUE_BOOL		"Value";
+	CDT_VALUE_NORMAL	"Value";
+
+	CDT_DRAW_ALWAYS		"Always Draw";
+	
+	CDT_COUNT			"Count";
+	
+	CDT_GROUP_OPTIONS	"Options";
+	CDT_GROUP_VERTEX_MAP	"Convert";
+	
+}

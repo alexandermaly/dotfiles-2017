@@ -1,0 +1,56 @@
+// C4D-StringResource
+// Identifier	Text
+
+STRINGTABLE
+{
+
+	IDS_VRAYBRIDGE     	"VrayBridge";
+	IDS_SIMPLEMATERIAL 	"VrayMaterial";
+	IDS_VRAY2SIDEDMATERIAL 	"Vray2SidedMaterial";
+	IDS_VRAYBITMAP	   	"VrayBitmap";
+	IDS_VRAYLIGHTTAG	"VrayLight";
+	IDS_VRAYDISPTAG		"VrayDisplacement";
+	IDS_VRAYMBLURTAG	"VrayMotionBlur";
+	IDS_VRAYCOMPOSITINGTAG	"VrayCompositing";
+	IDS_VRAYPHYSICALCAMERATAG "VrayPhysicalCamera";
+	IDS_VRAYCAMERADOMETAG	"VrayCameraDome";
+	IDS_VRAYVERBOSE		"VrayVerbose"; 
+	IDS_VRAYCHECHER		"VrayChecker";
+	IDS_VRAYNOISE		"VrayNoise";
+	IDS_VRAYPROXY		"VrayProxy";
+
+	IDS_FAST_FUR			"Fast&Fur!";
+	IDS_FAST_FUR_MAT		"Fast&Fur Material";
+
+	IDS_TEA_SET				"Aixsponza V-Ray TeaSet";
+	IDS_TEA_POT				"Aixsponza V-Ray Teapot";
+	IDS_PATCH				"Aixsponza V-Ray Patch";
+
+	IDS_AIX_ATTRIBUTE_TAG	"Aixsponza Attribute Tag";
+	
+	// PatchNames
+	IDS_BODY				"Body";
+	IDS_LID					"Lid";
+	
+	IDS_SPOUT				"Spout";
+	
+	IDS_HANDLE				"Handle";
+	
+	
+	//CAMLISTER
+	IDS_VRAYCAMLISTER               "VrayCamLister";
+    IDS_VRAYCAMLISTER_DLG_TITLE     "V-Ray Camera Lister";
+    IDS_STATUSBAR_HELPSTRING        "Access main settings of all Vray physical camera tags in a dopesheet like interface.";
+    
+    //LIGHTLISTER
+    IDS_VRAYLIGHTLISTER             "VrayLightLister";
+    IDS_VRAYLIGHTLISTER_DLG_TITLE   "V-Ray Light Lister";
+    IDS_STATUSBAR_HELPSTRING        "Access main settings of all Vray light tags in a dopesheet like interface.";
+    
+    //DOMELIGHT VIEWER
+    IDS_VRAYDOMELIGHTTEXTUREVIEW   "VrayDomelightTextureView";
+  	IDS_HELPSTRING                 "Launch test scaffold dialog for the Vray Domelight Texture Viewer";
+  	IDS_MSG_WRONGOBJ               "Please select an object containing a Vray Light tag with a dome light texture to view.";
+  	IDS_MSG_MISSING_LIGHTTAG       "Active object does not have a Vray Light tag.";
+
+}

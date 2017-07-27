@@ -1,0 +1,12 @@
+STRINGTABLE Oteapot
+{
+	Oteapot "Teapot Object";
+
+	TEAPOTOBJECT_SIZE		"Size";
+	TEAPOTOBJECT_SUB		"Subdivision";
+	TEAPOTOBJECT_BODY		"Body";
+	TEAPOTOBJECT_HANDLE		"Handle";
+	TEAPOTOBJECT_SPOUT		"Spout";
+	TEAPOTOBJECT_LID		"Lid";
+	TEAPOTOBJECT_STYLE		"1975 Style";
+}

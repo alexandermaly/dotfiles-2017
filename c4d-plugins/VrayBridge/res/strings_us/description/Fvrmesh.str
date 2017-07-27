@@ -1,0 +1,19 @@
+/// Copyright (C) 2014  Niklas Rosenstein
+/// All rights reserved.
+/// Developed for LAUBLab KG
+
+STRINGTABLE Fvrmesh
+{
+	Fvrmesh "VrMesh Export";
+
+	VRMESH_EXPORT_EXPORTSELECTED "Export selected Objects only";
+	VRMESH_EXPORT_EXPORTUVW "Export UVW";
+	VRMESH_EXPORT_EXPORTNORMALS "Export Normals";
+	VRMESH_EXPORT_EXPORTMATERIALS "Export Materials (Experimental)";
+	VRMESH_EXPORT_FACESPERVOXEL "Faces per Voxel";
+
+	VRMESH_EXPORT_GENERATEPREVIEW "Export Preview Voxel";
+	VRMESH_EXPORT_PREVIEWLOD "Preview Voxel LOD";
+
+	VRMESH_EXPORT_CREATEPROXY "Create Proxy Object";
+}

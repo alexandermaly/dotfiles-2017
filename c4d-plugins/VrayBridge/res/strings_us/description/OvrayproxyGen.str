@@ -1,0 +1,14 @@
+STRINGTABLE OvrayproxyGen
+{
+	OvrayproxyGen "VrayProxy Object";
+
+	VRAYPROXYGEN_LINK			"VrMeshExporter Tag";
+	VRAYPROXYGEN_MESSAGE_TEXT	"objects number";
+	VRAYPROXYGEN_OPTIMIZATION	"Optimization (0=BoundingBox)";
+	VRAYPROXYGEN_DISTANCEOPT	"Distance Optimization";
+	VRAYPROXYGEN_DONTDELETE		"Don't delete vrmeshes";
+	VRAYPROXYGEN_DISTANCEOPT	"Max distance to trace proxy";
+	VRAYPROXYGEN_ANGLEOPT		"Max angle to trace proxy";
+	VRAYPROXYGEN_SINGLEBBOX		"Draw a single Bounding Box";
+	VRAYPROXYGEN_SKIPOBJ		"Trace approximated proxy";
+}

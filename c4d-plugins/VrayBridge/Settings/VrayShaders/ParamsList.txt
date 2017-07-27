@@ -1,0 +1,2118 @@
+Parameters for plugin 'TexEdges'
+  edges_tex: acolor texture = AColor(1, 1, 1, 1)
+  bg_tex: acolor texture = AColor(0, 0, 0, 1)
+  show_hidden_edges: bool = false
+  width_type: integer = 0, 0 : World units, 1 : Pixels
+  pixel_width: float texture = 1
+  world_width: float texture = 1
+  show_subtriangles: bool = 0
+
+
+Parameters for plugin 'TexXSISnow'
+  compatibility_with: integer = 0, This is used to differentiate between textures exported from different applications. The value means : 0 - 3ds Max (this is also the default), 1 - Maya, ...
+  alpha_from_intensity: bool = false, If true, the resulting alpha is the color intensity; otherwise the alpha is taken from the bitmap alpha
+  invert: bool = false, If true, the resulting texture color will be inverted
+  invert_alpha: bool = true, If true and invert is on, the resulting texture alpha will be inverted too. If false, just the color will be inverted
+  color_mult: acolor texture = AColor(1, 1, 1, 1), A multiplier for the texture color
+  color_offset: acolor texture = AColor(0, 0, 0, 0), An additional offset for the texture color
+  alpha_mult: float texture = 1, A multiplier for the texture alpha
+  alpha_offset: float texture = 0, An additional offset for the texture alpha
+  nouvw_color: acolor texture = AColor(0.5, 0.5, 0.5, 1), The color when there are no valid uvw coordinates
+  color: output acolor texture, The resulting color
+  out_transparency: output acolor texture, The resulting transparency
+  out_alpha: output float texture, The resulting alpha
+  out_intensity: output float texture, The resulting intensity
+  uvwgen: plugin, The uvw generator for the texture
+  placement_type: integer = 0, The way the valid portion of the texture is applied. 0:the whole texture is valid, 1:crop, 2:place
+  u: float = 0, U coordinate of the valid texture sector
+  v: float = 0, V coordinate of the valid texture sector
+  w: float = 1, Width of the valid texture sector
+  h: float = 1, Height of the valid texture sector
+  jitter: float = 0, Amount of random placement variation
+  tile_u: integer = 0, If true there is horizontal tiling
+  tile_v: integer = 0, If true there is vertical tiling
+  uv_noise_on: integer = 0, If true the noise is enabled
+  uv_noise_animate: integer = 0, If true the noise is animated
+  uv_noise_amount: float = 1, UV noise amount
+  uv_noise_levels: float = 1, UV noise iterations
+  uv_noise_size: float = 1, UV noise size
+  un_noise_phase: float = 0, UV noise phase
+  snow_col: acolor texture = AColor(1.0, 1.0, 1.0, 1.0)
+  surface_col: acolor texture = AColor(0.27, 0.22, 0.16, 1.0)
+  threshold: float = 0.9
+  depth_decay: float = 5
+  thickness: float = 0.7
+  randomness: float = 0.5
+  rand_freq: float = 15
+
+
+Parameters for plugin 'TexXSIFalloff'
+  curve_falloff: float = 1, Curve falloff
+  facing_refl: float = 1, Facing reflectivity
+  perp_refl: float = 1, Perpendicular reflectivity
+  white_color: acolor texture = AColor(1.0, 1.0, 1.0, 1.0), Refraction (front) color
+  black_color: acolor texture = AColor(0.0, 0.0, 0.0, 1.0), Reflection (side) color
+
+
+Parameters for plugin 'TexXSIFlagstone'
+  compatibility_with: integer = 0, This is used to differentiate between textures exported from different applications. The value means : 0 - 3ds Max (this is also the default), 1 - Maya, ...
+  alpha_from_intensity: bool = false, If true, the resulting alpha is the color intensity; otherwise the alpha is taken from the bitmap alpha
+  invert: bool = false, If true, the resulting texture color will be inverted
+  invert_alpha: bool = true, If true and invert is on, the resulting texture alpha will be inverted too. If false, just the color will be inverted
+  color_mult: acolor texture = AColor(1, 1, 1, 1), A multiplier for the texture color
+  color_offset: acolor texture = AColor(0, 0, 0, 0), An additional offset for the texture color
+  alpha_mult: float texture = 1, A multiplier for the texture alpha
+  alpha_offset: float texture = 0, An additional offset for the texture alpha
+  nouvw_color: acolor texture = AColor(0.5, 0.5, 0.5, 1), The color when there are no valid uvw coordinates
+  color: output acolor texture, The resulting color
+  out_transparency: output acolor texture, The resulting transparency
+  out_alpha: output float texture, The resulting alpha
+  out_intensity: output float texture, The resulting intensity
+  uvwgen: plugin, The uvw generator for the texture
+  placement_type: integer = 0, The way the valid portion of the texture is applied. 0:the whole texture is valid, 1:crop, 2:place
+  u: float = 0, U coordinate of the valid texture sector
+  v: float = 0, V coordinate of the valid texture sector
+  w: float = 1, Width of the valid texture sector
+  h: float = 1, Height of the valid texture sector
+  jitter: float = 0, Amount of random placement variation
+  tile_u: integer = 0, If true there is horizontal tiling
+  tile_v: integer = 0, If true there is vertical tiling
+  uv_noise_on: integer = 0, If true the noise is enabled
+  uv_noise_animate: integer = 0, If true the noise is animated
+  uv_noise_amount: float = 1, UV noise amount
+  uv_noise_levels: float = 1, UV noise iterations
+  uv_noise_size: float = 1, UV noise size
+  un_noise_phase: float = 0, UV noise phase
+  color2: acolor texture = AColor(1.0, 1.0, 1.0, 1.0)
+  color1: acolor texture = AColor(0.0, 0.0, 0.0, 0.0)
+  mortar_width: float = 0.05
+
+
+Parameters for plugin 'TexXSIColorMix'
+  compatibility_with: integer = 0, This is used to differentiate between textures exported from different applications. The value means : 0 - 3ds Max (this is also the default), 1 - Maya, ...
+  alpha_from_intensity: bool = false, If true, the resulting alpha is the color intensity; otherwise the alpha is taken from the bitmap alpha
+  invert: bool = false, If true, the resulting texture color will be inverted
+  invert_alpha: bool = true, If true and invert is on, the resulting texture alpha will be inverted too. If false, just the color will be inverted
+  color_mult: acolor texture = AColor(1, 1, 1, 1), A multiplier for the texture color
+  color_offset: acolor texture = AColor(0, 0, 0, 0), An additional offset for the texture color
+  alpha_mult: float texture = 1, A multiplier for the texture alpha
+  alpha_offset: float texture = 0, An additional offset for the texture alpha
+  nouvw_color: acolor texture = AColor(0.5, 0.5, 0.5, 1), The color when there are no valid uvw coordinates
+  color: output acolor texture, The resulting color
+  out_transparency: output acolor texture, The resulting transparency
+  out_alpha: output float texture, The resulting alpha
+  out_intensity: output float texture, The resulting intensity
+  xsi_color: acolor texture, Color or Texture
+  xsi_scale: float = 1, Scale color parameter
+  use_alpha: bool = false, Use alpha of the texture as return greyscale value
+  xsi_invert: bool = false, Invert
+  fix_alpha_to_1: bool = false, Make result alpha 1
+
+
+Parameters for plugin 'TexXSIRipple'
+  compatibility_with: integer = 0, This is used to differentiate between textures exported from different applications. The value means : 0 - 3ds Max (this is also the default), 1 - Maya, ...
+  alpha_from_intensity: bool = false, If true, the resulting alpha is the color intensity; otherwise the alpha is taken from the bitmap alpha
+  invert: bool = false, If true, the resulting texture color will be inverted
+  invert_alpha: bool = true, If true and invert is on, the resulting texture alpha will be inverted too. If false, just the color will be inverted
+  color_mult: acolor texture = AColor(1, 1, 1, 1), A multiplier for the texture color
+  color_offset: acolor texture = AColor(0, 0, 0, 0), An additional offset for the texture color
+  alpha_mult: float texture = 1, A multiplier for the texture alpha
+  alpha_offset: float texture = 0, An additional offset for the texture alpha
+  nouvw_color: acolor texture = AColor(0.5, 0.5, 0.5, 1), The color when there are no valid uvw coordinates
+  color: output acolor texture, The resulting color
+  out_transparency: output acolor texture, The resulting transparency
+  out_alpha: output float texture, The resulting alpha
+  out_intensity: output float texture, The resulting intensity
+  use_3d_mapping: bool = true
+  uvwgen: plugin, The uvw generator for the texture
+  placement_type: integer = 0, The way the valid portion of the texture is applied. 0:the whole texture is valid, 1:crop, 2:place
+  u: float = 0, U coordinate of the valid texture sector
+  v: float = 0, V coordinate of the valid texture sector
+  w: float = 1, Width of the valid texture sector
+  h: float = 1, Height of the valid texture sector
+  jitter: float = 0, Amount of random placement variation
+  tile_u: integer = 0, If true there is horizontal tiling
+  tile_v: integer = 0, If true there is vertical tiling
+  uv_noise_on: integer = 0, If true the noise is enabled
+  uv_noise_animate: integer = 0, If true the noise is animated
+  uv_noise_amount: float = 1, UV noise amount
+  uv_noise_levels: float = 1, UV noise iterations
+  uv_noise_size: float = 1, UV noise size
+  un_noise_phase: float = 0, UV noise phase
+  color1: acolor texture = AColor(0.0, 0.0, 0.0, 1.0)
+  color2: acolor texture = AColor(1.0, 1.0, 1.0, 1.0)
+  Amplitude: float = 1.0
+  Origin: vector = Color(0.5, 0.5, 0.5)
+  Time: float = 1.0
+  Frequency: float = 10.0
+  Decay: float = 0.0
+  Group_Velocity: float = 0.0
+  Phase_Velocity: float = 0.0
+  Spread_Start: float = 1.0
+  Spread_Rate: float = 0.0
+
+
+Parameters for plugin 'texXSIColor2Vector'
+  compatibility_with: integer = 0, This is used to differentiate between textures exported from different applications. The value means : 0 - 3ds Max (this is also the default), 1 - Maya, ...
+  alpha_from_intensity: bool = false, If true, the resulting alpha is the color intensity; otherwise the alpha is taken from the bitmap alpha
+  invert: bool = false, If true, the resulting texture color will be inverted
+  invert_alpha: bool = true, If true and invert is on, the resulting texture alpha will be inverted too. If false, just the color will be inverted
+  color_mult: acolor texture = AColor(1, 1, 1, 1), A multiplier for the texture color
+  color_offset: acolor texture = AColor(0, 0, 0, 0), An additional offset for the texture color
+  alpha_mult: float texture = 1, A multiplier for the texture alpha
+  alpha_offset: float texture = 0, An additional offset for the texture alpha
+  nouvw_color: acolor texture = AColor(0.5, 0.5, 0.5, 1), The color when there are no valid uvw coordinates
+  color: output acolor texture, The resulting color
+  out_transparency: output acolor texture, The resulting transparency
+  out_alpha: output float texture, The resulting alpha
+  out_intensity: output float texture, The resulting intensity
+  clr_txt: acolor texture, Scalar2Vector will be calculated on the base of a color texture
+  output_scale: float texture, list of 1 elements, The intensity to output
+  method: integer = 0, method. 0:direct copy, 1:normal map
+
+
+Parameters for plugin 'TexXSIColorCorrection'
+  compatibility_with: integer = 0, This is used to differentiate between textures exported from different applications. The value means : 0 - 3ds Max (this is also the default), 1 - Maya, ...
+  alpha_from_intensity: bool = false, If true, the resulting alpha is the color intensity; otherwise the alpha is taken from the bitmap alpha
+  invert: bool = false, If true, the resulting texture color will be inverted
+  invert_alpha: bool = true, If true and invert is on, the resulting texture alpha will be inverted too. If false, just the color will be inverted
+  color_mult: acolor texture = AColor(1, 1, 1, 1), A multiplier for the texture color
+  color_offset: acolor texture = AColor(0, 0, 0, 0), An additional offset for the texture color
+  alpha_mult: float texture = 1, A multiplier for the texture alpha
+  alpha_offset: float texture = 0, An additional offset for the texture alpha
+  nouvw_color: acolor texture = AColor(0.5, 0.5, 0.5, 1), The color when there are no valid uvw coordinates
+  color: output acolor texture, The resulting color
+  out_transparency: output acolor texture, The resulting transparency
+  out_alpha: output float texture, The resulting alpha
+  out_intensity: output float texture, The resulting intensity
+  xsi_color: acolor texture = AColor(1, 1, 1, 1), Input texture
+  gamma: float = 1, Used to compensate for non-linearity in displays. Often used as a general brightness control.
+  contrast: float = 0.5, Increases and decreases the contrast levels between light and dark colors. 0.5 = no change in contrast
+  hue: float = 0, Controls a 360 degrees hue shift through the HLS color space spectrum without modifying the intensity or saturation of the color
+  saturation: float = 0, Adjusts the saturation, or amount of <pigment> in a color. A value of 1 results in no white and all color; a value of 0 results in no color, just white light
+  level: float = 0, Adjusts the level or luminance of a color. Similar to intensity or brightness
+
+
+Parameters for plugin 'TexXSIFabric'
+  compatibility_with: integer = 0, This is used to differentiate between textures exported from different applications. The value means : 0 - 3ds Max (this is also the default), 1 - Maya, ...
+  alpha_from_intensity: bool = false, If true, the resulting alpha is the color intensity; otherwise the alpha is taken from the bitmap alpha
+  invert: bool = false, If true, the resulting texture color will be inverted
+  invert_alpha: bool = true, If true and invert is on, the resulting texture alpha will be inverted too. If false, just the color will be inverted
+  color_mult: acolor texture = AColor(1, 1, 1, 1), A multiplier for the texture color
+  color_offset: acolor texture = AColor(0, 0, 0, 0), An additional offset for the texture color
+  alpha_mult: float texture = 1, A multiplier for the texture alpha
+  alpha_offset: float texture = 0, An additional offset for the texture alpha
+  nouvw_color: acolor texture = AColor(0.5, 0.5, 0.5, 1), The color when there are no valid uvw coordinates
+  color: output acolor texture, The resulting color
+  out_transparency: output acolor texture, The resulting transparency
+  out_alpha: output float texture, The resulting alpha
+  out_intensity: output float texture, The resulting intensity
+  use_3d_mapping: bool = true
+  uvwgen: plugin, The uvw generator for the texture
+  placement_type: integer = 0, The way the valid portion of the texture is applied. 0:the whole texture is valid, 1:crop, 2:place
+  u: float = 0, U coordinate of the valid texture sector
+  v: float = 0, V coordinate of the valid texture sector
+  w: float = 1, Width of the valid texture sector
+  h: float = 1, Height of the valid texture sector
+  jitter: float = 0, Amount of random placement variation
+  tile_u: integer = 0, If true there is horizontal tiling
+  tile_v: integer = 0, If true there is vertical tiling
+  uv_noise_on: integer = 0, If true the noise is enabled
+  uv_noise_animate: integer = 0, If true the noise is animated
+  uv_noise_amount: float = 1, UV noise amount
+  uv_noise_levels: float = 1, UV noise iterations
+  uv_noise_size: float = 1, UV noise size
+  un_noise_phase: float = 0, UV noise phase
+  uthread_color: acolor texture = AColor(0.0, 0.0, 0.8, 1.0)
+  vthread_color: acolor texture = AColor(0.0, 0.8, 0.0, 1.0)
+  gap_color: acolor texture = AColor(0.8, 0.0, 0.0, 1.0)
+  uthread_width: float = 0.75
+  vthread_width: float = 0.75
+  u_wave: float = 0.1
+  v_wave: float = 0.1
+  randomness: float = 0.0
+  width_variation: float = 0.25
+  bright_variation: float = 0.25
+
+
+Parameters for plugin 'TexXSIVein'
+  compatibility_with: integer = 0, This is used to differentiate between textures exported from different applications. The value means : 0 - 3ds Max (this is also the default), 1 - Maya, ...
+  alpha_from_intensity: bool = false, If true, the resulting alpha is the color intensity; otherwise the alpha is taken from the bitmap alpha
+  invert: bool = false, If true, the resulting texture color will be inverted
+  invert_alpha: bool = true, If true and invert is on, the resulting texture alpha will be inverted too. If false, just the color will be inverted
+  color_mult: acolor texture = AColor(1, 1, 1, 1), A multiplier for the texture color
+  color_offset: acolor texture = AColor(0, 0, 0, 0), An additional offset for the texture color
+  alpha_mult: float texture = 1, A multiplier for the texture alpha
+  alpha_offset: float texture = 0, An additional offset for the texture alpha
+  nouvw_color: acolor texture = AColor(0.5, 0.5, 0.5, 1), The color when there are no valid uvw coordinates
+  color: output acolor texture, The resulting color
+  out_transparency: output acolor texture, The resulting transparency
+  out_alpha: output float texture, The resulting alpha
+  out_intensity: output float texture, The resulting intensity
+  use_3d_mapping: bool = true
+  uvwgen: plugin, The uvw generator for the texture
+  placement_type: integer = 0, The way the valid portion of the texture is applied. 0:the whole texture is valid, 1:crop, 2:place
+  u: float = 0, U coordinate of the valid texture sector
+  v: float = 0, V coordinate of the valid texture sector
+  w: float = 1, Width of the valid texture sector
+  h: float = 1, Height of the valid texture sector
+  jitter: float = 0, Amount of random placement variation
+  tile_u: integer = 0, If true there is horizontal tiling
+  tile_v: integer = 0, If true there is vertical tiling
+  uv_noise_on: integer = 0, If true the noise is enabled
+  uv_noise_animate: integer = 0, If true the noise is animated
+  uv_noise_amount: float = 1, UV noise amount
+  uv_noise_levels: float = 1, UV noise iterations
+  uv_noise_size: float = 1, UV noise size
+  un_noise_phase: float = 0, UV noise phase
+  color1: acolor texture = AColor(0.0, 0.0, 0.0, 1.0)
+  color2: acolor texture = AColor(1.0, 1.0, 1.0, 1.0)
+  complexity: float = 2
+  thickness: float = 0.5
+  falloff: float = 0.5
+  sharpness: float = 0.5
+  intensity: float = 1
+  time: float = 0
+
+
+Parameters for plugin 'TexXSIBitmap'
+  compatibility_with: integer = 0, This is used to differentiate between textures exported from different applications. The value means : 0 - 3ds Max (this is also the default), 1 - Maya, ...
+  alpha_from_intensity: bool = false, If true, the resulting alpha is the color intensity; otherwise the alpha is taken from the bitmap alpha
+  invert: bool = false, If true, the resulting texture color will be inverted
+  invert_alpha: bool = true, If true and invert is on, the resulting texture alpha will be inverted too. If false, just the color will be inverted
+  color_mult: acolor texture = AColor(1, 1, 1, 1), A multiplier for the texture color
+  color_offset: acolor texture = AColor(0, 0, 0, 0), An additional offset for the texture color
+  alpha_mult: float texture = 1, A multiplier for the texture alpha
+  alpha_offset: float texture = 0, An additional offset for the texture alpha
+  nouvw_color: acolor texture = AColor(0.5, 0.5, 0.5, 1), The color when there are no valid uvw coordinates
+  color: output acolor texture, The resulting color
+  out_transparency: output acolor texture, The resulting transparency
+  out_alpha: output float texture, The resulting alpha
+  out_intensity: output float texture, The resulting intensity
+  tile: integer = 1, 0:not tiling, 1:tile in UV, 2:tile in U, 3:tile in V
+  uvwgen: plugin, The uvw generator for the texture
+  placement_type: integer = 0, The way the valid portion of the texture is applied. 0:the whole texture is valid, 1:crop, 2:place
+  u: float = 0, U coordinate of the valid texture sector
+  v: float = 0, V coordinate of the valid texture sector
+  w: float = 1, Width of the valid texture sector
+  h: float = 1, Height of the valid texture sector
+  jitter: float = 0, Amount of random placement variation
+  tile_u: integer = 0, If true there is horizontal tiling
+  tile_v: integer = 0, If true there is vertical tiling
+  uv_noise_on: integer = 0, If true the noise is enabled
+  uv_noise_animate: integer = 0, If true the noise is animated
+  uv_noise_amount: float = 1, UV noise amount
+  uv_noise_levels: float = 1, UV noise iterations
+  uv_noise_size: float = 1, UV noise size
+  un_noise_phase: float = 0, UV noise phase
+  bitmap: plugin
+  hue: float = 0, Controls a 360 degrees hue shift through HLS color space spectrum without modifying the intensity or saturation of the color.
+  saturation: float = 100, Adjusts the saturation or amount of “pigment” in a color.
+  gain: float = 100, Increases and decreases the contrast levels between light and dark colors. 0.5 = no change in contrast.
+  brightness: float = 0, Controls the brightness of the image clip. A negative value darkens the image and a positive value brightens it.
+  rgba_to_grayscl: bool = false, If true, converts the image to a gray scale (black and white) image.
+  flip_u: bool = false, Flip horizontal
+  flip_v: bool = false, Flip vertical
+  enable_effects: bool = true, Enable effects
+  exposure: float = 0, HDR exposure
+
+
+Parameters for plugin 'TexXSIGradient'
+  compatibility_with: integer = 0, This is used to differentiate between textures exported from different applications. The value means : 0 - 3ds Max (this is also the default), 1 - Maya, ...
+  alpha_from_intensity: bool = false, If true, the resulting alpha is the color intensity; otherwise the alpha is taken from the bitmap alpha
+  invert: bool = false, If true, the resulting texture color will be inverted
+  invert_alpha: bool = true, If true and invert is on, the resulting texture alpha will be inverted too. If false, just the color will be inverted
+  color_mult: acolor texture = AColor(1, 1, 1, 1), A multiplier for the texture color
+  color_offset: acolor texture = AColor(0, 0, 0, 0), An additional offset for the texture color
+  alpha_mult: float texture = 1, A multiplier for the texture alpha
+  alpha_offset: float texture = 0, An additional offset for the texture alpha
+  nouvw_color: acolor texture = AColor(0.5, 0.5, 0.5, 1), The color when there are no valid uvw coordinates
+  color: output acolor texture, The resulting color
+  out_transparency: output acolor texture, The resulting transparency
+  out_alpha: output float texture, The resulting alpha
+  out_intensity: output float texture, The resulting intensity
+  uvwgen: plugin, The uvw generator for the texture
+  placement_type: integer = 0, The way the valid portion of the texture is applied. 0:the whole texture is valid, 1:crop, 2:place
+  u: float = 0, U coordinate of the valid texture sector
+  v: float = 0, V coordinate of the valid texture sector
+  w: float = 1, Width of the valid texture sector
+  h: float = 1, Height of the valid texture sector
+  jitter: float = 0, Amount of random placement variation
+  tile_u: integer = 0, If true there is horizontal tiling
+  tile_v: integer = 0, If true there is vertical tiling
+  uv_noise_on: integer = 0, If true the noise is enabled
+  uv_noise_animate: integer = 0, If true the noise is animated
+  uv_noise_amount: float = 1, UV noise amount
+  uv_noise_levels: float = 1, UV noise iterations
+  uv_noise_size: float = 1, UV noise size
+  un_noise_phase: float = 0, UV noise phase
+  color1: acolor texture
+  color2: acolor texture
+  color3: acolor texture
+  color4: acolor texture
+  color5: acolor texture
+  color6: acolor texture
+  color7: acolor texture
+  color8: acolor texture
+  pos_color1: float = 0
+  pos_color2: float = 1
+  pos_color3: float = -1
+  pos_color4: float = -1
+  pos_color5: float = -1
+  pos_color6: float = -1
+  pos_color7: float = -1
+  pos_color8: float = -1
+  gradient_type: integer = 0, Gradient type. 0:Vertical, 1:Horizontal, 2:Radial Wave, 3:RadialRainbow, 4:DiagonalDown, 5:DiagonalUp
+  invert_direction: bool, list of 1 elements, Inverts gradient directions if true
+  clip: bool = false, If true, the gradient ends at the edge of the outermost color. Otherwise the outermost color bleeds over the untextured portion of the object
+  alpha_output: bool = false, If true, copies the gradient’s alpha channel into the RGB channels, creating a grayscale image.
+  alpha_factor: float texture, Determines the factor by which the Alpha is multiplied when it is copied into the RGB channels
+  input: float = -1, Especially for XSI Gradient Mixer, when input type is scalar
+
+
+Parameters for plugin 'TexXSIWood'
+  compatibility_with: integer = 0, This is used to differentiate between textures exported from different applications. The value means : 0 - 3ds Max (this is also the default), 1 - Maya, ...
+  alpha_from_intensity: bool = false, If true, the resulting alpha is the color intensity; otherwise the alpha is taken from the bitmap alpha
+  invert: bool = false, If true, the resulting texture color will be inverted
+  invert_alpha: bool = true, If true and invert is on, the resulting texture alpha will be inverted too. If false, just the color will be inverted
+  color_mult: acolor texture = AColor(1, 1, 1, 1), A multiplier for the texture color
+  color_offset: acolor texture = AColor(0, 0, 0, 0), An additional offset for the texture color
+  alpha_mult: float texture = 1, A multiplier for the texture alpha
+  alpha_offset: float texture = 0, An additional offset for the texture alpha
+  nouvw_color: acolor texture = AColor(0.5, 0.5, 0.5, 1), The color when there are no valid uvw coordinates
+  color: output acolor texture, The resulting color
+  out_transparency: output acolor texture, The resulting transparency
+  out_alpha: output float texture, The resulting alpha
+  out_intensity: output float texture, The resulting intensity
+  uvwgen: plugin, The uvw generator for the texture
+  placement_type: integer = 0, The way the valid portion of the texture is applied. 0:the whole texture is valid, 1:crop, 2:place
+  u: float = 0, U coordinate of the valid texture sector
+  v: float = 0, V coordinate of the valid texture sector
+  w: float = 1, Width of the valid texture sector
+  h: float = 1, Height of the valid texture sector
+  jitter: float = 0, Amount of random placement variation
+  tile_u: integer = 0, If true there is horizontal tiling
+  tile_v: integer = 0, If true there is vertical tiling
+  uv_noise_on: integer = 0, If true the noise is enabled
+  uv_noise_animate: integer = 0, If true the noise is animated
+  uv_noise_amount: float = 1, UV noise amount
+  uv_noise_levels: float = 1, UV noise iterations
+  uv_noise_size: float = 1, UV noise size
+  un_noise_phase: float = 0, UV noise phase
+  filler_color_tex: acolor texture = AColor(0.08, 0.06, 0.05, 1.0)
+  vein_color_tex: acolor texture = AColor(0.63, 0.59, 0.33, 1.0)
+  vein_spread: float = 0.25
+  grain_color_tex: acolor texture
+  grain_bias: float = 0.5
+  grain_size: float = 0.5
+  grain_density: float = 0.5
+  wobbly_struct: bool = true
+  age: float = 50
+  layer_size: float = 0.1
+  randomness: float = 0.5
+  center_u: float = 0.5
+  center_v: float = -0.5
+  ratio: float = 0.35
+  complexity: float = 0.35
+  u_amp: float = 0
+  v_amp: float = 0
+  frequency: vector = Color(0, 0, 0)
+  absolute: bool = false
+
+
+Parameters for plugin 'TexSurfIncidence'
+  inc_mode: integer = 0, Incidence mode
+  bias: float = 100, Controls the contrast between dark and light areas of shading
+  gain: float = 100, Controls the brightness of the effect
+  custom_vector: vector = Color(0, 0, 0), custom vector
+  invert: integer = 0, Invert if enabled
+  range: integer = 0, Range. 0:0 to 90 degrees, 1:0 to 180 degrees
+
+
+Parameters for plugin 'TexXSIRock'
+  compatibility_with: integer = 0, This is used to differentiate between textures exported from different applications. The value means : 0 - 3ds Max (this is also the default), 1 - Maya, ...
+  alpha_from_intensity: bool = false, If true, the resulting alpha is the color intensity; otherwise the alpha is taken from the bitmap alpha
+  invert: bool = false, If true, the resulting texture color will be inverted
+  invert_alpha: bool = true, If true and invert is on, the resulting texture alpha will be inverted too. If false, just the color will be inverted
+  color_mult: acolor texture = AColor(1, 1, 1, 1), A multiplier for the texture color
+  color_offset: acolor texture = AColor(0, 0, 0, 0), An additional offset for the texture color
+  alpha_mult: float texture = 1, A multiplier for the texture alpha
+  alpha_offset: float texture = 0, An additional offset for the texture alpha
+  nouvw_color: acolor texture = AColor(0.5, 0.5, 0.5, 1), The color when there are no valid uvw coordinates
+  color: output acolor texture, The resulting color
+  out_transparency: output acolor texture, The resulting transparency
+  out_alpha: output float texture, The resulting alpha
+  out_intensity: output float texture, The resulting intensity
+  use_3d_mapping: bool = true
+  uvwgen: plugin, The uvw generator for the texture
+  placement_type: integer = 0, The way the valid portion of the texture is applied. 0:the whole texture is valid, 1:crop, 2:place
+  u: float = 0, U coordinate of the valid texture sector
+  v: float = 0, V coordinate of the valid texture sector
+  w: float = 1, Width of the valid texture sector
+  h: float = 1, Height of the valid texture sector
+  jitter: float = 0, Amount of random placement variation
+  tile_u: integer = 0, If true there is horizontal tiling
+  tile_v: integer = 0, If true there is vertical tiling
+  uv_noise_on: integer = 0, If true the noise is enabled
+  uv_noise_animate: integer = 0, If true the noise is animated
+  uv_noise_amount: float = 1, UV noise amount
+  uv_noise_levels: float = 1, UV noise iterations
+  uv_noise_size: float = 1, UV noise size
+  un_noise_phase: float = 0, UV noise phase
+  color1_tex: acolor texture = AColor(0.46, 0.46, 0.45, 1.0)
+  color2_tex: acolor texture
+  grain_size: float = 0.01
+  diffusion: float = 1
+  mix_ratio: float = 0.5
+
+
+Parameters for plugin 'TexXSICell'
+  compatibility_with: integer = 0, This is used to differentiate between textures exported from different applications. The value means : 0 - 3ds Max (this is also the default), 1 - Maya, ...
+  alpha_from_intensity: bool = false, If true, the resulting alpha is the color intensity; otherwise the alpha is taken from the bitmap alpha
+  invert: bool = false, If true, the resulting texture color will be inverted
+  invert_alpha: bool = true, If true and invert is on, the resulting texture alpha will be inverted too. If false, just the color will be inverted
+  color_mult: acolor texture = AColor(1, 1, 1, 1), A multiplier for the texture color
+  color_offset: acolor texture = AColor(0, 0, 0, 0), An additional offset for the texture color
+  alpha_mult: float texture = 1, A multiplier for the texture alpha
+  alpha_offset: float texture = 0, An additional offset for the texture alpha
+  nouvw_color: acolor texture = AColor(0.5, 0.5, 0.5, 1), The color when there are no valid uvw coordinates
+  color: output acolor texture, The resulting color
+  out_transparency: output acolor texture, The resulting transparency
+  out_alpha: output float texture, The resulting alpha
+  out_intensity: output float texture, The resulting intensity
+  uvwgen: plugin, The uvw generator for the texture
+  placement_type: integer = 0, The way the valid portion of the texture is applied. 0:the whole texture is valid, 1:crop, 2:place
+  u: float = 0, U coordinate of the valid texture sector
+  v: float = 0, V coordinate of the valid texture sector
+  w: float = 1, Width of the valid texture sector
+  h: float = 1, Height of the valid texture sector
+  jitter: float = 0, Amount of random placement variation
+  tile_u: integer = 0, If true there is horizontal tiling
+  tile_v: integer = 0, If true there is vertical tiling
+  uv_noise_on: integer = 0, If true the noise is enabled
+  uv_noise_animate: integer = 0, If true the noise is animated
+  uv_noise_amount: float = 1, UV noise amount
+  uv_noise_levels: float = 1, UV noise iterations
+  uv_noise_size: float = 1, UV noise size
+  un_noise_phase: float = 0, UV noise phase
+  cells_color_tex: acolor texture = AColor(1.0, 1.0, 1.0, 1.0)
+  background_color_tex: acolor texture = AColor(0.0, 0.0, 0.0, 1.0)
+
+
+Parameters for plugin 'TexWood'
+  compatibility_with: integer = 0, This is used to differentiate between textures exported from different applications. The value means : 0 - 3ds Max (this is also the default), 1 - Maya, ...
+  alpha_from_intensity: bool = false, If true, the resulting alpha is the color intensity; otherwise the alpha is taken from the bitmap alpha
+  invert: bool = false, If true, the resulting texture color will be inverted
+  invert_alpha: bool = true, If true and invert is on, the resulting texture alpha will be inverted too. If false, just the color will be inverted
+  color_mult: acolor texture = AColor(1, 1, 1, 1), A multiplier for the texture color
+  color_offset: acolor texture = AColor(0, 0, 0, 0), An additional offset for the texture color
+  alpha_mult: float texture = 1, A multiplier for the texture alpha
+  alpha_offset: float texture = 0, An additional offset for the texture alpha
+  nouvw_color: acolor texture = AColor(0.5, 0.5, 0.5, 1), The color when there are no valid uvw coordinates
+  color: output acolor texture, The resulting color
+  out_transparency: output acolor texture, The resulting transparency
+  out_alpha: output float texture, The resulting alpha
+  out_intensity: output float texture, The resulting intensity
+  use_3d_mapping: bool = true
+  wrap: bool = true
+  uvwgen: plugin, The uvw generator for the texture
+  placement_type: integer = 0, The way the valid portion of the texture is applied. 0:the whole texture is valid, 1:crop, 2:place
+  u: float = 0, U coordinate of the valid texture sector
+  v: float = 0, V coordinate of the valid texture sector
+  w: float = 1, Width of the valid texture sector
+  h: float = 1, Height of the valid texture sector
+  jitter: float = 0, Amount of random placement variation
+  tile_u: integer = 0, If true there is horizontal tiling
+  tile_v: integer = 0, If true there is vertical tiling
+  uv_noise_on: integer = 0, If true the noise is enabled
+  uv_noise_animate: integer = 0, If true the noise is animated
+  uv_noise_amount: float = 1, UV noise amount
+  uv_noise_levels: float = 1, UV noise iterations
+  uv_noise_size: float = 1, UV noise size
+  un_noise_phase: float = 0, UV noise phase
+  filler_color_tex: acolor texture = AColor(0.08, 0.06, 0.05, 1.0)
+  vein_color_tex: acolor texture = AColor(0.63, 0.59, 0.33, 1.0)
+  vein_spread: float = 0.25
+  layer_size: float = 0.05
+  randomness: float = 0.5
+  age: float = 20
+  grain_color_tex: acolor texture
+  grain_contr: float = 0.5
+  grain_spacing: float = 0.01
+  center_u: float = 0.5
+  center_v: float = -0.5
+  amplitude_x: float = 0
+  amplitude_y: float = 0
+  ratio: float = 0.35
+  ripples_x: float = 1
+  ripples_y: float = 1
+  ripples_z: float = 1
+  depth_min: float = 0
+  depth_max: float = 8
+
+
+Parameters for plugin 'TexWater'
+  uvwgen: plugin
+  height_mult: float = 5, multiplier for the height of the water
+  use_3d_mapping: bool = false, use 3d mapping
+  wind_direction: float = 0.78, direction of the wind
+  wind_magnitude: float = 15, magnitude of the wind
+  wind_direction_mult: float = 1.0, wind direction
+  choppy_mult: float = 0.75, choppy mult
+  movement_rate: float = 1, movement rate
+  seed: integer = 1, Used to produce different waters
+  resolution: integer = 4, Resolution -> real resolution is 2^res
+  patch_size: float = 1000, Size of the patch -> real resolution is 2^res
+
+
+Parameters for plugin 'TexUVW'
+  uvwgen: plugin, The uvw space that will be displayed as RGB
+  component: integer = 0, Specifies which component to show. 0:all, 1:u, 2:v, 3:w
+
+
+Parameters for plugin 'TexSnow'
+  compatibility_with: integer = 0, This is used to differentiate between textures exported from different applications. The value means : 0 - 3ds Max (this is also the default), 1 - Maya, ...
+  alpha_from_intensity: bool = false, If true, the resulting alpha is the color intensity; otherwise the alpha is taken from the bitmap alpha
+  invert: bool = false, If true, the resulting texture color will be inverted
+  invert_alpha: bool = true, If true and invert is on, the resulting texture alpha will be inverted too. If false, just the color will be inverted
+  color_mult: acolor texture = AColor(1, 1, 1, 1), A multiplier for the texture color
+  color_offset: acolor texture = AColor(0, 0, 0, 0), An additional offset for the texture color
+  alpha_mult: float texture = 1, A multiplier for the texture alpha
+  alpha_offset: float texture = 0, An additional offset for the texture alpha
+  nouvw_color: acolor texture = AColor(0.5, 0.5, 0.5, 1), The color when there are no valid uvw coordinates
+  color: output acolor texture, The resulting color
+  out_transparency: output acolor texture, The resulting transparency
+  out_alpha: output float texture, The resulting alpha
+  out_intensity: output float texture, The resulting intensity
+  use_3d_mapping: bool = true
+  wrap: bool = true
+  uvwgen: plugin, The uvw generator for the texture
+  placement_type: integer = 0, The way the valid portion of the texture is aapplied. 0:the whole texture is valid, 1:crop, 2:place
+  u: float = 0, U coordinate of the valid texture sector
+  v: float = 0, V coordinate of the valid texture sector
+  w: float = 1, Width of the valid texture sector
+  h: float = 1, Height of the valid texture sector
+  jitter: float = 0, Amount of random placement variation
+  tile_u: integer = 0, If true there is horizontal tiling
+  tile_v: integer = 0, If true there is vertical tiling
+  uv_noise_on: integer = 0, If true the noise is enabled
+  uv_noise_animate: integer = 0, If true the noise is animated
+  uv_noise_amount: float = 1, UV noise amount
+  uv_noise_levels: float = 1, UV noise iterations
+  uv_noise_size: float = 1, UV noise size
+  un_noise_phase: float = 0, UV noise phase
+  snow_tex: acolor texture = AColor(1.0, 1.0, 1.0, 1), the Snow Color
+  surface_tex: acolor texture
+  threshold: float texture = 0.25
+  depth_decay: float texture = 2.0
+  thickness: float texture	= 1.0
+
+
+Parameters for plugin 'TexAColorOp'
+  color_a: acolor texture, The first color
+  color_b: acolor texture, The second color
+  mult_a: float texture, Multiplier for the first color
+  mult_b: float texture, Multiplier for the second color
+  result_alpha: float texture, The alpha for the result; if not specified, the resulting alpha taken from the first color)
+  mode: integer = 0, Which output should be considered as the output of the main texture. 0:result_a, 1:result_b, 2:product, 3:sum, 4:difference, 5:power, 6:division, 7:Minimum, 8:Maximum, 9:absolute difference
+  product: output acolor texture, (color_a*mult_a)*(color_b*mult_b)
+  division: output acolor texture, (color_a*mult_a)/(color_b*mult_b)
+  minimum: output acolor texture, Min(color_a*mult_a , color_b*mult_b)
+  maximum: output acolor texture, Max(color_a*mult_a , color_b*mult_b)
+  sum: output acolor texture, (color_a*mult_a)+(color_b*mult_b)
+  difference: output acolor texture, (color_a*mult_a)-(color_b*mult_b)
+  result_a: output acolor texture, color_a*mult_a
+  result_b: output acolor texture, color_b*mult_b
+  red: output float texture, (color_a*mult_a).r
+  green: output float texture, (color_a*mult_a).g
+  blue: output float texture, (color_a*mult_a).b
+  alpha: output float texture, (color_a*mult_a).a
+  intensity: output float texture, mult_a*(color_a.r+color_a.g+color_a.b)/3.0
+  power: output acolor texture, (color_a*mult_a)^mult_b
+
+
+Parameters for plugin 'TexRock'
+  compatibility_with: integer = 0, This is used to differentiate between textures exported from different applications. The value means : 0 - 3ds Max (this is also the default), 1 - Maya, ...
+  alpha_from_intensity: bool = false, If true, the resulting alpha is the color intensity; otherwise the alpha is taken from the bitmap alpha
+  invert: bool = false, If true, the resulting texture color will be inverted
+  invert_alpha: bool = true, If true and invert is on, the resulting texture alpha will be inverted too. If false, just the color will be inverted
+  color_mult: acolor texture = AColor(1, 1, 1, 1), A multiplier for the texture color
+  color_offset: acolor texture = AColor(0, 0, 0, 0), An additional offset for the texture color
+  alpha_mult: float texture = 1, A multiplier for the texture alpha
+  alpha_offset: float texture = 0, An additional offset for the texture alpha
+  nouvw_color: acolor texture = AColor(0.5, 0.5, 0.5, 1), The color when there are no valid uvw coordinates
+  color: output acolor texture, The resulting color
+  out_transparency: output acolor texture, The resulting transparency
+  out_alpha: output float texture, The resulting alpha
+  out_intensity: output float texture, The resulting intensity
+  use_3d_mapping: bool = true
+  wrap: bool = true
+  uvwgen: plugin, The uvw generator for the texture
+  placement_type: integer = 0, The way the valid portion of the texture is applied. 0:the whole texture is valid, 1:crop, 2:place
+  u: float = 0, U coordinate of the valid texture sector
+  v: float = 0, V coordinate of the valid texture sector
+  w: float = 1, Width of the valid texture sector
+  h: float = 1, Height of the valid texture sector
+  jitter: float = 0, Amount of random placement variation
+  tile_u: integer = 0, If true there is horizontal tiling
+  tile_v: integer = 0, If true there is vertical tiling
+  uv_noise_on: integer = 0, If true the noise is enabled
+  uv_noise_animate: integer = 0, If true the noise is animated
+  uv_noise_amount: float = 1, UV noise amount
+  uv_noise_levels: float = 1, UV noise iterations
+  uv_noise_size: float = 1, UV noise size
+  un_noise_phase: float = 0, UV noise phase
+  color1_tex: acolor texture = AColor(0, 0, 0, 1)
+  color2_tex: acolor texture = AColor(0.5, 0.5, 0.5, 1)
+  grain_size: float = 2
+  diffusion: float = 1
+  mix_ratio: float = 0.5
+
+
+Parameters for plugin 'TexRamp'
+  compatibility_with: integer = 0, This is used to differentiate between textures exported from different applications. The value means : 0 - 3ds Max (this is also the default), 1 - Maya, ...
+  alpha_from_intensity: bool = false, If true, the resulting alpha is the color intensity; otherwise the alpha is taken from the bitmap alpha
+  invert: bool = false, If true, the resulting texture color will be inverted
+  invert_alpha: bool = true, If true and invert is on, the resulting texture alpha will be inverted too. If false, just the color will be inverted
+  color_mult: acolor texture = AColor(1, 1, 1, 1), A multiplier for the texture color
+  color_offset: acolor texture = AColor(0, 0, 0, 0), An additional offset for the texture color
+  alpha_mult: float texture = 1, A multiplier for the texture alpha
+  alpha_offset: float texture = 0, An additional offset for the texture alpha
+  nouvw_color: acolor texture = AColor(0.5, 0.5, 0.5, 1), The color when there are no valid uvw coordinates
+  color: output acolor texture, The resulting color
+  out_transparency: output acolor texture, The resulting transparency
+  out_alpha: output float texture, The resulting alpha
+  out_intensity: output float texture, The resulting intensity
+  uvwgen: plugin, The uvw generator for the texture
+  placement_type: integer = 0, The way the valid portion of the texture is applied. 0:the whole texture is valid, 1:crop, 2:place
+  u: float = 0, U coordinate of the valid texture sector
+  v: float = 0, V coordinate of the valid texture sector
+  w: float = 1, Width of the valid texture sector
+  h: float = 1, Height of the valid texture sector
+  jitter: float = 0, Amount of random placement variation
+  tile_u: integer = 0, If true there is horizontal tiling
+  tile_v: integer = 0, If true there is vertical tiling
+  uv_noise_on: integer = 0, If true the noise is enabled
+  uv_noise_animate: integer = 0, If true the noise is animated
+  uv_noise_amount: float = 1, UV noise amount
+  uv_noise_levels: float = 1, UV noise iterations
+  uv_noise_size: float = 1, UV noise size
+  un_noise_phase: float = 0, UV noise phase
+  colors: acolor texture, unlimited list, the given colors
+  positions: float = 0.5, unlimited list, positions of the given colors
+  type: integer = 0, 0:V, 1:U, 2:(U+V)/2, 3:radial, 4:circular, 5:box, 6:UV, 7:four corner, 8:tartan
+  interpolation: integer = 1. 0:none, 1:linear, 2:expUp, 3:expDown, 4:smooth, 5:bump, 6:spike
+  u_wave: float = 0, Sine wave offset in the u direction
+  v_wave: float = 0, Sine wave offset in the v direction
+  noise_amount: float = 0, Distortion noise amount
+  noise_frequency: float = 0.5, Distortion noise frequency
+  hue_noise_amount: float = 0, Hue noise amount
+  hue_noise_frequency: float = 0.5, Hue noise frequency
+  saturation_noise_amount: float = 0, Saturation noise amount
+  saturation_noise_frequency: float = 0.5, Saturation noise frequency
+  value_noise_amount: float = 0, Value noise amount
+  value_noise_frequency: float = 0.5, Value noise frequency
+
+
+Parameters for plugin 'TexNoise'
+  compatibility_with: integer = 0, This is used to differentiate between textures exported from different applications. The value means : 0 - 3ds Max (this is also the default), 1 - Maya, ...
+  alpha_from_intensity: bool = false, If true, the resulting alpha is the color intensity; otherwise the alpha is taken from the bitmap alpha
+  invert: bool = false, If true, the resulting texture color will be inverted
+  invert_alpha: bool = true, If true and invert is on, the resulting texture alpha will be inverted too. If false, just the color will be inverted
+  color_mult: acolor texture = AColor(1, 1, 1, 1), A multiplier for the texture color
+  color_offset: acolor texture = AColor(0, 0, 0, 0), An additional offset for the texture color
+  alpha_mult: float texture = 1, A multiplier for the texture alpha
+  alpha_offset: float texture = 0, An additional offset for the texture alpha
+  nouvw_color: acolor texture = AColor(0.5, 0.5, 0.5, 1), The color when there are no valid uvw coordinates
+  color: output acolor texture, The resulting color
+  out_transparency: output acolor texture, The resulting transparency
+  out_alpha: output float texture, The resulting alpha
+  out_intensity: output float texture, The resulting intensity
+  use_3d_mapping: bool = true
+  wrap: bool = true
+  uvwgen: plugin, The uvw generator for the texture
+  placement_type: integer = 0, The way the valid portion of the texture is applied. 0:the whole texture is valid, 1:crop, 2:place
+  u: float = 0, U coordinate of the valid texture sector
+  v: float = 0, V coordinate of the valid texture sector
+  w: float = 1, Width of the valid texture sector
+  h: float = 1, Height of the valid texture sector
+  jitter: float = 0, Amount of random placement variation
+  tile_u: integer = 0, If true there is horizontal tiling
+  tile_v: integer = 0, If true there is vertical tiling
+  uv_noise_on: integer = 0, If true the noise is enabled
+  uv_noise_animate: integer = 0, If true the noise is animated
+  uv_noise_amount: float = 1, UV noise amount
+  uv_noise_levels: float = 1, UV noise iterations
+  uv_noise_size: float = 1, UV noise size
+  un_noise_phase: float = 0, UV noise phase
+  persistence: float = 1, amplitude(i+1) = amplitude(i) / persistence
+  amplitude_ratio: float = 1, amplitude(i+1) = amplitude(i) * amplitude_ratio
+  frequency_ratio: float = 2, frequency(i+1) = frequency(i) * frequency_ratio
+  frequency1: float = 1, The starting frequency
+  amplitude1: float = 1, The starting amplitude
+  octaves: integer = 3
+  noiseType: integer = 2. 0:just noise(), 1:Perlin noise, 2:inflected Perlin noise, 3:marble (with Perlin)
+  frequency_mult: float = 1
+  amplitude_mult: float = 1
+  inflection: integer = 0. 1:inflected, 0:not inflected
+  color1: color = Color(0, 0, 0)
+  color2: color = Color(1, 1, 1)
+  color1_tex: acolor texture
+  color2_tex: acolor texture
+  color1_tex_mult: float = 0
+  color2_tex_mult: float = 0
+  clamp: bool = true
+  dimensions: integer = 3, 2:2D Noise, 3:3D Noise
+  time: float = 0, The time of the noise, this will act as a third or fourth dimension to the noise generating function
+  threshold: float texture = 0, Value added to the noise function, noise function values above 1.0 are clamped.
+  scale: acolor texture = AColor(0.5, 0.5, 0.5, 1.0), Scale for the noise UVW coordinates.
+  origin: acolor texture, Translation for the noise UVW coordinates.
+  implode: float texture = 0.0, Amount of implode performed on the UVW coordinates.
+  implode_center: acolor texture, The center of the implode effect
+
+
+Parameters for plugin 'TexStencil'
+  compatibility_with: integer = 0, This is used to differentiate between textures exported from different applications. The value means : 0 - 3ds Max (this is also the default), 1 - Maya, ...
+  alpha_from_intensity: bool = false, If true, the resulting alpha is the color intensity; otherwise the alpha is taken from the bitmap alpha
+  invert: bool = false, If true, the resulting texture color will be inverted
+  invert_alpha: bool = true, If true and invert is on, the resulting texture alpha will be inverted too. If false, just the color will be inverted
+  color_mult: acolor texture = AColor(1, 1, 1, 1), A multiplier for the texture color
+  color_offset: acolor texture = AColor(0, 0, 0, 0), An additional offset for the texture color
+  alpha_mult: float texture = 1, A multiplier for the texture alpha
+  alpha_offset: float texture = 0, An additional offset for the texture alpha
+  nouvw_color: acolor texture = AColor(0.5, 0.5, 0.5, 1), The color when there are no valid uvw coordinates
+  color: output acolor texture, The resulting color
+  out_transparency: output acolor texture, The resulting transparency
+  out_alpha: output float texture, The resulting alpha
+  out_intensity: output float texture, The resulting intensity
+  image: acolor texture, The texture that is used as a stencil
+  mask: float texture, Represents the Stencilâ€™s transparency
+  key_masking: bool = false, If true, selects the areas in the texture similar to or equal to the Color Key and masks them out
+  positive_key: bool = false, If true, inverts the Chroma Key mask(only the colors specified in the Color Key and HSV Range are displayed)
+  color_key: acolor texture, The color to be masked in the texture
+  hue_range: float texture, The range of hues centered on the Color Key color which are also masked
+  sat_range: float texture, The range of saturations centered on the Color Key color which are also masked
+  val_range: float texture, The range of values centered on the Color Key color which are also masked
+  default_color: acolor texture, Represents the texture that is underneath
+  edge_blend: float = 0, Controls the sharpness of the texture edges.
+  uvwgen: plugin, UVWGen from which the uvw coordinates will be taken
+
+
+Parameters for plugin 'TexLuminance'
+  input: acolor texture
+  luminance: output float texture
+
+
+Parameters for plugin 'TexGradient'
+  compatibility_with: integer = 0, This is used to differentiate between textures exported from different applications. The value means : 0 - 3ds Max (this is also the default), 1 - Maya, ...
+  alpha_from_intensity: bool = false, If true, the resulting alpha is the color intensity; otherwise the alpha is taken from the bitmap alpha
+  invert: bool = false, If true, the resulting texture color will be inverted
+  invert_alpha: bool = true, If true and invert is on, the resulting texture alpha will be inverted too. If false, just the color will be inverted
+  color_mult: acolor texture = AColor(1, 1, 1, 1), A multiplier for the texture color
+  color_offset: acolor texture = AColor(0, 0, 0, 0), An additional offset for the texture color
+  alpha_mult: float texture = 1, A multiplier for the texture alpha
+  alpha_offset: float texture = 0, An additional offset for the texture alpha
+  nouvw_color: acolor texture = AColor(0.5, 0.5, 0.5, 1), The color when there are no valid uvw coordinates
+  color: output acolor texture, The resulting color
+  out_transparency: output acolor texture, The resulting transparency
+  out_alpha: output float texture, The resulting alpha
+  out_intensity: output float texture, The resulting intensity
+  uvwgen: plugin, The uvw generator for the texture
+  placement_type: integer = 0, The way the valid portion of the texture is applied. 0:the whole texture is valid, 1:crop, 2:place
+  u: float = 0, U coordinate of the valid texture sector
+  v: float = 0, V coordinate of the valid texture sector
+  w: float = 1, Width of the valid texture sector
+  h: float = 1, Height of the valid texture sector
+  jitter: float = 0, Amount of random placement variation
+  tile_u: integer = 0, If true there is horizontal tiling
+  tile_v: integer = 0, If true there is vertical tiling
+  uv_noise_on: integer = 0, If true the noise is enabled
+  uv_noise_animate: integer = 0, If true the noise is animated
+  uv_noise_amount: float = 1, UV noise amount
+  uv_noise_levels: float = 1, UV noise iterations
+  uv_noise_size: float = 1, UV noise size
+  un_noise_phase: float = 0, UV noise phase
+  color1: acolor texture = AColor(0, 0, 0, 1), First color
+  color2: acolor texture = AColor(0.5, 0.5, 0.5, 1), Middle color
+  color3: acolor texture = AColor(1, 1, 1, 1), End color
+  has_textures: bool = false, This affects bump mapping, following a peculiarity in the 3ds Max implementation
+  middle: float = 0.5, Middle color position
+  type: integer = 0, Gradient type. 0:linear, 1:radial
+  noise_amount: float = 0, Noise amount
+  noise_size: float = 1, Noise size
+  noise_type: integer = 0, Noise type. 0:regular, 1:fractal, 2:turbulence
+  noise_iterations: float = 4, Noise iterations
+  noise_phase: float = 0, Noise phase
+  noise_low: float = 0, Noise low threshold
+  noise_high: float = 1, Noise high threshold
+  noise_smooth: float = 0, Threshold smoothing
+
+
+Parameters for plugin 'TexFalloff'
+  compatibility_with: integer = 0, This is used to differentiate between textures exported from different applications. The value means : 0 - 3ds Max (this is also the default), 1 - Maya, ...
+  alpha_from_intensity: bool = false, If true, the resulting alpha is the color intensity; otherwise the alpha is taken from the bitmap alpha
+  invert: bool = false, If true, the resulting texture color will be inverted
+  invert_alpha: bool = true, If true and invert is on, the resulting texture alpha will be inverted too. If false, just the color will be inverted
+  color_mult: acolor texture = AColor(1, 1, 1, 1), A multiplier for the texture color
+  color_offset: acolor texture = AColor(0, 0, 0, 0), An additional offset for the texture color
+  alpha_mult: float texture = 1, A multiplier for the texture alpha
+  alpha_offset: float texture = 0, An additional offset for the texture alpha
+  nouvw_color: acolor texture = AColor(0.5, 0.5, 0.5, 1), The color when there are no valid uvw coordinates
+  color: output acolor texture, The resulting color
+  out_transparency: output acolor texture, The resulting transparency
+  out_alpha: output float texture, The resulting alpha
+  out_intensity: output float texture, The resulting intensity
+  color1: acolor texture = AColor(1, 1, 1, 1), First color
+  color2: acolor texture = AColor(0, 0, 0, 0), Second color
+  type: integer = 0, Type 0:towards/away, 1:perpendicular/parallel, 2:Fresnel, 3:shadow/light, 4:distance blend)
+  direction_type: integer = 0, Direction type. 0:viewZ, 1:viewX, 2:viewY, 3:explicit, 4:localX, 5:localY, 6:localZ, 7:worldX, 8:worldY, 9:worldZ
+  fresnel_ior: float = 1.6, IOR for the Fresnel falloff type
+  dist_extrapolate: bool = false, Extrapolate for the distance blend falloff type
+  dist_near: float = 0, Near distance for the distance blend falloff type
+  dist_far: float = 100, Far distance for the distance blend falloff type
+  explicit_dir: vector = Color(0, 0, 0), Direction for the explicit direction type
+  blend_output: output float texture, The blending amount, based on the parameters
+  use_blend_input: bool = false
+  blend_input: float texture = 0.5, If specified and use_blend_input is true, the final blending amount will be taken from this texture
+
+
+Parameters for plugin 'TexNoiseMax'
+  compatibility_with: integer = 0, This is used to differentiate between textures exported from different applications. The value means : 0 - 3ds Max (this is also the default), 1 - Maya, ...
+  alpha_from_intensity: bool = false, If true, the resulting alpha is the color intensity; otherwise the alpha is taken from the bitmap alpha
+  invert: bool = false, If true, the resulting texture color will be inverted
+  invert_alpha: bool = true, If true and invert is on, the resulting texture alpha will be inverted too. If false, just the color will be inverted
+  color_mult: acolor texture = AColor(1, 1, 1, 1), A multiplier for the texture color
+  color_offset: acolor texture = AColor(0, 0, 0, 0), An additional offset for the texture color
+  alpha_mult: float texture = 1, A multiplier for the texture alpha
+  alpha_offset: float texture = 0, An additional offset for the texture alpha
+  nouvw_color: acolor texture = AColor(0.5, 0.5, 0.5, 1), The color when there are no valid uvw coordinates
+  color: output acolor texture, The resulting color
+  out_transparency: output acolor texture, The resulting transparency
+  out_alpha: output float texture, The resulting alpha
+  out_intensity: output float texture, The resulting intensity
+  use_3d_mapping: bool = true
+  uvwgen: plugin, The uvw generator for the texture
+  placement_type: integer = 0, The way the valid portion of the texture is applied. 0:the whole texture is valid, 1:crop, 2:place
+  u: float = 0, U coordinate of the valid texture sector
+  v: float = 0, V coordinate of the valid texture sector
+  w: float = 1, Width of the valid texture sector
+  h: float = 1, Height of the valid texture sector
+  jitter: float = 0, Amount of random placement variation
+  tile_u: integer = 0, If true there is horizontal tiling
+  tile_v: integer = 0, If true there is vertical tiling
+  uv_noise_on: integer = 0, If true the noise is enabled
+  uv_noise_animate: integer = 0, If true the noise is animated
+  uv_noise_amount: float = 1, UV noise amount
+  uv_noise_levels: float = 1, UV noise iterations
+  uv_noise_size: float = 1, UV noise size
+  un_noise_phase: float = 0, UV noise phase
+  color1: acolor texture = AColor(1, 1, 1, 1), First color
+  color2: acolor texture = AColor(0, 0, 0, 0), Second color
+  size: float = 30, Size
+  phase: float = 0, Phase
+  iterations: float = 3, Number of iterations for the fractal generator
+  low: float = 0, Low threshold
+  high: float = 1, High threshold
+  type: integer = 0. 0:regular, 1:fractal, 2:turbulence
+
+
+Parameters for plugin 'TexMix'
+  compatibility_with: integer = 0, This is used to differentiate between textures exported from different applications. The value means : 0 - 3ds Max (this is also the default), 1 - Maya, ...
+  alpha_from_intensity: bool = false, If true, the resulting alpha is the color intensity; otherwise the alpha is taken from the bitmap alpha
+  invert: bool = false, If true, the resulting texture color will be inverted
+  invert_alpha: bool = true, If true and invert is on, the resulting texture alpha will be inverted too. If false, just the color will be inverted
+  color_mult: acolor texture = AColor(1, 1, 1, 1), A multiplier for the texture color
+  color_offset: acolor texture = AColor(0, 0, 0, 0), An additional offset for the texture color
+  alpha_mult: float texture = 1, A multiplier for the texture alpha
+  alpha_offset: float texture = 0, An additional offset for the texture alpha
+  nouvw_color: acolor texture = AColor(0.5, 0.5, 0.5, 1), The color when there are no valid uvw coordinates
+  color: output acolor texture, The resulting color
+  out_transparency: output acolor texture, The resulting transparency
+  out_alpha: output float texture, The resulting alpha
+  out_intensity: output float texture, The resulting intensity
+  color1: acolor texture = AColor(1, 1, 1, 1), First color
+  color2: acolor texture = AColor(0, 0, 0, 0), Second color
+  mix_map: acolor texture = AColor(0.5, 0.5, 0.5, 1), Mix amount texture
+  mix_amount: float = 0, Mix amount
+  transition_upper: float = 0.7, Transition zone - upper
+  transition_lower: float = 0.3, Transition zone - lower
+  use_curve: integer = 0, If true the blend curve is used
+
+
+Parameters for plugin 'TexMarbleMax'
+  compatibility_with: integer = 0, This is used to differentiate between textures exported from different applications. The value means : 0 - 3ds Max (this is also the default), 1 - Maya, ...
+  alpha_from_intensity: bool = false, If true, the resulting alpha is the color intensity; otherwise the alpha is taken from the bitmap alpha
+  invert: bool = false, If true, the resulting texture color will be inverted
+  invert_alpha: bool = true, If true and invert is on, the resulting texture alpha will be inverted too. If false, just the color will be inverted
+  color_mult: acolor texture = AColor(1, 1, 1, 1), A multiplier for the texture color
+  color_offset: acolor texture = AColor(0, 0, 0, 0), An additional offset for the texture color
+  alpha_mult: float texture = 1, A multiplier for the texture alpha
+  alpha_offset: float texture = 0, An additional offset for the texture alpha
+  nouvw_color: acolor texture = AColor(0.5, 0.5, 0.5, 1), The color when there are no valid uvw coordinates
+  color: output acolor texture, The resulting color
+  out_transparency: output acolor texture, The resulting transparency
+  out_alpha: output float texture, The resulting alpha
+  out_intensity: output float texture, The resulting intensity
+  use_3d_mapping: bool = true
+  uvwgen: plugin, The uvw generator for the texture
+  placement_type: integer = 0, The way the valid portion of the texture is applied. 0:the whole texture is valid, 1:crop, 2:place
+  u: float = 0, U coordinate of the valid texture sector
+  v: float = 0, V coordinate of the valid texture sector
+  w: float = 1, Width of the valid texture sector
+  h: float = 1, Height of the valid texture sector
+  jitter: float = 0, Amount of random placement variation
+  tile_u: integer = 0, If true there is horizontal tiling
+  tile_v: integer = 0, If true there is vertical tiling
+  uv_noise_on: integer = 0, If true the noise is enabled
+  uv_noise_animate: integer = 0, If true the noise is animated
+  uv_noise_amount: float = 1, UV noise amount
+  uv_noise_levels: float = 1, UV noise iterations
+  uv_noise_size: float = 1, UV noise size
+  un_noise_phase: float = 0, UV noise phase
+  color1: acolor texture = AColor(1, 1, 1, 1), First color
+  color2: acolor texture = AColor(0, 0, 0, 0), Second color
+  size: float = 70, Size
+  vein_width: float = 0.02, Vein width
+
+
+Parameters for plugin 'TexSwirl'
+  compatibility_with: integer = 0, This is used to differentiate between textures exported from different applications. The value means : 0 - 3ds Max (this is also the default), 1 - Maya, ...
+  alpha_from_intensity: bool = false, If true, the resulting alpha is the color intensity; otherwise the alpha is taken from the bitmap alpha
+  invert: bool = false, If true, the resulting texture color will be inverted
+  invert_alpha: bool = true, If true and invert is on, the resulting texture alpha will be inverted too. If false, just the color will be inverted
+  color_mult: acolor texture = AColor(1, 1, 1, 1), A multiplier for the texture color
+  color_offset: acolor texture = AColor(0, 0, 0, 0), An additional offset for the texture color
+  alpha_mult: float texture = 1, A multiplier for the texture alpha
+  alpha_offset: float texture = 0, An additional offset for the texture alpha
+  nouvw_color: acolor texture = AColor(0.5, 0.5, 0.5, 1), The color when there are no valid uvw coordinates
+  color: output acolor texture, The resulting color
+  out_transparency: output acolor texture, The resulting transparency
+  out_alpha: output float texture, The resulting alpha
+  out_intensity: output float texture, The resulting intensity
+  uvwgen: plugin, The uvw generator for the texture
+  placement_type: integer = 0, The way the valid portion of the texture is applied. 0:the whole texture is valid, 1:crop, 2:place
+  u: float = 0, U coordinate of the valid texture sector
+  v: float = 0, V coordinate of the valid texture sector
+  w: float = 1, Width of the valid texture sector
+  h: float = 1, Height of the valid texture sector
+  jitter: float = 0, Amount of random placement variation
+  tile_u: integer = 0, If true there is horizontal tiling
+  tile_v: integer = 0, If true there is vertical tiling
+  uv_noise_on: integer = 0, If true the noise is enabled
+  uv_noise_animate: integer = 0, If true the noise is animated
+  uv_noise_amount: float = 1, UV noise amount
+  uv_noise_levels: float = 1, UV noise iterations
+  uv_noise_size: float = 1, UV noise size
+  un_noise_phase: float = 0, UV noise phase
+  color1: acolor texture = AColor(0.0, 0.0, 0.5, 1.0), First color
+  color2: acolor texture = AColor(1.0, 0.5, 0.0, 0.0), Second color
+  swirl_intensity: float = 2.5, Swirl Intensity
+  color_contrast: float = 0.45, Color Contrast
+  swirl_amount: float = 1, Swirl Amount
+  constant_detail: integer = 5, Constant Detail
+  center_x: float = -0.5, Center Position X
+  center_y: float = -0.5, Center Position Y
+  random_seed: float = 0.83, Random Seed
+  twist: float = 3.3, Twist
+
+
+Parameters for plugin 'TexTiles'
+  compatibility_with: integer = 0, This is used to differentiate between textures exported from different applications. The value means : 0 - 3ds Max (this is also the default), 1 - Maya, ...
+  alpha_from_intensity: bool = false, If true, the resulting alpha is the color intensity; otherwise the alpha is taken from the bitmap alpha
+  invert: bool = false, If true, the resulting texture color will be inverted
+  invert_alpha: bool = true, If true and invert is on, the resulting texture alpha will be inverted too. If false, just the color will be inverted
+  color_mult: acolor texture = AColor(1, 1, 1, 1), A multiplier for the texture color
+  color_offset: acolor texture = AColor(0, 0, 0, 0), An additional offset for the texture color
+  alpha_mult: float texture = 1, A multiplier for the texture alpha
+  alpha_offset: float texture = 0, An additional offset for the texture alpha
+  nouvw_color: acolor texture = AColor(0.5, 0.5, 0.5, 1), The color when there are no valid uvw coordinates
+  color: output acolor texture, The resulting color
+  out_transparency: output acolor texture, The resulting transparency
+  out_alpha: output float texture, The resulting alpha
+  out_intensity: output float texture, The resulting intensity
+  uvwgen: plugin, The uvw generator for the texture
+  placement_type: integer = 0, The way the valid portion of the texture is applied. 0:the whole texture is valid, 1:crop, 2:place
+  u: float = 0, U coordinate of the valid texture sector
+  v: float = 0, V coordinate of the valid texture sector
+  w: float = 1, Width of the valid texture sector
+  h: float = 1, Height of the valid texture sector
+  jitter: float = 0, Amount of random placement variation
+  tile_u: integer = 0, If true there is horizontal tiling
+  tile_v: integer = 0, If true there is vertical tiling
+  uv_noise_on: integer = 0, If true the noise is enabled
+  uv_noise_animate: integer = 0, If true the noise is animated
+  uv_noise_amount: float = 1, UV noise amount
+  uv_noise_levels: float = 1, UV noise iterations
+  uv_noise_size: float = 1, UV noise size
+  un_noise_phase: float = 0, UV noise phase
+  color_mortar: acolor texture = AColor(0.7, 0.7, 0.7, 1), Mortar color
+  color_tiles: acolor texture = AColor(0.6, 0.5, 0.4, 1), Tiles color
+  horizontal_count: float = 1, Tiles horizontal count
+  vertical_count: float = 1, Tiles vertical count
+  color_variance: float = 0, Color variance
+  horizontal_gap: float = 0, Horizontal gap between tiles
+  vertical_gap: float = 0, Vertical gap between tiles
+  pattern_type: integer = 0, Tiles pattern. 0:Custom Tiles, 1:Running Bond, 2:Common Flemish Bond, 3:English Bond, 4:1/2 Running Bond, 5:Stack Bond, 6:Fine Running Bond, 7:Fine Stack Bond
+  line_shift: float = 0.5, Line shift
+  random_shift: float = 0, Random shift
+  edge_roughness: float = 0, Edge roughness
+  holes: integer = 0, Holes
+  random_seed: integer = 0, Random seed
+  fade_variance: float = 0, Fade variance
+  row_modify: integer = 0, if 1 - custom row parameters
+  column_modify: integer = 0, if 1 - custom column parameters
+  per_row: integer = 1, every per_row row is modified by corresponding change value
+  row_change: float = 1, row change value modifying the number of tiles in affected rows
+  per_column: integer = 1, every per_column column is modified by corresponding change value
+  column_change: float = 1, column change value modifying the number of tiles in affected columns
+
+
+Parameters for plugin 'TexSpeckle'
+  compatibility_with: integer = 0, This is used to differentiate between textures exported from different applications. The value means : 0 - 3ds Max (this is also the default), 1 - Maya, ...
+  alpha_from_intensity: bool = false, If true, the resulting alpha is the color intensity; otherwise the alpha is taken from the bitmap alpha
+  invert: bool = false, If true, the resulting texture color will be inverted
+  invert_alpha: bool = true, If true and invert is on, the resulting texture alpha will be inverted too. If false, just the color will be inverted
+  color_mult: acolor texture = AColor(1, 1, 1, 1), A multiplier for the texture color
+  color_offset: acolor texture = AColor(0, 0, 0, 0), An additional offset for the texture color
+  alpha_mult: float texture = 1, A multiplier for the texture alpha
+  alpha_offset: float texture = 0, An additional offset for the texture alpha
+  nouvw_color: acolor texture = AColor(0.5, 0.5, 0.5, 1), The color when there are no valid uvw coordinates
+  color: output acolor texture, The resulting color
+  out_transparency: output acolor texture, The resulting transparency
+  out_alpha: output float texture, The resulting alpha
+  out_intensity: output float texture, The resulting intensity
+  use_3d_mapping: bool = false
+  uvwgen: plugin, The uvw generator for the texture
+  placement_type: integer = 0, The way the valid portion of the texture is applied. 0:the whole texture is valid, 1:crop, 2:place
+  u: float = 0, U coordinate of the valid texture sector
+  v: float = 0, V coordinate of the valid texture sector
+  w: float = 1, Width of the valid texture sector
+  h: float = 1, Height of the valid texture sector
+  jitter: float = 0, Amount of random placement variation
+  tile_u: integer = 0, If true there is horizontal tiling
+  tile_v: integer = 0, If true there is vertical tiling
+  uv_noise_on: integer = 0, If true the noise is enabled
+  uv_noise_animate: integer = 0, If true the noise is animated
+  uv_noise_amount: float = 1, UV noise amount
+  uv_noise_levels: float = 1, UV noise iterations
+  uv_noise_size: float = 1, UV noise size
+  un_noise_phase: float = 0, UV noise phase
+  color1: acolor texture = AColor(1, 1, 1, 1), First color
+  color2: acolor texture = AColor(0, 0, 0, 0), Second color
+  size: float = 0.5, Size
+
+
+Parameters for plugin 'TexSmoke'
+  compatibility_with: integer = 0, This is used to differentiate between textures exported from different applications. The value means : 0 - 3ds Max (this is also the default), 1 - Maya, ...
+  alpha_from_intensity: bool = false, If true, the resulting alpha is the color intensity; otherwise the alpha is taken from the bitmap alpha
+  invert: bool = false, If true, the resulting texture color will be inverted
+  invert_alpha: bool = true, If true and invert is on, the resulting texture alpha will be inverted too. If false, just the color will be inverted
+  color_mult: acolor texture = AColor(1, 1, 1, 1), A multiplier for the texture color
+  color_offset: acolor texture = AColor(0, 0, 0, 0), An additional offset for the texture color
+  alpha_mult: float texture = 1, A multiplier for the texture alpha
+  alpha_offset: float texture = 0, An additional offset for the texture alpha
+  nouvw_color: acolor texture = AColor(0.5, 0.5, 0.5, 1), The color when there are no valid uvw coordinates
+  color: output acolor texture, The resulting color
+  out_transparency: output acolor texture, The resulting transparency
+  out_alpha: output float texture, The resulting alpha
+  out_intensity: output float texture, The resulting intensity
+  use_3d_mapping: bool = false
+  uvwgen: plugin, The uvw generator for the texture
+  placement_type: integer = 0, The way the valid portion of the texture is applied. 0:the whole texture is valid, 1:crop, 2:place
+  u: float = 0, U coordinate of the valid texture sector
+  v: float = 0, V coordinate of the valid texture sector
+  w: float = 1, Width of the valid texture sector
+  h: float = 1, Height of the valid texture sector
+  jitter: float = 0, Amount of random placement variation
+  tile_u: integer = 0, If true there is horizontal tiling
+  tile_v: integer = 0, If true there is vertical tiling
+  uv_noise_on: integer = 0, If true the noise is enabled
+  uv_noise_animate: integer = 0, If true the noise is animated
+  uv_noise_amount: float = 1, UV noise amount
+  uv_noise_levels: float = 1, UV noise iterations
+  uv_noise_size: float = 1, UV noise size
+  un_noise_phase: float = 0, UV noise phase
+  color1: acolor texture = AColor(1, 1, 1, 1), First color
+  color2: acolor texture = AColor(0, 0, 0, 0), Second color
+  size: float = 1, Size
+  iterations: integer = 5, Iterations
+  phase: float = 0, Phase
+  exponent: float = 1.5, Exponent
+
+
+Parameters for plugin 'TexStucco'
+  compatibility_with: integer = 0, This is used to differentiate between textures exported from different applications. The value means : 0 - 3ds Max (this is also the default), 1 - Maya, ...
+  alpha_from_intensity: bool = false, If true, the resulting alpha is the color intensity; otherwise the alpha is taken from the bitmap alpha
+  invert: bool = false, If true, the resulting texture color will be inverted
+  invert_alpha: bool = true, If true and invert is on, the resulting texture alpha will be inverted too. If false, just the color will be inverted
+  color_mult: acolor texture = AColor(1, 1, 1, 1), A multiplier for the texture color
+  color_offset: acolor texture = AColor(0, 0, 0, 0), An additional offset for the texture color
+  alpha_mult: float texture = 1, A multiplier for the texture alpha
+  alpha_offset: float texture = 0, An additional offset for the texture alpha
+  nouvw_color: acolor texture = AColor(0.5, 0.5, 0.5, 1), The color when there are no valid uvw coordinates
+  color: output acolor texture, The resulting color
+  out_transparency: output acolor texture, The resulting transparency
+  out_alpha: output float texture, The resulting alpha
+  out_intensity: output float texture, The resulting intensity
+  use_3d_mapping: bool = false
+  uvwgen: plugin, The uvw generator for the texture
+  placement_type: integer = 0, The way the valid portion of the texture is applied. 0:the whole texture is valid, 1:crop, 2:place
+  u: float = 0, U coordinate of the valid texture sector
+  v: float = 0, V coordinate of the valid texture sector
+  w: float = 1, Width of the valid texture sector
+  h: float = 1, Height of the valid texture sector
+  jitter: float = 0, Amount of random placement variation
+  tile_u: integer = 0, If true there is horizontal tiling
+  tile_v: integer = 0, If true there is vertical tiling
+  uv_noise_on: integer = 0, If true the noise is enabled
+  uv_noise_animate: integer = 0, If true the noise is animated
+  uv_noise_amount: float = 1, UV noise amount
+  uv_noise_levels: float = 1, UV noise iterations
+  uv_noise_size: float = 1, UV noise size
+  un_noise_phase: float = 0, UV noise phase
+  color1: acolor texture = AColor(1, 1, 1, 1), First color
+  color2: acolor texture = AColor(0, 0, 0, 0), Second color
+  size: float = 0.05, Size
+  thickness: float = 3, Thickness
+  threshold: float = 0.2, Threshold
+
+
+Parameters for plugin 'TexSplat'
+  compatibility_with: integer = 0, This is used to differentiate between textures exported from different applications. The value means : 0 - 3ds Max (this is also the default), 1 - Maya, ...
+  alpha_from_intensity: bool = false, If true, the resulting alpha is the color intensity; otherwise the alpha is taken from the bitmap alpha
+  invert: bool = false, If true, the resulting texture color will be inverted
+  invert_alpha: bool = true, If true and invert is on, the resulting texture alpha will be inverted too. If false, just the color will be inverted
+  color_mult: acolor texture = AColor(1, 1, 1, 1), A multiplier for the texture color
+  color_offset: acolor texture = AColor(0, 0, 0, 0), An additional offset for the texture color
+  alpha_mult: float texture = 1, A multiplier for the texture alpha
+  alpha_offset: float texture = 0, An additional offset for the texture alpha
+  nouvw_color: acolor texture = AColor(0.5, 0.5, 0.5, 1), The color when there are no valid uvw coordinates
+  color: output acolor texture, The resulting color
+  out_transparency: output acolor texture, The resulting transparency
+  out_alpha: output float texture, The resulting alpha
+  out_intensity: output float texture, The resulting intensity
+  use_3d_mapping: bool = true
+  uvwgen: plugin, The uvw generator for the texture
+  placement_type: integer = 0, The way the valid portion of the texture is applied. 0:the whole texture is valid, 1:crop, 2:place
+  u: float = 0, U coordinate of the valid texture sector
+  v: float = 0, V coordinate of the valid texture sector
+  w: float = 1, Width of the valid texture sector
+  h: float = 1, Height of the valid texture sector
+  jitter: float = 0, Amount of random placement variation
+  tile_u: integer = 0, If true there is horizontal tiling
+  tile_v: integer = 0, If true there is vertical tiling
+  uv_noise_on: integer = 0, If true the noise is enabled
+  uv_noise_animate: integer = 0, If true the noise is animated
+  uv_noise_amount: float = 1, UV noise amount
+  uv_noise_levels: float = 1, UV noise iterations
+  uv_noise_size: float = 1, UV noise size
+  un_noise_phase: float = 0, UV noise phase
+  color1: acolor texture = AColor(1, 1, 1, 1), First color
+  color2: acolor texture = AColor(0, 0, 0, 0), Second color
+  size: float = 10, Size
+  iterations: integer = 4, Number of iterations for the fractal generator
+  threshold: float = 0.2, Threshold
+  smoothing: float = 0.02, Transition smoothing
+
+
+Parameters for plugin 'TexGradRamp'
+  compatibility_with: integer = 0, This is used to differentiate between textures exported from different applications. The value means : 0 - 3ds Max (this is also the default), 1 - Maya, ...
+  alpha_from_intensity: bool = false, If true, the resulting alpha is the color intensity; otherwise the alpha is taken from the bitmap alpha
+  invert: bool = false, If true, the resulting texture color will be inverted
+  invert_alpha: bool = true, If true and invert is on, the resulting texture alpha will be inverted too. If false, just the color will be inverted
+  color_mult: acolor texture = AColor(1, 1, 1, 1), A multiplier for the texture color
+  color_offset: acolor texture = AColor(0, 0, 0, 0), An additional offset for the texture color
+  alpha_mult: float texture = 1, A multiplier for the texture alpha
+  alpha_offset: float texture = 0, An additional offset for the texture alpha
+  nouvw_color: acolor texture = AColor(0.5, 0.5, 0.5, 1), The color when there are no valid uvw coordinates
+  color: output acolor texture, The resulting color
+  out_transparency: output acolor texture, The resulting transparency
+  out_alpha: output float texture, The resulting alpha
+  out_intensity: output float texture, The resulting intensity
+  uvwgen: plugin, The uvw generator for the texture
+  placement_type: integer = 0, The way the valid portion of the texture is applied. 0:the whole texture is valid, 1:crop, 2:place
+  u: float = 0, U coordinate of the valid texture sector
+  v: float = 0, V coordinate of the valid texture sector
+  w: float = 1, Width of the valid texture sector
+  h: float = 1, Height of the valid texture sector
+  jitter: float = 0, Amount of random placement variation
+  tile_u: integer = 0, If true there is horizontal tiling
+  tile_v: integer = 0, If true there is vertical tiling
+  uv_noise_on: integer = 0, If true the noise is enabled
+  uv_noise_animate: integer = 0, If true the noise is animated
+  uv_noise_amount: float = 1, UV noise amount
+  uv_noise_levels: float = 1, UV noise iterations
+  uv_noise_size: float = 1, UV noise size
+  un_noise_phase: float = 0, UV noise phase
+  colors: acolor texture, unlimited list, the given colors
+  positions: float = 0.5, unlimited positions of the given colors
+  texture_map: acolor texture, the texture used for mapped gradient ramp
+  gradient_type: integer = 0, 0:four corner, 1:box, 2:diagonal, 3:lighting, 4:linear, 5:mapped, 6:normal, 7:pong, 8:radial, 9:spiral, 10:sweep, 11:tartan
+  interpolation: integer = 1, 0:none, 1:linear, 2:expUp, 3:expDown, 4:smooth, 5:bump, 6:spike
+  noise_amount: float = 0, Distortion noise amount
+  noise_type: integer = 0. 0:regular, 1:fractal, 2:turbulence
+  noise_size: float = 1, default = 1.0
+  noise_phase: float = 0, default = 0.0
+  noise_levels: float = 4, default = 4.0
+  noise_treshold_low: float = 0, default = 0.0f
+  noise_treshold_high: float = 0, default = 1.0f
+  noise_smooth: float = 0, default = 0.0f
+
+
+Parameters for plugin 'LightAmbientMax'
+  enabled: bool = true, true if the light is enabled
+  mode: integer = 0, light mode
+  gi_min_distance: float = 0, minimal distance for gi rays
+  color: acolor texture = AColor(0.5, 0.5, 0.5, 1), The ambient color
+  compensate_exposure: bool = true, true to compensate for camera exposure
+
+
+Parameters for plugin 'TexMarble'
+  compatibility_with: integer = 0, This is used to differentiate between textures exported from different applications. The value means : 0 - 3ds Max (this is also the default), 1 - Maya, ...
+  alpha_from_intensity: bool = false, If true, the resulting alpha is the color intensity; otherwise the alpha is taken from the bitmap alpha
+  invert: bool = false, If true, the resulting texture color will be inverted
+  invert_alpha: bool = true, If true and invert is on, the resulting texture alpha will be inverted too. If false, just the color will be inverted
+  color_mult: acolor texture = AColor(1, 1, 1, 1), A multiplier for the texture color
+  color_offset: acolor texture = AColor(0, 0, 0, 0), An additional offset for the texture color
+  alpha_mult: float texture = 1, A multiplier for the texture alpha
+  alpha_offset: float texture = 0, An additional offset for the texture alpha
+  nouvw_color: acolor texture = AColor(0.5, 0.5, 0.5, 1), The color when there are no valid uvw coordinates
+  color: output acolor texture, The resulting color
+  out_transparency: output acolor texture, The resulting transparency
+  out_alpha: output float texture, The resulting alpha
+  out_intensity: output float texture, The resulting intensity
+  use_3d_mapping: bool = false
+  wrap: bool = true
+  uvwgen: plugin, The uvw generator for the texture
+  placement_type: integer = 0, The way the valid portion of the texture is applied. 0:the whole texture is valid, 1:crop, 2:place
+  u: float = 0, U coordinate of the valid texture sector
+  v: float = 0, V coordinate of the valid texture sector
+  w: float = 1, Width of the valid texture sector
+  h: float = 1, Height of the valid texture sector
+  jitter: float = 0, Amount of random placement variation
+  tile_u: integer = 0, If true there is horizontal tiling
+  tile_v: integer = 0, If true there is vertical tiling
+  uv_noise_on: integer = 0, If true the noise is enabled
+  uv_noise_animate: integer = 0, If true the noise is animated
+  uv_noise_amount: float = 1, UV noise amount
+  uv_noise_levels: float = 1, UV noise iterations
+  uv_noise_size: float = 1, UV noise size
+  un_noise_phase: float = 0, UV noise phase
+  filler_color_tex: acolor texture = AColor(0.3, 0.2, 0.5, 1.0)
+  vein_color_tex: acolor texture = AColor(0.7, 0.6, 0.8, 1.0)
+  vein_width: float texture = 0.5
+  diffusion: float texture = 0.5
+  contrast: float texture = 0.5
+  amplitude: float texture = 20.0
+  ratio: float texture = 0.5
+  ripples: acolor texture = AColor(1.0, 1.0, 1.0, 1.0)
+  depth_min: float texture = 1
+  depth_max: float texture = 100
+
+
+Parameters for plugin 'TexLeather'
+  compatibility_with: integer = 0, This is used to differentiate between textures exported from different applications. The value means : 0 - 3ds Max (this is also the default), 1 - Maya, ...
+  alpha_from_intensity: bool = false, If true, the resulting alpha is the color intensity; otherwise the alpha is taken from the bitmap alpha
+  invert: bool = false, If true, the resulting texture color will be inverted
+  invert_alpha: bool = true, If true and invert is on, the resulting texture alpha will be inverted too. If false, just the color will be inverted
+  color_mult: acolor texture = AColor(1, 1, 1, 1), A multiplier for the texture color
+  color_offset: acolor texture = AColor(0, 0, 0, 0), An additional offset for the texture color
+  alpha_mult: float texture = 1, A multiplier for the texture alpha
+  alpha_offset: float texture = 0, An additional offset for the texture alpha
+  nouvw_color: acolor texture = AColor(0.5, 0.5, 0.5, 1), The color when there are no valid uvw coordinates
+  color: output acolor texture, The resulting color
+  out_transparency: output acolor texture, The resulting transparency
+  out_alpha: output float texture, The resulting alpha
+  out_intensity: output float texture, The resulting intensity
+  wrap: bool = true
+  uvwgen: plugin, The uvw generator for the texture
+  placement_type: integer = 0, The way the valid portion of the texture is applied. 0:the whole texture is valid, 1:crop, 2:place
+  u: float = 0, U coordinate of the valid texture sector
+  v: float = 0, V coordinate of the valid texture sector
+  w: float = 1, Width of the valid texture sector
+  h: float = 1, Height of the valid texture sector
+  jitter: float = 0, Amount of random placement variation
+  tile_u: integer = 0, If true there is horizontal tiling
+  tile_v: integer = 0, If true there is vertical tiling
+  uv_noise_on: integer = 0, If true the noise is enabled
+  uv_noise_animate: integer = 0, If true the noise is animated
+  uv_noise_amount: float = 1, UV noise amount
+  uv_noise_levels: float = 1, UV noise iterations
+  uv_noise_size: float = 1, UV noise size
+  un_noise_phase: float = 0, UV noise phase
+  cell_color_tex: acolor texture = AColor(0.5, 0.5, 0.5, 1.0)
+  crease_color_tex: acolor texture
+  cell_color: color = Color(1, 1, 1)
+  crease_color: color = Color(0, 0, 0)
+  cell_color_tex_mult: float = 1
+  crease_color_tex_mult: float = 1
+  size: float = 0.1
+  density: float = 1
+  spottyness: float = 0.1
+  randomness: float = 0.5
+  threshold: float = 0.83
+  creases: bool = true
+
+
+Parameters for plugin 'TexLayered'
+  compatibility_with: integer = 0, This is used to differentiate between textures exported from different applications. The value means : 0 - 3ds Max (this is also the default), 1 - Maya, ...
+  alpha_from_intensity: bool = false, If true, the resulting alpha is the color intensity; otherwise the alpha is taken from the bitmap alpha
+  invert: bool = false, If true, the resulting texture color will be inverted
+  invert_alpha: bool = true, If true and invert is on, the resulting texture alpha will be inverted too. If false, just the color will be inverted
+  color_mult: acolor texture = AColor(1, 1, 1, 1), A multiplier for the texture color
+  color_offset: acolor texture = AColor(0, 0, 0, 0), An additional offset for the texture color
+  alpha_mult: float texture = 1, A multiplier for the texture alpha
+  alpha_offset: float texture = 0, An additional offset for the texture alpha
+  nouvw_color: acolor texture = AColor(0.5, 0.5, 0.5, 1), The color when there are no valid uvw coordinates
+  color: output acolor texture, The resulting color
+  out_transparency: output acolor texture, The resulting transparency
+  out_alpha: output float texture, The resulting alpha
+  out_intensity: output float texture, The resulting intensity
+  textures: plugin, unlimited list
+  blend_modes: integer, unlimited list. 0:None, 1:Over, 2:In, 3:Out, 4:Add, 5:Subtract, 6:Multiply, 7:Difference, 8:Lighten, 9:Darken, 10:Saturate, 11:Desaturate, 12:Illuminate
+  alpha: float texture = 1.0, This is not a list
+
+
+Parameters for plugin 'TexInvert'
+  texture: acolor texture, The texture to be inverted
+  invert_alpha: bool = false
+  color: output acolor texture, The inverted texture color
+
+
+Parameters for plugin 'TexGrid'
+  compatibility_with: integer = 0, This is used to differentiate between textures exported from different applications. The value means : 0 - 3ds Max (this is also the default), 1 - Maya, ...
+  alpha_from_intensity: bool = false, If true, the resulting alpha is the color intensity; otherwise the alpha is taken from the bitmap alpha
+  invert: bool = false, If true, the resulting texture color will be inverted
+  invert_alpha: bool = true, If true and invert is on, the resulting texture alpha will be inverted too. If false, just the color will be inverted
+  color_mult: acolor texture = AColor(1, 1, 1, 1), A multiplier for the texture color
+  color_offset: acolor texture = AColor(0, 0, 0, 0), An additional offset for the texture color
+  alpha_mult: float texture = 1, A multiplier for the texture alpha
+  alpha_offset: float texture = 0, An additional offset for the texture alpha
+  nouvw_color: acolor texture = AColor(0.5, 0.5, 0.5, 1), The color when there are no valid uvw coordinates
+  color: output acolor texture, The resulting color
+  out_transparency: output acolor texture, The resulting transparency
+  out_alpha: output float texture, The resulting alpha
+  out_intensity: output float texture, The resulting intensity
+  uvwgen: plugin, The uvw generator for the texture
+  placement_type: integer = 1, The way the valid portion of the texture is applied. 0:the whole texture is valid, 1:crop, 2:place
+  u: float = 0, U coordinate of the valid texture sector
+  v: float = 0, V coordinate of the valid texture sector
+  w: float = 4, Width of the valid texture sector
+  h: float = 4, Height of the valid texture sector
+  jitter: float = 0, Amount of random placement variation
+  tile_u: integer = 0, If true there is horizontal tiling
+  tile_v: integer = 0, If true there is vertical tiling
+  uv_noise_on: integer = 0, If true the noise is enabled
+  uv_noise_animate: integer = 0, If true the noise is animated
+  uv_noise_amount: float = 1, UV noise amount
+  uv_noise_levels: float = 1, UV noise iterations
+  uv_noise_size: float = 1, UV noise size
+  un_noise_phase: float = 0, UV noise phase
+  line_color: acolor texture = AColor(0.9, 0.9, 0.9, 1.0) 
+  fill_color: acolor texture = AColor(0.0, 0.0, 0.0, 1.0)
+  u_width: float = 0.1
+  v_width: float = 0.1
+
+
+Parameters for plugin 'TexGranite'
+  compatibility_with: integer = 0, This is used to differentiate between textures exported from different applications. The value means : 0 - 3ds Max (this is also the default), 1 - Maya, ...
+  alpha_from_intensity: bool = false, If true, the resulting alpha is the color intensity; otherwise the alpha is taken from the bitmap alpha
+  invert: bool = false, If true, the resulting texture color will be inverted
+  invert_alpha: bool = true, If true and invert is on, the resulting texture alpha will be inverted too. If false, just the color will be inverted
+  color_mult: acolor texture = AColor(1, 1, 1, 1), A multiplier for the texture color
+  color_offset: acolor texture = AColor(0, 0, 0, 0), An additional offset for the texture color
+  alpha_mult: float texture = 1, A multiplier for the texture alpha
+  alpha_offset: float texture = 0, An additional offset for the texture alpha
+  nouvw_color: acolor texture = AColor(0.5, 0.5, 0.5, 1), The color when there are no valid uvw coordinates
+  color: output acolor texture, The resulting color
+  out_transparency: output acolor texture, The resulting transparency
+  out_alpha: output float texture, The resulting alpha
+  out_intensity: output float texture, The resulting intensity
+  use_3d_mapping: bool = false
+  wrap: bool = true
+  uvwgen: plugin, The uvw generator for the texture
+  placement_type: integer = 0, The way the valid portion of the texture is applied. 0:the whole texture is valid, 1:crop, 2:place
+  u: float = 0, U coordinate of the valid texture sector
+  v: float = 0, V coordinate of the valid texture sector
+  w: float = 1, Width of the valid texture sector
+  h: float = 1, Height of the valid texture sector
+  jitter: float = 0, Amount of random placement variation
+  tile_u: integer = 0, If true there is horizontal tiling
+  tile_v: integer = 0, If true there is vertical tiling
+  uv_noise_on: integer = 0, If true the noise is enabled
+  uv_noise_animate: integer = 0, If true the noise is animated
+  uv_noise_amount: float = 1, UV noise amount
+  uv_noise_levels: float = 1, UV noise iterations
+  uv_noise_size: float = 1, UV noise size
+  un_noise_phase: float = 0, UV noise phase
+  color1_tex: acolor texture = AColor(0.55, 0.55, 0.58, 1.0)
+  color2_tex: acolor texture = AColor(0.80, 0.80, 0.80, 1.0)
+  color3_tex: acolor texture = AColor(0.9, 0.9, 0.9, 1.0)
+  filler_color_tex: acolor texture = AColor(0.12, 0.12, 0.12, 1.0)
+  cell_size: float = 0.15
+  density: float = 1
+  mix_ratio: float = 0.5
+  spottyness: float = 0.3
+  randomness: float = 1
+  threshold: float = 0.5
+  creases: bool = true
+
+
+Parameters for plugin 'TexFresnel'
+  fresnel_ior: float = 1.55, Fresnel ior.
+  refract_ior: float = 1.55, Refraction ior of the underlying surface; this is ignored if the surface has a volume shader (the volume IOR is used).
+  white_color: acolor texture = AColor(1.0, 1.0, 1.0, 1.0), Refraction (front) color
+  black_color: acolor texture = AColor(0.0, 0.0, 0.0, 1.0), Reflection (side) color
+
+
+Parameters for plugin 'TexDirt'
+  white_color: acolor texture = AColor(1, 1, 1, 1)
+  black_color: acolor texture = AColor(0, 0, 0, 0)
+  radius: float texture = 100
+  distribution: float = 0
+  falloff: float = 0
+  subdivs: integer = 8
+  bias_x: float = 0
+  bias_y: float = 0
+  bias_z: float = 0
+  ignore_for_gi: bool = true, ignore GI
+  consider_same_object_only: bool = false, consider same object
+  invert_normal: bool = false, falso
+  double_sided: bool = false, if true, the occlusion on both sides of the surface will be calculated
+  work_with_transparency: bool = false, falso
+  ignore_self_occlusion: bool = false, falso
+  render_nodes: plugin, unlimited list
+  affect_result_nodes: plugin, unlimited list
+  affect_result_nodes_inclusive: bool = false, if true the affect_result_nodes list is inclusive
+  mode: integer = 0, Mode. 0:ambient occlusion, 1:Phong reflection occlusion, 2:Blinn reflection occlusion, 3:Ward reflection occlusion
+  environment_occlusion: bool = false, true to compute the environment for unoccluded samples
+  affect_reflection_elements: bool = false, true to add the occlusion to relection render elements when mode>0
+  glossiness: float texture, A texture for the glossiness when mode>0
+
+
+Parameters for plugin 'TexCloth'
+  compatibility_with: integer = 0, This is used to differentiate between textures exported from different applications. The value means : 0 - 3ds Max (this is also the default), 1 - Maya, ...
+  alpha_from_intensity: bool = false, If true, the resulting alpha is the color intensity; otherwise the alpha is taken from the bitmap alpha
+  invert: bool = false, If true, the resulting texture color will be inverted
+  invert_alpha: bool = true, If true and invert is on, the resulting texture alpha will be inverted too. If false, just the color will be inverted
+  color_mult: acolor texture = AColor(1, 1, 1, 1), A multiplier for the texture color
+  color_offset: acolor texture = AColor(0, 0, 0, 0), An additional offset for the texture color
+  alpha_mult: float texture = 1, A multiplier for the texture alpha
+  alpha_offset: float texture = 0, An additional offset for the texture alpha
+  nouvw_color: acolor texture = AColor(0.5, 0.5, 0.5, 1), The color when there are no valid uvw coordinates
+  color: output acolor texture, The resulting color
+  out_transparency: output acolor texture, The resulting transparency
+  out_alpha: output float texture, The resulting alpha
+  out_intensity: output float texture, The resulting intensity
+  uvwgen: plugin, The uvw generator for the texture
+  placement_type: integer = 0, The way the valid portion of the texture is applied. 0:the whole texture is valid, 1:crop, 2:place
+  u: float = 0, U coordinate of the valid texture sector
+  v: float = 0, V coordinate of the valid texture sector
+  w: float = 1, Width of the valid texture sector
+  h: float = 1, Height of the valid texture sector
+  jitter: float = 0, Amount of random placement variation
+  tile_u: integer = 0, If true there is horizontal tiling
+  tile_v: integer = 0, If true there is vertical tiling
+  uv_noise_on: integer = 0, If true the noise is enabled
+  uv_noise_animate: integer = 0, If true the noise is animated
+  uv_noise_amount: float = 1, UV noise amount
+  uv_noise_levels: float = 1, UV noise iterations
+  uv_noise_size: float = 1, UV noise size
+  un_noise_phase: float = 0, UV noise phase
+  gap_color: acolor texture = AColor(0.3, 0.3, 0.3, 1.0)
+  u_color: acolor texture = AColor(0.2, 0.2, 0.2, 1.0)
+  v_color: acolor texture = AColor(0.1, 0.1, 0.1, 1.0)
+  u_width: float texture = 1
+  v_width: float texture = 1
+  u_wave: float texture = 5
+  v_wave: float texture = 5
+  randomness: float texture = 1.0
+  width_spread: float texture = 0.5
+  bright_spread: float texture = 0.5
+
+
+Parameters for plugin 'TexChecker'
+  compatibility_with: integer = 0, This is used to differentiate between textures exported from different applications. The value means : 0 - 3ds Max (this is also the default), 1 - Maya, ...
+  alpha_from_intensity: bool = false, If true, the resulting alpha is the color intensity; otherwise the alpha is taken from the bitmap alpha
+  invert: bool = false, If true, the resulting texture color will be inverted
+  invert_alpha: bool = true, If true and invert is on, the resulting texture alpha will be inverted too. If false, just the color will be inverted
+  color_mult: acolor texture = AColor(1, 1, 1, 1), A multiplier for the texture color
+  color_offset: acolor texture = AColor(0, 0, 0, 0), An additional offset for the texture color
+  alpha_mult: float texture = 1, A multiplier for the texture alpha
+  alpha_offset: float texture = 0, An additional offset for the texture alpha
+  nouvw_color: acolor texture = AColor(0.5, 0.5, 0.5, 1), The color when there are no valid uvw coordinates
+  color: output acolor texture, The resulting color
+  out_transparency: output acolor texture, The resulting transparency
+  out_alpha: output float texture, The resulting alpha
+  out_intensity: output float texture, The resulting intensity
+  uvwgen: plugin, The uvw generator for the texture
+  placement_type: integer = 0, The way the valid portion of the texture is applied. 0:the whole texture is valid, 1:crop, 2:place
+  u: float = 0, U coordinate of the valid texture sector
+  v: float = 0, V coordinate of the valid texture sector
+  w: float = 1, Width of the valid texture sector
+  h: float = 1, Height of the valid texture sector
+  jitter: float = 0, Amount of random placement variation
+  tile_u: integer = 0, If true there is horizontal tiling
+  tile_v: integer = 0, If true there is vertical tiling
+  uv_noise_on: integer = 0, If true the noise is enabled
+  uv_noise_animate: integer = 0, If true the noise is animated
+  uv_noise_amount: float = 1, UV noise amount
+  uv_noise_levels: float = 1, UV noise iterations
+  uv_noise_size: float = 1, UV noise size
+  un_noise_phase: float = 0, UV noise phase
+  white_color: acolor texture = AColor(1, 1, 1, 1), The white checker color
+  black_color: acolor texture = AColor(0, 0, 0, 0), The black checker color
+  contrast: float texture = 1, Contrast value
+
+
+Parameters for plugin 'TexCellular'
+  compatibility_with: integer = 0, This is used to differentiate between textures exported from different applications. The value means : 0 - 3ds Max (this is also the default), 1 - Maya, ...
+  alpha_from_intensity: bool = false, If true, the resulting alpha is the color intensity; otherwise the alpha is taken from the bitmap alpha
+  invert: bool = false, If true, the resulting texture color will be inverted
+  invert_alpha: bool = true, If true and invert is on, the resulting texture alpha will be inverted too. If false, just the color will be inverted
+  color_mult: acolor texture = AColor(1, 1, 1, 1), A multiplier for the texture color
+  color_offset: acolor texture = AColor(0, 0, 0, 0), An additional offset for the texture color
+  alpha_mult: float texture = 1, A multiplier for the texture alpha
+  alpha_offset: float texture = 0, An additional offset for the texture alpha
+  nouvw_color: acolor texture = AColor(0.5, 0.5, 0.5, 1), The color when there are no valid uvw coordinates
+  color: output acolor texture, The resulting color
+  out_transparency: output acolor texture, The resulting transparency
+  out_alpha: output float texture, The resulting alpha
+  out_intensity: output float texture, The resulting intensity
+  use_3d_mapping: bool = true
+  uvwgen: plugin, The uvw generator for the texture
+  placement_type: integer = 0, The way the valid portion of the texture is applied. 0:the whole texture is valid, 1:crop, 2:place
+  u: float = 0, U coordinate of the valid texture sector
+  v: float = 0, V coordinate of the valid texture sector
+  w: float = 1, Width of the valid texture sector
+  h: float = 1, Height of the valid texture sector
+  jitter: float = 0, Amount of random placement variation
+  tile_u: integer = 0, If true there is horizontal tiling
+  tile_v: integer = 0, If true there is vertical tiling
+  uv_noise_on: integer = 0, If true the noise is enabled
+  uv_noise_animate: integer = 0, If true the noise is animated
+  uv_noise_amount: float = 1, UV noise amount
+  uv_noise_levels: float = 1, UV noise iterations
+  uv_noise_size: float = 1, UV noise size
+  un_noise_phase: float = 0, UV noise phase
+  center_color: acolor texture = AColor(0.0, 0.0, 0.4, 1.0)
+  edge_color: acolor texture = AColor(0.85, 0.6, 0.0, 1.0)
+  bg_color: acolor texture = AColor(0.5, 0.1, 0.4, 1.0)
+  size: float = 20.0
+  spread: float = 1.0
+  density: float = 1.5
+  type: integer = 0. 0:dots, 1:chips, 2:cells, 3:chess cells, 4:plasma
+  low: float = 0, Low threshold (for the bg color)
+  middle: float = 0.5, Middle threshold (for the edge color)
+  high: float = 1, High threshold (for the center color)
+  fractal: bool = false
+  fractal_iterations: float = 2.0, The number of fractal iterations
+  fractal_roughness: float = 0.5, The fractal roughness (0.0f is very rough; 1.0 is smooth - i.e. no fractal)
+  components: output vector texture, Outputs (F(1), F(2), F(3)) (the distances to the three closest points in the cellular context) as a Vector
+
+
+Parameters for plugin 'TexBulge'
+  compatibility_with: integer = 0, This is used to differentiate between textures exported from different applications. The value means : 0 - 3ds Max (this is also the default), 1 - Maya, ...
+  alpha_from_intensity: bool = false, If true, the resulting alpha is the color intensity; otherwise the alpha is taken from the bitmap alpha
+  invert: bool = false, If true, the resulting texture color will be inverted
+  invert_alpha: bool = true, If true and invert is on, the resulting texture alpha will be inverted too. If false, just the color will be inverted
+  color_mult: acolor texture = AColor(1, 1, 1, 1), A multiplier for the texture color
+  color_offset: acolor texture = AColor(0, 0, 0, 0), An additional offset for the texture color
+  alpha_mult: float texture = 1, A multiplier for the texture alpha
+  alpha_offset: float texture = 0, An additional offset for the texture alpha
+  nouvw_color: acolor texture = AColor(0.5, 0.5, 0.5, 1), The color when there are no valid uvw coordinates
+  color: output acolor texture, The resulting color
+  out_transparency: output acolor texture, The resulting transparency
+  out_alpha: output float texture, The resulting alpha
+  out_intensity: output float texture, The resulting intensity
+  uvwgen: plugin, The uvw generator for the texture
+  placement_type: integer = 0, The way the valid portion of the texture is applied. 0:the whole texture is valid, 1:crop, 2:place
+  u: float = 0, U coordinate of the valid texture sector
+  v: float = 0, V coordinate of the valid texture sector
+  w: float = 1, Width of the valid texture sector
+  h: float = 1, Height of the valid texture sector
+  jitter: float = 0, Amount of random placement variation
+  tile_u: integer = 0, If true there is horizontal tiling
+  tile_v: integer = 0, If true there is vertical tiling
+  uv_noise_on: integer = 0, If true the noise is enabled
+  uv_noise_animate: integer = 0, If true the noise is animated
+  uv_noise_amount: float = 1, UV noise amount
+  uv_noise_levels: float = 1, UV noise iterations
+  uv_noise_size: float = 1, UV noise size
+  un_noise_phase: float = 0, UV noise phase
+  u_width: float = 0.1
+  v_width: float = 0.1
+
+
+Parameters for plugin 'TexBlend'
+  color_a: acolor texture = AColor(1, 0, 0, 1)
+  color_b: acolor texture = AColor(0, 0, 1, 1)
+  blend_amount: float texture = 0.5
+  composite: bool = false, If true, color_b will be composited over color_a with the given weight, taking its alpha into account
+
+
+Parameters for plugin 'TexBitmap'
+  compatibility_with: integer = 0, This is used to differentiate between textures exported from different applications. The value means : 0 - 3ds Max (this is also the default), 1 - Maya, ...
+  alpha_from_intensity: bool = false, If true, the resulting alpha is the color intensity; otherwise the alpha is taken from the bitmap alpha
+  invert: bool = false, If true, the resulting texture color will be inverted
+  invert_alpha: bool = true, If true and invert is on, the resulting texture alpha will be inverted too. If false, just the color will be inverted
+  color_mult: acolor texture = AColor(1, 1, 1, 1), A multiplier for the texture color
+  color_offset: acolor texture = AColor(0, 0, 0, 0), An additional offset for the texture color
+  alpha_mult: float texture = 1, A multiplier for the texture alpha
+  alpha_offset: float texture = 0, An additional offset for the texture alpha
+  nouvw_color: acolor texture = AColor(0.5, 0.5, 0.5, 1), The color when there are no valid uvw coordinates
+  color: output acolor texture, The resulting color
+  out_transparency: output acolor texture, The resulting transparency
+  out_alpha: output float texture, The resulting alpha
+  out_intensity: output float texture, The resulting intensity
+  tile: integer = 1, 0:not tiling, 1:tile in UV, 2:tile in U, 3:tile in V
+  uvwgen: plugin, The uvw generator for the texture
+  placement_type: integer = 0, The way the valid portion of the texture is applied. 0:the whole texture is valid, 1:crop, 2:place
+  u: float = 0, U coordinate of the valid texture sector
+  v: float = 0, V coordinate of the valid texture sector
+  w: float = 1, Width of the valid texture sector
+  h: float = 1, Height of the valid texture sector
+  jitter: float = 0, Amount of random placement variation
+  tile_u: integer = 0, If true there is horizontal tiling
+  tile_v: integer = 0, If true there is vertical tiling
+  uv_noise_on: integer = 0, If true the noise is enabled
+  uv_noise_animate: integer = 0, If true the noise is animated
+  uv_noise_amount: float = 1, UV noise amount
+  uv_noise_levels: float = 1, UV noise iterations
+  uv_noise_size: float = 1, UV noise size
+  un_noise_phase: float = 0, UV noise phase
+  bitmap: plugin
+
+
+Parameters for plugin 'TexAColor'
+  uvwgen: plugin, The uvw generator for the texture
+  texture: acolor texture = AColor(0.8, 0.8, 0.8, 1.0)
+
+
+Parameters for plugin 'BitmapBuffer'
+  filter_type: integer = 1, 0:no filtering, 1:mip-map filtering, 2:summed area table filtering
+  filter_blur: float = 0.01, niente
+  color_space: integer = 1, 0:linear, 1:gamma corrected, 2:sRGB
+  gamma: float = 1, niente
+  maya_compatible: bool = false
+  allow_negative_colors: bool = false, if false negative colors will be clamped
+  interpolation: integer = 0, Interpolation method for the mip-map filtering. 0:bilinear, 1:bicubic
+  file: string = "", The file name; can contain <UDIM> or <UVTILE> tags for Mari or Mudbox tiles respectively
+  frame_sequence: bool = false, niente
+  frame_number: integer = 0
+  frame_offset: integer = 0
+  use_data_window: bool = true, true to use the data window information in e.g. OpenEXR files; otherwise false
+  psd_group_name: integer, unlimited list
+  psd_alpha_name: integer, unlimited list
+  ifl_start_frame: integer = 0
+  ifl_playback_rate: float = 1
+  ifl_end_condition: integer = 0, Image file list (IFL) end condition. 0:Loop, 1:Ping Pong, 2:Hold
+
+
+Parameters for plugin 'TexDistance'
+  compatibility_with: integer = 0, This is used to differentiate between textures exported from different applications. The value means : 0 - 3ds Max (this is also the default), 1 - Maya, ...
+  alpha_from_intensity: integer = 0, If 2- the alpha is forced to 1.0f; 1-the resulting alpha is the color intensity; 0 - the alpha is taken from the bitmap alpha
+  invert: bool = false, If true, the resulting texture color will be inverted
+  invert_alpha: bool = true, If true and invert is on, the resulting texture alpha will be inverted too. If false, just the color will be inverted
+  color_mult: acolor texture = AColor(1, 1, 1, 1), A multiplier for the texture color
+  color_offset: acolor texture = AColor(0, 0, 0, 0), An additional offset for the texture color
+  alpha_mult: float texture = 1, A multiplier for the texture alpha
+  alpha_offset: float texture = 0, An additional offset for the texture alpha
+  nouvw_color: acolor texture = AColor(0.5, 0.5, 0.5, 1), The color when there are no valid uvw coordinates
+  color: output acolor texture, The resulting color
+  out_transparency: output acolor texture, The resulting transparency
+  out_alpha: output float texture, The resulting alpha
+  out_intensity: output float texture, The resulting intensity
+  distance: float texture = 1
+  far_tex: acolor texture = AColor(1, 1, 1, 1)
+  near_tex: acolor texture = AColor(0, 0, 0, 1)
+  inside_separate: bool = true
+  inside_solid: bool = false
+  inside_tex: acolor texture = AColor(0, 0, 0, 1)
+  outside_separate: bool = false
+  outside_solid: bool = false
+  outside_tex: acolor texture = AColor(0, 0, 0, 1)
+  objects: plugin, unlimited list, List of nodes to measure distance
+
+
+Parameters for plugin 'TexXSIHLSAdjust'
+  compatibility_with: integer = 0, This is used to differentiate between textures exported from different applications. The value means : 0 - 3ds Max (this is also the default), 1 - Maya, ...
+  alpha_from_intensity: integer = 0, If 2- the alpha is forced to 1.0f; 1-the resulting alpha is the color intensity; 0 - the alpha is taken from the bitmap alpha
+  invert: bool = false, If true, the resulting texture color will be inverted
+  invert_alpha: bool = true, If true and invert is on, the resulting texture alpha will be inverted too. If false, just the color will be inverted
+  color_mult: acolor texture = AColor(1, 1, 1, 1), A multiplier for the texture color
+  color_offset: acolor texture = AColor(0, 0, 0, 0), An additional offset for the texture color
+  alpha_mult: float texture = 1, A multiplier for the texture alpha
+  alpha_offset: float texture = 0, An additional offset for the texture alpha
+  nouvw_color: acolor texture = AColor(0.5, 0.5, 0.5, 1), The color when there are no valid uvw coordinates
+  color: output acolor texture, The resulting color
+  out_transparency: output acolor texture, The resulting transparency
+  out_alpha: output float texture, The resulting alpha
+  out_intensity: output float texture, The resulting intensity
+  xsi_color: acolor texture, Input texture
+  master_h: float = 0, master hue
+  master_l: float = 0, master lightness
+  master_s: float = 0, master saturation
+  red_h: float = 0, red hue
+  red_l: float = 0, red lightness
+  red_s: float = 0, red saturation
+  green_h: float = 0, green hue
+  green_l: float = 0, green lightness
+  green_s: float = 0, green saturation
+  blue_h: float = 0, blue hue
+  blue_l: float = 0, blue lightness
+  blue_s: float = 0, blue saturation
+  cyan_h: float = 0, cyan hue
+  cyan_l: float = 0, cyan lightness
+  cyan_s: float = 0, cyan saturation
+  yellow_h: float = 0, yellow hue
+  yellow_l: float = 0, yellow lightness
+  yellow_s: float = 0, yellow saturation
+  magenta_h: float = 0, yellow hue
+  magenta_l: float = 0, yellow lightness
+  magenta_s: float = 0, yellow saturation
+
+
+Parameters for plugin 'TexMultiProjection'
+  color_textures: acolor texture, unlimited list, The spherical projection textures; must be TexProjection
+  zdepth_offset: float = 0.01, An offset for the zdepth value to avoid numeric errors
+  zdepth_textures: acolor texture, unlimited list, The z-depth projection textures
+
+
+Parameters for plugin 'TexXSIColorBalance'
+  compatibility_with: integer = 0, This is used to differentiate between textures exported from different applications. The value means : 0 - 3ds Max (this is also the default), 1 - Maya, ...
+  alpha_from_intensity: integer = 0, If 2- the alpha is forced to 1.0f; 1-the resulting alpha is the color intensity; 0 - the alpha is taken from the bitmap alpha
+  invert: bool = false, If true, the resulting texture color will be inverted
+  invert_alpha: bool = true, If true and invert is on, the resulting texture alpha will be inverted too. If false, just the color will be inverted
+  color_mult: acolor texture = AColor(1, 1, 1, 1), A multiplier for the texture color
+  color_offset: acolor texture = AColor(0, 0, 0, 0), An additional offset for the texture color
+  alpha_mult: float texture = 1, A multiplier for the texture alpha
+  alpha_offset: float texture = 0, An additional offset for the texture alpha
+  nouvw_color: acolor texture = AColor(0.5, 0.5, 0.5, 1), The color when there are no valid uvw coordinates
+  color: output acolor texture, The resulting color
+  out_transparency: output acolor texture, The resulting transparency
+  out_alpha: output float texture, The resulting alpha
+  out_intensity: output float texture, The resulting intensity
+  xsi_color: acolor texture, Input texture
+  shadows_red: float = 0
+  shadows_green: float = 0
+  shadows_blue: float = 0
+  midtones_red: float = 0
+  midtones_green: float = 0
+  midtones_blue: float = 0
+  highlights_red: float = 0
+  highlights_green: float = 0
+  highlights_blue: float = 0
+  preserve_value: integer = 0
+
+
+Parameters for plugin 'TexXSIRGBAKeyer'
+  compatibility_with: integer = 0, This is used to differentiate between textures exported from different applications. The value means : 0 - 3ds Max (this is also the default), 1 - Maya, ...
+  alpha_from_intensity: integer = 0, If 2- the alpha is forced to 1.0f; 1-the resulting alpha is the color intensity; 0 - the alpha is taken from the bitmap alpha
+  invert: bool = false, If true, the resulting texture color will be inverted
+  invert_alpha: bool = true, If true and invert is on, the resulting texture alpha will be inverted too. If false, just the color will be inverted
+  color_mult: acolor texture = AColor(1, 1, 1, 1), A multiplier for the texture color
+  color_offset: acolor texture = AColor(0, 0, 0, 0), An additional offset for the texture color
+  alpha_mult: float texture = 1, A multiplier for the texture alpha
+  alpha_offset: float texture = 0, An additional offset for the texture alpha
+  nouvw_color: acolor texture = AColor(0.5, 0.5, 0.5, 1), The color when there are no valid uvw coordinates
+  color: output acolor texture, The resulting color
+  out_transparency: output acolor texture, The resulting transparency
+  out_alpha: output float texture, The resulting alpha
+  out_intensity: output float texture, The resulting intensity
+  xsi_color: acolor texture, Input texture
+  min_thresh: acolor texture, Minimum threshold
+  max_thresh: acolor texture, Maximum threshold
+  inrange: acolor texture, Color if in range
+  outrange: acolor texture, Color if outside range
+  alpha: integer = 0, Include alpha
+
+
+Parameters for plugin 'TexXSIIntensity'
+  compatibility_with: integer = 0, This is used to differentiate between textures exported from different applications. The value means : 0 - 3ds Max (this is also the default), 1 - Maya, ...
+  alpha_from_intensity: integer = 0, If 2- the alpha is forced to 1.0f; 1-the resulting alpha is the color intensity; 0 - the alpha is taken from the bitmap alpha
+  invert: bool = false, If true, the resulting texture color will be inverted
+  invert_alpha: bool = true, If true and invert is on, the resulting texture alpha will be inverted too. If false, just the color will be inverted
+  color_mult: acolor texture = AColor(1, 1, 1, 1), A multiplier for the texture color
+  color_offset: acolor texture = AColor(0, 0, 0, 0), An additional offset for the texture color
+  alpha_mult: float texture = 1, A multiplier for the texture alpha
+  alpha_offset: float texture = 0, An additional offset for the texture alpha
+  nouvw_color: acolor texture = AColor(0.5, 0.5, 0.5, 1), The color when there are no valid uvw coordinates
+  color: output acolor texture, The resulting color
+  out_transparency: output acolor texture, The resulting transparency
+  out_alpha: output float texture, The resulting alpha
+  out_intensity: output float texture, The resulting intensity
+  xsi_color: acolor texture, Color or Texture
+  factor: float = 1, multiply factor
+
+
+Parameters for plugin 'TexXSINormalMap'
+  compatibility_with: integer = 0, This is used to differentiate between textures exported from different applications. The value means : 0 - 3ds Max (this is also the default), 1 - Maya, ...
+  alpha_from_intensity: integer = 0, If 2- the alpha is forced to 1.0f; 1-the resulting alpha is the color intensity; 0 - the alpha is taken from the bitmap alpha
+  invert: bool = false, If true, the resulting texture color will be inverted
+  invert_alpha: bool = true, If true and invert is on, the resulting texture alpha will be inverted too. If false, just the color will be inverted
+  color_mult: acolor texture = AColor(1, 1, 1, 1), A multiplier for the texture color
+  color_offset: acolor texture = AColor(0, 0, 0, 0), An additional offset for the texture color
+  alpha_mult: float texture = 1, A multiplier for the texture alpha
+  alpha_offset: float texture = 0, An additional offset for the texture alpha
+  nouvw_color: acolor texture = AColor(0.5, 0.5, 0.5, 1), The color when there are no valid uvw coordinates
+  color: output acolor texture, The resulting color
+  out_transparency: output acolor texture, The resulting transparency
+  out_alpha: output float texture, The resulting alpha
+  out_intensity: output float texture, The resulting intensity
+  uvwgen: plugin, The uvw generator for the texture
+  placement_type: integer = 0, The way the valid portion of the texture is applied: 0 - the whole texture is valid, 1 - crop, 2 -place
+  u: float = 0, U coordinate of the valid texture sector
+  v: float = 0, V coordinate of the valid texture sector
+  w: float = 1, Width of the valid texture sector
+  h: float = 1, Height of the valid texture sector
+  jitter: float = 0, Amount of random placement variation
+  tile_u: integer = 0, If true there is horizontal tiling
+  tile_v: integer = 0, If true there is vertical tiling
+  uv_noise_on: integer = 0, If true the noise is enabled
+  uv_noise_animate: integer = 0, If true the noise is animated
+  uv_noise_amount: float = 1, UV noise amount
+  uv_noise_levels: float = 1, UV noise iterations
+  uv_noise_size: float = 1, UV noise size
+  un_noise_phase: float = 0, UV noise phase
+  xsi_color: acolor texture, Color or Texture
+  tangents: acolor texture, Vertex color map
+  dir_tex: acolor texture = AColor(0, 0, 0, 0), Direction texture of type
+  TangentsAreUnbiased: integer = 0, Unbiased Tangents
+
+
+Parameters for plugin 'TexMulti'
+  mode: integer = 0, The mode for the texture 0:use face material ID, 1:use object
+  default_texture: acolor texture = AColor(0.5, 0.5, 0.5, 1), The default texture color
+  textures_list: plugin, unlimited list, A list of the sub-textures.
+  ids_list: integer, unlimited list, A list of material/object IDs
+
+
+Parameters for plugin 'TexSoftbox'
+  compatibility_with: integer = 0, This is used to differentiate between textures exported from different applications. The value means : 0 - 3ds Max (this is also the default), 1 - Maya, ...
+  alpha_from_intensity: integer = 0, If 2 - the alpha is forced to 1.0f; 1 - the resulting alpha is the color intensity (if compatibility_with is 0) or the color luminance (if compatibility_with is 1); 0 - the alpha is taken from the bitmap alpha
+  invert: bool = false, If true, the resulting texture color will be inverted
+  invert_alpha: bool = true, If true and invert is on, the resulting texture alpha will be inverted too. If false, just the color will be inverted
+  color_mult: acolor texture = AColor(1, 1, 1, 1), A multiplier for the texture color
+  color_offset: acolor texture = AColor(0, 0, 0, 0), An additional offset for the texture color
+  alpha_mult: float texture = 1, A multiplier for the texture alpha
+  alpha_offset: float texture = 0, An additional offset for the texture alpha
+  nouvw_color: acolor texture = AColor(0.5, 0.5, 0.5, 1), The color when there are no valid uvw coordinates
+  color: output acolor texture, The resulting color
+  out_transparency: output acolor texture, The resulting transparency
+  out_alpha: output float texture, The resulting alpha
+  out_intensity: output float texture, The resulting intensity
+  uvwgen: plugin, The uvw generator for the texture
+  placement_type: integer = 0, The way the valid portion of the texture is applied: 0 - the whole texture is valid, 1 - crop, 2 -place
+  u: float = 0, U coordinate of the valid texture sector
+  v: float = 0, V coordinate of the valid texture sector
+  w: float = 1, Width of the valid texture sector
+  h: float = 1, Height of the valid texture sector
+  jitter: float = 0, Amount of random placement variation
+  tile_u: integer = 0, If true there is horizontal tiling
+  tile_v: integer = 0, If true there is vertical tiling
+  uv_noise_on: integer = 0, If true the noise is enabled
+  uv_noise_animate: integer = 0, If true the noise is animated
+  uv_noise_amount: float = 1, UV noise amount
+  uv_noise_levels: float = 1, UV noise iterations
+  uv_noise_size: float = 1, UV noise size
+  un_noise_phase: float = 0, UV noise phase
+  base_color: color = Color(1, 1, 1), Base color
+  base_tex: acolor texture = AColor(0, 0, 0, 1), Base texture
+  base_tex_on: bool = false, Turn on base texture
+  base_tint: color = Color(1, 1, 1), Base tint color
+  base_tint_strength: float = 0.5, Base tint strength
+  base_tint_on: bool = false, Turn on base tint
+  base_mult: float = 1, Base multiplier
+  base_gamma: float = 1, Base gamma
+  spots_on: bool = false, Turn on hot/dark spots
+  spots_mult: float = 1, Spots multiplier
+  spots_mode: integer = 0, Spots mode
+  u_offset: float = 0, Spots u offset
+  u_tiling: float = 1, Spots u tiling
+  u_tiling_on: bool = false, Turn on spots u tiling
+  v_offset: float = 0, Spots v offset
+  v_tiling: float = 1, Spots v tiling
+  v_tiling_on: bool = false, Turn on v tiling
+  spots_oradius: float = 0.5, Fading outer radius
+  spots_iradius: float = 0.4, Fading inner radius
+  spots_exp: float = 1, Fading softness
+  spots_tint: color = Color(1, 1, 1), Spots tint color
+  spots_tint_strength: float = 0.5, Spots tint strength
+  spots_tint_on: bool = false, Turn on spots tint
+  grad_vert_on: bool = false, Turn on vertical gradient
+  grad_vert_flip: bool = false, Flip vertical gradient
+  grad_vert_pos: float, unlimited list, Vertical gradient positions
+  grad_vert_col: color, unlimited list, Vertical gradient colors
+  grad_horiz_on: bool = false, Turn on horizontal gradient
+  grad_horiz_flip: bool = false, Flip horizontal gradient
+  grad_horiz_pos: float, unlimited list, Horizontal gradient positions
+  grad_horiz_col: color, unlimited list, Horizontal gradient colors
+  grad_rad_on: bool = false, Turn on radial gradient
+  grad_rad_flip: bool = false, Flip radial gradient
+  grad_rad_pos: float, unlimited list, Radial gradient positions
+  grad_rad_col: color, unlimited list, Radial gradient colors
+  frame_on: bool = false, Turn on frame
+  frame_flip: bool = false, Flip frame
+  frame_pos: float, unlimited list, Frame positions
+  frame_col: color, unlimited list, Frame colors
+  frame_tint: color = Color(1, 1, 1), Frame tint color
+  frame_tint_strength: float = 0.5, Frame tint strength
+  frame_tint_on: bool = false, Turn on frame tint
+  noise_amount: float = 0, Frame noise amount
+  noise_size: float = 1, Frame noise size
+  noise_phase: float = 0, Frame noise phase
+  noise_fractal: bool = false, Turn on frame fractal noise
+  noise_levels: integer = 3, Frame noise levels
+
+
+Parameters for plugin 'TexTemperature'
+  color_mode: integer = 0. 0:from color, 1:from temperature mode
+  temperature: float texture = 6500, Temperature in Kelvins.
+  color: color = Color(0.5, 0.5, 0.5), Color.
+  rgb_multiplier: float = 1, Color multiplier.
+  alpha: float = 1, Alpha color channel.
+  gamma_correction: float = 1, Gamma correction value
+
+
+Parameters for plugin 'TexClamp'
+  texture: acolor texture
+  min_color: acolor texture = AColor(0.5,0.5,0.5,0.0), The min color
+  max_color: acolor texture =  AColor(1.0,1.0,1.0,0.0), The max color
+
+
+Parameters for plugin 'TexCompMax'
+  compatibility_with: integer = 0, This is used to differentiate between textures exported from different applications. 0:3ds Max (this is also the default), 1:Maya, ...
+  alpha_from_intensity: integer = 0, If 2:the alpha is forced to 1.0, 1:the resulting alpha is the color intensity (if compatibility_with is 0) or the color luminance (if compatibility_with is 1), 0:the alpha is taken from the bitmap alpha
+  invert: bool = false, If true, the resulting texture color will be inverted
+  invert_alpha: bool = true, If true and invert is on, the resulting texture alpha will be inverted too. If false, just the color will be inverted
+  color_mult: acolor texture = AColor(1, 1, 1, 1), A multiplier for the texture color
+  color_offset: acolor texture = AColor(0, 0, 0, 0), An additional offset for the texture color
+  alpha_mult: float texture = 1, A multiplier for the texture alpha
+  alpha_offset: float texture = 0, An additional offset for the texture alpha
+  nouvw_color: acolor texture = AColor(0.5, 0.5, 0.5, 1), The color when there are no valid uvw coordinates
+  color: output acolor texture, The resulting color
+  out_transparency: output acolor texture, The resulting transparency
+  out_alpha: output float texture, The resulting alpha
+  out_intensity: output float texture, The resulting intensity
+  sourceA: acolor texture, Left hand side texture.
+  sourceB: acolor texture, Right hand side texture.
+  operator: integer = 0, 0:Add, 1:Subtract, 2:Difference, 3:Multiply, 4:Divide, 5:Minimum, 6:Maximum
+
+
+Parameters for plugin 'TexMaxGamma'
+  input: acolor texture = AColor(0.5, 0.5, 0.5, 1), The input texture
+  multiplier: float = 1, The texture multiplier
+  color_space: integer = 0. 0:linear, 1:inverse gamma, 2:sRGB
+  gamma: float = 1, The gamma value of the texture
+
+
+Parameters for plugin 'TexRGBMultiplyMax'
+  color_a: acolor texture = AColor(1, 1, 1, 1), The first texture
+  color_b: acolor texture = AColor(1, 1, 1, 1), The second texture
+  alpha_mode: integer = 2. 0:from color_a, 1:from color_b, 2:multiply
+
+
+Parameters for plugin 'TexRGBTintMax'
+  texture: acolor texture = AColor(1, 1, 1, 1), The texture
+  red: color = Color(1, 0, 0), The red color
+  green: color = Color(0, 1, 0), The green color
+  blue: color = Color(0, 0, 1), The blue color
+
+
+Parameters for plugin 'TexMaskMax'
+  texture: acolor texture = AColor(1, 1, 1, 1), The base texture
+  mask: acolor texture = AColor(1, 1, 1, 1), The mask texture
+  invert_mask: bool = false, true to invert the mask
+
+
+Parameters for plugin 'TexNoiseMaya'
+  compatibility_with: integer = 0, This is used to differentiate between textures exported from different applications. The value means : 0 - 3ds Max (this is also the default), 1 - Maya, ...
+  alpha_from_intensity: integer = 0, If 2:the alpha is forced to 1.0, 1:the resulting alpha is the color intensity (if compatibility_with is 0) or the color luminance (if compatibility_with is 1), 0:the alpha is taken from the bitmap alpha
+  invert: bool = false, If true, the resulting texture color will be inverted
+  invert_alpha: bool = true, If true and invert is on, the resulting texture alpha will be inverted too. If false, just the color will be inverted
+  color_mult: acolor texture = AColor(1, 1, 1, 1), A multiplier for the texture color
+  color_offset: acolor texture = AColor(0, 0, 0, 0), An additional offset for the texture color
+  alpha_mult: float texture = 1, A multiplier for the texture alpha
+  alpha_offset: float texture = 0, An additional offset for the texture alpha
+  nouvw_color: acolor texture = AColor(0.5, 0.5, 0.5, 1), The color when there are no valid uvw coordinates
+  color: output acolor texture, The resulting color
+  out_transparency: output acolor texture, The resulting transparency
+  out_alpha: output float texture, The resulting alpha
+  out_intensity: output float texture, The resulting intensity
+  use_3d_mapping: bool = false
+  wrap: bool = true
+  uvwgen: plugin, The uvw generator for the texture
+  placement_type: integer = 0, The way the valid portion of the texture is applied: 0 - the whole texture is valid, 1 - crop, 2 -place
+  u: float = 0, U coordinate of the valid texture sector
+  v: float = 0, V coordinate of the valid texture sector
+  w: float = 1, Width of the valid texture sector
+  h: float = 1, Height of the valid texture sector
+  jitter: float = 0, Amount of random placement variation
+  tile_u: integer = 0, If true there is horizontal tiling
+  tile_v: integer = 0, If true there is vertical tiling
+  uv_noise_on: integer = 0, If true the noise is enabled
+  uv_noise_animate: integer = 0, If true the noise is animated
+  uv_noise_amount: float = 1, UV noise amount
+  uv_noise_levels: float = 1, UV noise iterations
+  uv_noise_size: float = 1, UV noise size
+  un_noise_phase: float = 0, UV noise phase
+  color1: color = Color(0.0, 0.0, 0.0), First color
+  color2: color = Color(1.0, 1.0, 1.0), Second color
+  color1_tex: acolor texture, AColor(0.0, 0.0, 0.0) .Texture for the first color
+  color2_tex: acolor texture, AColor(1, 1, 1). Texture for the second color
+  color1_tex_mult: float = 0, Texture multiplier for the first color
+  color2_tex_mult: float = 0, Texture multiplier for the second color
+  dimensions: integer = 3, Two or Three dimensional noise
+  amplitude: float texture = 1, Amplitude is a scaling factor applied to all the values in the texture, centered around the texture's average value.  This means that when you increase Amplitude, the light areas get lighter and the dark areas get darker. If the Noise is being used as a bump map, then increasing Amplitude will make the bumps higher and the valleys deeper. If you set Amplitude to a value greater than 1.0, then those parts of the texture that scale out of range will be clipped. On a bump map, this will show up as plateau regions.
+  ratio: float texture = 0.707, Controls the frequency of the fractal noise.  Increase this value to increase the fineness of detail in the fractal.
+  threshold: float texture = 0, Threshold is a number that is added to the whole fractal, making it uniformly brighter.  If some parts of the fractal are pushed up out of range (greater than 1.0), then they will be clipped to 1.0.  If the Noise is being used as a bump map, this will show up as plateau regions. 
+  depth_max: integer = 3, Controls how much calculation is done by the Noise texture
+  frequency: float texture = 8, Determines the fundamental frequency for the noise. As this value increases the noise becomes more detailed. It has the inverse effect of the scale parameter.
+  frequency_ratio: float texture = 2, Determines the relative spacial scale of the noise frequencies. If this ratio is not a whole integer then the fractal will not repeat  at the integer uv boundaries.
+  inflection: bool = false, If true applies a kink in the noise function. This is useful for creating puffy or bumpy effects. It is equivalent to abs(noise) * 2 - 1
+  time: float = 0, Animate the Noise texture. Control the rate and amount of change of the texture.
+  noise_type: integer = 1.  0:Perlin Noise, 1:Billow, 2:Wave, 3:Wispy
+  density: float texture = 1, Controls how many cells there are imbedded in the medium used by the Billow noise type. At 1.0, the medium is completely packed with cells. Reduce this value to make the cells more sparse. If the texture is being used as a bump map, then low values for Density will make it look like a smooth surface with occasional bumps on it.
+  spottyness: float texture = 0.1, Controls the randomization of the density	of the individual cells used by the Billow noise type. When Spottyness is close to 0, all the cells will be the same density.  As you increase Spottyness, some cells will be denser or thinner than others, in a random fashion.
+  size_rand: float texture = 0, Controls the randomization of the size of the individual blobs used by the Billow noise type. When it is close to 0, all the cells will be the same size.  As you increase size_rand, some cells will be smaller than others,	in a random fashion.
+  randomness: float texture = 1, Controls how the cells for the Billow noise type are arranged relative to one another. Set randomness to 1.0 to get a realistic random distribution of cells, as would be found in nature. If you set Randomness to 0, all the spots are laid out in a completely regular pattern.  This can provide interesting effects when used as a bump map;  you can make things like insect eyes, or machine-tooled raspy surfaces.
+  falloff: integer = 2. 0:Linear, 1:Smooth, 2:Fast, 3:Bubble.
+  num_waves: integer = 5, Determines how many waves to generate for the Wave noise type. The larger this number the more random looking and slower the texture.
+  implode: float texture = 0, Implode warps the noise function in a concentric fashion about a point defined by the implode_center. At a value of zero there is no effect, while at a value of 1.0 it is a spherical projection of the noise function, creating a starburst effect. Negative values can be used to skew the noise outward instead of inward.
+  implode_center: acolor texture = AColor(0.5, 0.5, 0.5, 1), Implode center in UVW coordinates.
+  scale: acolor texture = AColor(1, 1, 1, 1), Scale for the noise UVW coordinates.
+  origin: acolor texture = AColor(0, 0, 0, 1), Translation for the noise UVW coordinates.
+
+
+Parameters for plugin 'TexMayaConversion'
+  input: float texture
+  conversion_factor: float = 1
+  output: output float texture
+
+
+Parameters for plugin 'TexMayaContrast'
+  value: acolor texture = AColor(0, 0, 0, 1)
+  contrast: acolor texture = AColor(2, 2, 2, 1)
+  bias: acolor texture = AColor(0.5, 0.5, 0.5, 1)
+
+
+Parameters for plugin 'TexLayeredMax'
+  compatibility_with: integer = 0, This is used to differentiate between textures exported from different applications. The value means : 0 - 3ds Max (this is also the default), 1 - Maya, ...
+  alpha_from_intensity: integer = 0, If 2 - the alpha is forced to 1.0f; 1 - the resulting alpha is the color intensity (if compatibility_with is 0) or the color luminance (if compatibility_with is 1); 0 - the alpha is taken from the bitmap alpha
+  invert: bool = false, If true, the resulting texture color will be inverted
+  invert_alpha: bool = true, If true and invert is on, the resulting texture alpha will be inverted too. If false, just the color will be inverted
+  color_mult: acolor texture = AColor(1, 1, 1, 1), A multiplier for the texture color
+  color_offset: acolor texture = AColor(0, 0, 0, 0), An additional offset for the texture color
+  alpha_mult: float texture = 1, A multiplier for the texture alpha
+  alpha_offset: float texture = 0, An additional offset for the texture alpha
+  nouvw_color: acolor texture = AColor(0.5, 0.5, 0.5, 1), The color when there are no valid uvw coordinates
+  color: output acolor texture, The resulting color
+  out_transparency: output acolor texture, The resulting transparency
+  out_alpha: output float texture, The resulting alpha
+  out_intensity: output float texture, The resulting intensity
+  textures: plugin, unlimited list
+  blend_modes: integer, unlimited list, 0:Normal, 1:Average, 2:Add, 3:Subtract, 4:Darken, 5:Multiply, 6:Color burn, 7:Linear burn, 8:Lighten, 9:Screen, 10:Color Dodge, 11:Linear Dodge, 12:Spotlite,   13:Spotlite blend, 14:Overlay, 15:Softlight, 16:Hardlight, 17:Pinlight, 18:Hardmix, 19:Difference, 20:Exclusion, 21:Hue, 22:Saturation, 23:Color, 24:Value
+  alpha: float texture, This is not a list
+  masks: plugin, unlimited list
+  opacities: float, unlimited list, The opacity of each texture

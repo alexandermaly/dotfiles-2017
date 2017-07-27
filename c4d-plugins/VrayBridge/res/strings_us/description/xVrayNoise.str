@@ -1,0 +1,34 @@
+STRINGTABLE Xvraynoise
+{
+	Xvraynoise "Vray Noise";
+	
+	TEXNOISE_PERSISTENCE	"Persistence";	
+	TEXNOISE_AMPLITUDERATIO "Amplitude ratio";
+	TEXNOISE_FREQUENCYRATIO "Frequency ratio";
+	TEXNOISE_FREQUENCY1		"Frequency1";
+	TEXNOISE_AMPLITUDE1		"Amplitude1";
+	TEXNOISE_OCTAVES		"Octaves";
+
+	TEXNOISE_NOISETYPE		"Noise type";
+	TEXNOISE_NOISETYPE_0	"Just noise";
+	TEXNOISE_NOISETYPE_1	"Perlin noise";
+	TEXNOISE_NOISETYPE_2	"Inflected perlin";
+	TEXNOISE_NOISETYPE_3	"Marble";
+
+	TEXNOISE_SIZE	"Noise size";
+
+	TEXNOISE_INFLECTION	"Inflection";
+	TEXNOISE_INFLECTION_0 "Inflected";
+	TEXNOISE_INFLECTION_1 "Not inflected";
+
+	TEXNOISE_MIXRATIO	"Mix ratio";
+	TEXNOISE_BIAS		"Bias";
+	TEXNOISE_COLOR1		"Color1";
+	TEXNOISE_COLOR1TEX	"Color1 texture";
+	TEXNOISE_COLOR1TEXMUL "Color1 texture mult";
+	TEXNOISE_COLOR2		"Color2";
+	TEXNOISE_COLOR2TEX	"Color2 texture";
+	TEXNOISE_COLOR2TEXMUL "Color2 texture mult";
+
+	TEXNOISE_USE3D "Use 3D mapping";
+}

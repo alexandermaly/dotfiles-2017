@@ -1,0 +1,15 @@
+#ifndef _Ovrayproxy_H_
+#define _Ovrayproxy_H_
+
+enum
+{
+	//VRAYPROXY_LINK	= 1500,
+	VRAYPROXY_FILE	= 1501,
+	//VRAYPROXY_ONLYFILE = 1502,
+	//VRAYPROXY_FILE_TEMP = 1503,
+	//VRAYPROXY_DDESC		= 1499,
+	VRAYPROXY_SCALE	= 1502,
+	VRAYPROXY_TITLEBAR = 1600
+};
+
+#endif

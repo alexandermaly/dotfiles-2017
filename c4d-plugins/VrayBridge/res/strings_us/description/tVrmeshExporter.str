@@ -1,0 +1,12 @@
+STRINGTABLE tVrmeshExporter
+{
+	tVrmeshExporter "Vrmesh Exporter";
+	
+	VRMESHEXPORTER_PARAMS		"Parameters";
+
+	VRMESHEXPORTER_SMOOTH		"Enable Smoothing";
+	VRMESHEXPORTER_FILENAME		"Exported Vrmesh";
+	VRMESHEXPORTER_RAD			"Box Dimension";
+	VRMESHEXPORTER_MP			"Box Center";
+	VRMESHEXPORTER_DONTDELETE	"Don't delete VrMeshes";
+}

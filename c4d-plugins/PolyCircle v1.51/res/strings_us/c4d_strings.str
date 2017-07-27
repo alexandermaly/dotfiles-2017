@@ -1,0 +1,9 @@
+// C4D-StringResource
+// Identifier	Text
+
+STRINGTABLE
+{
+	IDS_POLYCIRCLE "PolyCircle";
+	IDS_POLYCIRCLE_TOOL_HLP "PolyCircle v1.51";
+	IDC_VER "v1.51";
+}

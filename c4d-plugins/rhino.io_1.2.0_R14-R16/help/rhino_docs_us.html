@@ -1,0 +1,288 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<TITLE>rhino.io</TITLE>
+<META NAME="Generator" CONTENT="TextPad 4.6">
+<META NAME="Author" CONTENT="?">
+<META NAME="Keywords" CONTENT="?">
+<META NAME="Description" CONTENT="?">
+
+<style type="text/css">
+<!--
+body { font-family:Verdana, Arial, sans-serif; font-size: 0.75em; }
+img { border : 0px; }
+.important { background-color: #dddddd; padding: 20px; }
+-->
+</style>
+
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000" LINK="#FF0000" VLINK="#800000" ALINK="#FF00FF" style="padding:15px;">
+
+<div style="width:600px;">
+
+<!--<img src="rhinoio.png" alt="RhinoIO"><br>-->
+<h1>Rhino Import/Export</h1>
+<small>Version 1.1 for CINEMA 4D R12</small>
+
+
+<p>rhino.io is an Import/Export plugin for <a href="http://www.rhino3d.com" target="_blank">Rhino</a> scenes using
+the <a href="http://www.opennurbs.org/" target="_blank">OpenNURBS toolkit</a>. It requires CINEMA 4D R12 or
+higher and can read Rhino files up to version 5. Rhino files exported through rhino.io will be saved as Rhino
+Version 4 files, so they can be read by Rhino 4 and 5. The most up to date information can be found on the
+<a target="_blank" href="http://www.rhino.io">official support website</a>.</p>
+
+<p>&nbsp;</p>
+
+<p><b>
+<ul>
+  <li><a href="#installation">Installation</a>
+    <ul>
+<!--
+      <li><a href="#download">Download</a></li>
+      <li><a href="#installwin">Windows</a></li>
+      <li><a href="#installmac">Mac OS X</a></li>
+-->
+      <li><a href="#license">Obtaining a License</a></li>
+    </ul>
+  </li>
+  <li><a href="#import">Rhino Import</a>
+    <ul>
+      <li><a href="#importgeneral">General Operation</a></li>
+      <li><a href="#importoptions">Import Options</a>
+      <li><a href="#merge">Merge</a>
+	  <li><a href="#vertexcolors">Vertex Colors</a>
+      <!--
+        <ul>
+          <li>Scale Mode</li>
+          -->
+      </li>
+    </ul>
+  </li>
+  <li><a href="#export">Rhino Export</a>
+    <ul>
+      <li><a href="#exportgeneral">General Operation</a></li>
+      <li><a href="#exportoptions">Export Options</a>
+    </ul>
+  </li>
+  <li><a href="#disclaimer">Disclaimer</a></li>
+</ul>
+</b></p>
+
+<p>&nbsp;</p>
+
+<h2><a name="installation">Installation</a></h2>
+
+<p>You can always download the most recent versions of rhino.io for CINEMA 4D from the
+<a href="http://www.rhino.io" target="_blank">support website</a>. The Zip-File contains both,
+the windows version and a Universal Binary for Mac OS X.</p>
+
+<p>After downloading the rhino.io Zip-File, unzip it and copy the folder into the 'plugins' folder
+of your CINEMA 4D application directory. The screenshots below show the correct locations for
+Windows and Mac OS X users respectively.</p>
+
+<p>
+  <a href="install_win_bg.png"><img src="install_win_sm.png" alt="Windows Installation"></a>
+  <a href="install_mac_bg.png"><img src="install_mac_sm.png" alt="Mac OS X Installation" align="right"></a>
+</p>
+
+<p>&nbsp;</p>
+
+<h3><a name="license">Obtaining a License</a></h3>
+
+<p>After you installed rhino.io as a CINEMA 4D plugin, you need to obtain a rhino.io license. This
+license is generated based on the rhino.io serial you received on purchase, as well as the CINEMA 4D
+serial of the installation you want to use rhino.io with. Do not use the temporary CINEMA 4D serial
+you get on purchase of CINEMA 4D, but the final number you get after registering with MAXON.</p>
+
+<p>The easiest way to get your license code, is to start CINEMA 4D with the plugin installed. It
+will complain about the missing rhino.io license and bring up the <i>Register</i> window. Ignore this by
+pressing cancel, CINEMA 4D will continue to load. In the <i>Plugins</i> Menu you will find an entry
+called <i>Register rhino.io</i>. Clicking this entry will bring up the registration website with most of
+the info already filled in from what you entered in CINEMAs Register window. Finish filling out
+this form and click submit. The license will then be sent instantly to the e-mail adress you
+supplied.</p>
+
+<p>You can also directly visit the registration website here:
+<a href="http://www.rhino.io/register/" target="_blank">www.rhino.io/register/</a>. If there
+are any problems with obtaining a license, please check the <a href="http://www.rhino.io" target="_blank">
+support website</a> or send an e-mail to <a href="mailto:info@rhino.io">info@rhino.io</a>.</p>
+
+<p>&nbsp;</p>
+
+<h2><a name="import">Rhino Import</a></h2>
+
+<p>&nbsp;</p>
+
+<h3><a name="importgeneral">General Operation</a></h3>
+
+<p class="important">The Rhino Importer will load Rhino Mesh Objects as they are, but it is unable
+to tesselate NURBS Objects. Rhino can, however, store Render Meshes with NURBS objects in a 3dm file,
+which are then used for import. These meshes are created by Rhino automatically as long as they have
+at least once been rendered or drawn into the viewport in shaded mode. Also make sure the
+<i>Save Small</i> flag is not checked when the file is saved. Some other applications using the 3dm
+file format may not automatically store Render Meshes with the file, so in that case you will have
+to explicitly tesselate them or go through Rhino first. When a NURBS/Brep object without render
+meshes is encountered in the rendered file, a warning message is issued.</p>
+
+<p>For proper import, you can convert NURBS objects into meshes within Rhino manually before you
+import them into CINEMA 4D. Otherwise you need to have the tesselation settings set correctly. Check this
+either in the global Rhino Options under <i>Render mesh quality</i> or individually in the Render mesh
+setting of an object.</p>
+
+<p>The exact behaviour of the Rhino Import is guided by a number of settings, which come up every time
+a file is imported and can always be found under <i>Edit -> Preferences -> Import/Export -> Rhino (*.3dm) Import</i>.</p>
+
+<p>&nbsp;</p>
+
+<h3><a name="importoptions">Import Options</a></h3>
+
+<p><img src="import_us.png" alt="Import Options"></p>
+
+<p><b>Document Scale</b> determines how the Rhino model is scaled on import. For both cases the
+geometry is read from the Rhino file as is and the CINEMA 4D Document Unit is set accordingly. It
+defaults to <i>From Rhino File</i>, which just sets the CINEMA 4D document unit to be whatever
+the unit is in the imported file. <i>Custom</i> will set the document unit to whatever you chose
+in the line below. Keep in mind that if you merge a Rhino file into another document, the objects
+will be scaled from the unit in the file or you specify to the unit of the document you merge into.</p>
+
+<p><b>Import Layers</b> controls how Rhino layers are imported. It defaults to <i>As Layers</i>,
+meaning Rhino Layers are directly converted to CINEMA layers. For certain workflows it might be
+more appropriate to import layers as Null Objects and group all objects on the layer (and
+sublayers) thereunder. This is what <i>As Groups</i> does. Layers, that have no content, will never
+be imported.To completely ignore layers, set this option to <i>Off</i>.</p>
+
+<p>If you want to <b>Create Materials</b> from Rhino materials, set this option to <i>From Rhino
+Materials</i>. It is also possible to have materials created <i>From Layer Colors</i>. If you do
+not want any materials to be created, set this option to <i>Off</i>.</p>
+
+<p><b>Clean Up Materials</b> will remove any unused or duplicate material from the Rhino scene.
+Unused materials can come from objects that the Rhino Importer doesn't import, duplicate materials
+often happen when several objects have materials with identical settings applied.</p>
+
+<p><b>Import Mesh Objects</b> specifies whether Rhino Meshes are imported. If it is not checked,
+they are ignored on import.</p>
+
+<p>When <b>Import Render Meshes</b> is checked, the Render Meshes stored with NURBS objects are
+imported. This is the way you will probably import most of your data, since the NURBS objects can
+not be imported directly.
+
+<p>It is possible to have Rhino Groups imported as Selection Objects. If you want this to happen,
+make sure <b>Import Groups</b> is checked.</p>
+
+<p><b>Import Cameras</b> controls whether Named Views from Rhino are imported as Cameras.</p>
+
+<p><b>Import Lights</b> defines if light sources are imported from Rhino. Be aware, that for lights
+defined as camera space lights in Rhino, position and orientation may not match!</p>
+
+<p>If <b>Skip Invisible Objects</b> is checked, the importer will ignore all hidden objects,
+otherwise they are imported and flagged as hidden within CINEMA 4D.</p>
+
+<p><b>Import Curves</b> will cause NURBS Curves and Polylines in the Rhino file to be imported as
+Spline Objects, when checked. While Polylines can be converted precisely, NURBS Curves will be
+automatically tesselated creating as many <b>Intermediate Points</b> per span as you specify.</p>
+
+<p>Objects in Rhino usually consist of separate NURBS patches, that are often joined at patch
+boundaries or trim curves. These patches are tesselated independently from each other, which causes
+duplicate vertices to be created at patch or trim boundaries. When working with these objects in
+CINEMA 4D, this is often a waste of resources and can be inconvenient when editing the model or
+applying texture coordinates. It is possible to use the <i>Optimize</i> command after import.
+Checking the <b>Merge Overlapping Points</b> checkbox does the same thing on import. When the
+checkbox is checked <b>Threshold</b> defines the maximum distance two points can have to be
+considered the same.</p>
+
+<p>In Rhino objects do not have an axis associated with them, so normally the objects would import
+with all their Axes at the origin. If <b>Axis Center Objects</b> is enabled, every objects axis is
+moved to the center of the contained points.</p>
+
+<p>&nbsp;</p>
+
+<h3><a name="merge">Merge</a></h3>
+
+<p>When <i>Merge</i> is used to open a Rhino file, the importer checks if any objects that have
+been imported previosly from the same model already exist in the current CINEMA 4D scene. If that
+is the case, a dialog window pops up, asking you if you just want the model to be updated with the
+changes you made to the Rhino model. If you choose to do so, changes to objects will be applied
+to the existing objects in CINEMA 4D, everything else (like material or layer reassignements or
+regrouping of the objects in the object manager) will stay intact.</p>
+
+<p>Rhino attaches unique IDs to all objects and layers. You can see this ID within Rhino by
+clicking on <i>Details</i> in the Object Properties Tab. On import, this ID is stored with the
+objects and layers (or groups) in CINEMA 4D, so they can be looked up later. When the scene is
+updated, the importer checks if any object in the merged Rhino file already exists in the CINEMA
+scene and updates the geometry. There are a few things to keep in mind, though:</p>
+<ul>
+  <li>If an object has been removed within CINEMA, but still exists in the Rhino scene, it will be
+    imported again. If you don't want this to happen you could e.g. hide the object and choose
+    <i>Skip Hidden Objects</i> in the import settings.</li>
+  <li>Some operations in Rhino (e.g. Join, Explode, Extract) don't keep the object ID intact. In that
+    case, the importer doesn't know how the objects relate and imports the object anew.</li>
+  <li>If an object is imported that didn't exist previously, the importer tries to put it inside
+    the same layer or group, as long as the layer or group already exist. New layers do not get
+    added.</li>
+  <li>Some attention has to be paid on import settings when updating a scene. If e.g. a scene has
+    been originally opened with layers imported as groups and, on merge, layer import is set to
+    import as CINEMA 4D layers, new objects will not be sorted into the existing groups, because
+    the importer looks for existing layers in the CINEMA 4D layer list.</li>
+</ul>
+
+<p>&nbsp;</p>
+
+<h3><a name="vertexcolors">Vertex Colors</a></h3>
+<p><img src="vertex_color_shader.png" alt="Vertex Color Shader"></p>
+<p>If <i>Vertex Colors</i> are available, rhino.io imports them by creating one Vertex Map for 
+each channel. These are named according to the color which they represent.</p>
+
+<p>The file <i>vertex_color_shader.c4d</i> in the <i>examples</i> folder shows a possible application, where a material uses a Layer Shader
+to combine the three colors. Each layer is built by a Colorizer Shader with a specific color and the
+corresponding Vertex Map assigned.</p>
+
+<p>&nbsp;</p>
+
+<h2><a name="export">Rhino Export</a></h2>
+<h3><a name="exportgeneral">General Operation</a></h3>
+
+<p>A layer called Default is created always, all objects that have no layer assigned in cinema, are
+assigned to that layer on export.</p>
+<p>The exporter uses viewport visibility, not render visibility, to set Rhino layer visibilities</p>
+
+<p>For advanced users: Be aware that exporting polygon meshes will not retain vertex order. Rhino
+can not represent discontinous texture coordinates or normals and the mesh will be processed so
+that vertices can be split up in those cases. This has the downside that vertex count and order
+will, in most cases, be different.</p>
+
+<p>The Document Unit always also gets stored in the Rhino file.</p>
+
+<p>The exact behaviour of the Rhino Import is guided by a number of settings, which come up at the
+time of export and can always be found under <i>Edit -> Preferences -> Import/Export -> Rhino (*.3dm) Export</i>.</p>
+
+<p>&nbsp;</p>
+
+<h3><a name="exportoptions">Export Options</a></h3>
+
+<p><img src="export_us.png" alt="Import Options"></p>
+
+<p>If <b>Export Splines</b> is checked, any Spline Objects found in the scene are exported as
+polylines. If the box is not checked, Spline Objects are ignored.
+
+<p>&nbsp;</p>
+
+
+<h2><a name="disclaimer">Disclaimer</a></h2>
+
+<p><small>The rhino.io Import/Export Tools have been created in cooperation between
+<a href="http://www.laublab.com" target="_blank">LAUBLab KG</a> and
+<a href="http://www.timmdapper.de" target="_blank">Timm Dapper</a>
+and are Copyright (C) 2009-2011 Timm Dapper</small></p>
+<p><small>Rhino and OpenNURBS are Trademarks of Robert McNeel & Associates.
+The OpenNURBS toolkit is copyright (C) 1993-2007 Robert McNeel & Associates.
+All Rights Reserved.</small></p>
+<p><small>MAXON and CINEMA 4D are registered Trademarks of MAXON Computer GmbH.</small></p>
+<!--<p><small>All other stuff is trademark of their respective owners</small></p>-->
+
+</div>
+
+</BODY>
+</HTML>
+
+

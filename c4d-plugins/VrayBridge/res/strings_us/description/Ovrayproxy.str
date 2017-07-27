@@ -1,0 +1,9 @@
+STRINGTABLE Ovrayproxy
+{
+	Ovrayproxy "VrayProxy Object";
+
+	VRAYPROXY_LINK			"VrMeshExporter Tag";
+	VRAYPROXY_FILE			"Vrmesh file";
+	VRAYPROXY_ONLYFILE		"Use Filename";
+	VRAYPROXY_SCALE			"Scale";
+}

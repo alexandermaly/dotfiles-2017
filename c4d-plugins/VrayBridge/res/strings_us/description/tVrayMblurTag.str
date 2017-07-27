@@ -1,0 +1,8 @@
+STRINGTABLE tVrayMblurTag
+{
+	tVrayMblurTag					"VrayMotionBlur";
+	
+	VRAYMBLURTAG_PARAMS				"Parameters";
+	VRAYMBLURTAG_NSAMPLES			"Motion Blur Samples";
+	VRAYMBLURTAG_DEFORMATION		"Deformation Blur";
+}

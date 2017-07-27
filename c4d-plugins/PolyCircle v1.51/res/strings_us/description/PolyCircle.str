@@ -1,0 +1,29 @@
+STRINGTABLE PolyCircle
+{
+	PolyCircle	"PolyCircle";
+	ID_MODE "Mode";
+	CH_WOLD "Axis";
+	CH_NORMAL "Normal";
+	CH_WINDOWS "View";
+	ID_CHECK_X "X";
+	ID_CHECK_Y "Y";
+	ID_CHECK_Z "Z";
+	CIRCLE_VALUE "Radius:";
+	ID_CHECK "Equal interval";
+	ID_MAIN "Tool";
+	ID_BOOLX "X:";
+	ID_BOOLY "Y:";
+	ID_BOOLZ "Z:";
+	ID_GROUPXYZ "Axis";
+	ID_GROUP_BOOL "Option";
+	ID_BTN "Set Circle";
+	ID_CH_X "X";
+	ID_CH_Y "Y";
+	ID_CH_Z "Z";
+	CH_LOCAL "Object";
+	ID_LINK "Axis Target";
+	ID_BTNNSET "Set Axis";
+	ID_BTNRESET "  Reset  ";
+	 ID_DIREC  "Direction";
+	ID_CHECK_FACE "Face";
+}

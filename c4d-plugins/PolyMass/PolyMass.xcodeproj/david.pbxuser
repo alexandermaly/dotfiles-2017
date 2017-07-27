@@ -1,0 +1,206 @@
+// !$*UTF8*$!
+{
+	633744091339AA0100F3FBD3 /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+			repositoryNamesForRoots = {
+				../../.. = "";
+			};
+		};
+	};
+	6337440A1339AA0100F3FBD3 /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	633744191339ACDC00F3FBD3 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 65636BE408E5922100FBAB34 /* activeobject.cpp */;
+		name = "activeobject.cpp: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 775;
+		vrLoc = 0;
+	};
+	6337441A1339ACDC00F3FBD3 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 65636BF108E5922100FBAB34 /* atom.cpp */;
+		name = "atom.cpp: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1986;
+		vrLoc = 0;
+	};
+	634CBA15133B119600766B1E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 65636BEF08E5922100FBAB34 /* main.cpp */;
+		name = "main.cpp: 21";
+		rLen = 0;
+		rLoc = 694;
+		rType = 0;
+		vrLen = 2177;
+		vrLoc = 0;
+	};
+	63AB407E159F08CC006D21BB /* polymass.cpp */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1279, 4576}}";
+			sepNavSelRange = "{12437, 0}";
+			sepNavVisRange = "{12010, 1424}";
+		};
+	};
+	63AB4088159F0912006D21BB /* XCBuildMessageTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "No matching function for call to 'BaseSelect::GetRange(LONG, LONG&, LONG*, LONG*)'";
+		fRef = 63AB407E159F08CC006D21BB /* polymass.cpp */;
+		fallbackIsa = XCBuildMessageTextBookmark;
+		rLen = 1;
+		rLoc = 287;
+		rType = 1;
+	};
+	63AB4089159F0912006D21BB /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 63AB407E159F08CC006D21BB /* polymass.cpp */;
+		name = "polymass.cpp: 286";
+		rLen = 0;
+		rLoc = 12437;
+		rType = 0;
+		vrLen = 1424;
+		vrLoc = 12010;
+	};
+	63BC9346159F08530009C706 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 65636BEF08E5922100FBAB34 /* main.cpp */;
+		name = "main.cpp: 21";
+		rLen = 0;
+		rLoc = 694;
+		rType = 0;
+		vrLen = 1465;
+		vrLoc = 0;
+	};
+	65636BE408E5922100FBAB34 /* activeobject.cpp */ = {
+		isa = PBXFileReference;
+		fileEncoding = 30;
+		lastKnownFileType = sourcecode.cpp.cpp;
+		name = activeobject.cpp;
+		path = "/Applications/MAXON/CINEMA 4D R12/plugins/PolyMass/source/gui/activeobject.cpp";
+		sourceTree = "<absolute>";
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1070, 9451}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 775}";
+		};
+	};
+	65636BEF08E5922100FBAB34 /* main.cpp */ = {
+		isa = PBXFileReference;
+		fileEncoding = 30;
+		lastKnownFileType = sourcecode.cpp.cpp;
+		name = main.cpp;
+		path = "/Applications/MAXON/CINEMA 4D R12/plugins/PolyMass/source/main.cpp";
+		sourceTree = "<absolute>";
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {755, 1001}}";
+			sepNavSelRange = "{694, 0}";
+			sepNavVisRange = "{0, 2272}";
+		};
+	};
+	65636BF108E5922100FBAB34 /* atom.cpp */ = {
+		isa = PBXFileReference;
+		fileEncoding = 30;
+		lastKnownFileType = sourcecode.cpp.cpp;
+		name = atom.cpp;
+		path = "/Applications/MAXON/CINEMA 4D R12/plugins/PolyMass/source/object/atom.cpp";
+		sourceTree = "<absolute>";
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1307, 6240}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 1986}";
+		};
+	};
+	65E5168A083D10D0005BFD9A /* Project object */ = {
+		activeBuildConfigurationName = Debug;
+		activeTarget = 65E51692083D10D0005BFD9A /* PolyMass */;
+		addToTargets = (
+			65E51692083D10D0005BFD9A /* PolyMass */,
+		);
+		codeSenseManager = 6337440A1339AA0100F3FBD3 /* Code sense */;
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXExecutablesDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXExecutablesDataSource_NameID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					22,
+					300,
+					1017,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXExecutablesDataSource_ActiveFlagID,
+					PBXExecutablesDataSource_NameID,
+					PBXExecutablesDataSource_CommentsID,
+				);
+			};
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					577,
+					20,
+					48,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXConfiguration.PBXTargetDataSource.PBXTargetDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					537,
+					60,
+					20,
+					48,
+					43,
+					43,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXTargetDataSource_PrimaryAttribute,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 362743983;
+			PBXWorkspaceStateSaveDate = 362743983;
+		};
+		perUserProjectItems = {
+			633744191339ACDC00F3FBD3 = 633744191339ACDC00F3FBD3 /* PBXTextBookmark */;
+			6337441A1339ACDC00F3FBD3 = 6337441A1339ACDC00F3FBD3 /* PBXTextBookmark */;
+			634CBA15133B119600766B1E = 634CBA15133B119600766B1E /* PBXTextBookmark */;
+			63AB4088159F0912006D21BB /* XCBuildMessageTextBookmark */ = 63AB4088159F0912006D21BB /* XCBuildMessageTextBookmark */;
+			63AB4089159F0912006D21BB /* PBXTextBookmark */ = 63AB4089159F0912006D21BB /* PBXTextBookmark */;
+			63BC9346159F08530009C706 = 63BC9346159F08530009C706 /* PBXTextBookmark */;
+		};
+		sourceControlManager = 633744091339AA0100F3FBD3 /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	65E51692083D10D0005BFD9A /* PolyMass */ = {
+		activeExec = 0;
+	};
+}

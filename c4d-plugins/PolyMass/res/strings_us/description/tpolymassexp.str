@@ -1,0 +1,11 @@
+STRINGTABLE Tpolymassexp
+{
+	Tpolymassexp			"Vertex Map to Polygon Selection";
+	POLYMASS_VMAPTAGLINK	"Vertex Map";
+	POLYMASS_POLYTAGLINK	"Polygon Selection";
+	POLYMASS_THRESHOLD		"Weight Threshold";
+	POLYMASS_VERTTHRESH		"Poly Vert Threshold";
+	POLYMASS_MAPMODE		"Map Mode";
+		MAPMODE_VMAPTOPOLY	"Vertex Map to Poly Selection";
+		MAPMODE_POLYTOVMAP	"Poly Selection to Vertex Map";
+}

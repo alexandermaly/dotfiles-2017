@@ -1,0 +1,269 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<TITLE>rhino.io</TITLE>
+<META NAME="Generator" CONTENT="TextPad 4.6">
+<META NAME="Author" CONTENT="?">
+<META NAME="Keywords" CONTENT="?">
+<META NAME="Description" CONTENT="?">
+<style type="text/css">
+<!--
+body { font-family:Verdana, Arial, sans-serif; font-size: 0.75em; }
+img { border : 0px; }
+.important { background-color: #dddddd; padding: 20px; }
+-->
+</style>
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000" LINK="#FF0000" VLINK="#800000" ALINK="#FF00FF" style="padding:15px;">
+
+<div style="width:600px;">
+
+<!--<img src="rhinoio.png" alt="RhinoIO"><br>-->
+<h1>Rhino Import/Export</h1>
+<small>Version 1.1 für CINEMA 4D R12</small>
+
+
+<p>rhino.io ist ein Plugin für den Import und Export von <a href="http://www.de.rhino3d.com/?language=de" target="_blank">Rhino</a> Szenen unter
+Verwendung des <a href="http://www.opennurbs.org/" target="_blank">OpenNURBS Toolkits</a>. Es setzt mindestens eine R12 Version von
+CINEMA 4D voraus und unterstützt Rhino Dateien bis Version 5. Dateien, die über rhino.io exportiert werden, werden als Rhino 4 Dateien 
+gespeichert, damit sie sowohl unter Version 4 als auch unter Version 5 geöffnet werden können. Aktuelle Informationen zum Plugin gibt es auf der
+<a target="_blank" href="http://www.rhino.io">offiziellen Support-Seite</a>.</p>
+
+<p>&nbsp;</p>
+
+<p><b>
+<ul>
+  <li><a href="#installation">Installation</a>
+    <ul>
+<!--
+      <li><a href="#download">Download</a></li>
+      <li><a href="#installwin">Windows</a></li>
+      <li><a href="#installmac">Mac OS X</a></li>
+-->
+      <li><a href="#license">Erhalten einer Lizenz</a></li>
+    </ul>
+  </li>
+  <li><a href="#import">Rhino Import</a>
+    <ul>
+      <li><a href="#importgeneral">Allgemeiner Ablauf</a></li>
+      <li><a href="#importoptions">Import Optionen</a>
+      <li><a href="#merge">Hinzuladen</a>
+	  <li><a href="#vertexcolors">Vertex Farben</a>
+      <!--
+        <ul>
+          <li>Scale Mode</li>
+          -->
+      </li>
+    </ul>
+  </li>
+  <li><a href="#export">Rhino Export</a>
+    <ul>
+      <li><a href="#exportgeneral">Allgemeiner Ablauf</a></li>
+      <li><a href="#exportoptions">Export Optionen</a>
+    </ul>
+  </li>
+  <li><a href="#disclaimer">Impressum</a></li>
+</ul>
+</b></p>
+
+<p>&nbsp;</p>
+
+<h2><a name="installation">Installation</a></h2>
+
+<p>Die aktuelle Version von rhino.io für CINEMA 4D kann stets auf der
+<a href="http://www.rhino.io" target="_blank">Support-Seite</a> heruntergeladen werden. Die Zip-Datei 
+beinhaltet sowohl die Windows Version als auch die Universal Binaries für Mac OS X.</p>
+
+<p>Entpacken Sie die Zip-Datei nach dem herunterladen und kopieren Sie den "rhinoio" Ordner in das 'plugins' Verzeichnis in Ihrem Installationsverzeichnis
+von CINEMA 4D. Die folgenden Screenshots stellen jeweils die korrekten Pfade unter Windows und Mac OS X dar.</p>
+
+<p>
+  <a href="install_win_bg.png"><img src="install_win_sm.png" alt="Windows Installation"></a>
+  <a href="install_mac_bg.png"><img src="install_mac_sm.png" alt="Mac OS X Installation" align="right"></a>
+</p>
+
+<p>&nbsp;</p>
+
+<h3><a name="license">Erhalten einer Lizenz</a></h3>
+
+<p>Nachdem Sie rhino.io installiert haben, benötigen Sie eine Lizenz. Diese wird anhand der Seriennummer,
+die Sie beim Erwerb erhalten haben, und Ihrer Seriennummer von CINEMA 4D, unter der Sie das Plugin nutzen wollen, 
+generiert. Verwenden Sie nicht die temporäre CINEMA 4D Seriennummer, die Sie beim Kauf erhalten haben, sondern 
+die finale Nummer, die Ihnen nach der Registrierung bei MAXON zugeteilt wurde.</p>
+
+<p>Die einfachste Möglichkeit eine Lizenz zu erhalten besteht darin, CINEMA 4D mit dem installierten Plugin zu starten.
+Dabei sollte eine Meldung erscheinen, dass keine rhino.io Lizenz gefunden werden konnte, und sich ein Fenster für die 
+<i>Registrierung</i> öffnen. Überspringen Sie dieses indem sie auf "Abbrechen" drücken und CINEMA 4D sollte gestartet werden.
+Wählen Sie dann unter <i>Plugins</i> in der Menüleiste den Eintrag <i>rhino.io registrieren</i>. Daraufhin sollte erneut die
+Registrierungs-Seite erscheinen. Die meisten Felder sollten nun bereits mit den Information aus der CINEMA 4D Registrierung
+ausgefüllt sein. Vervollständigen Sie das Formular und drücken Sie auf "Senden". Anschließend sollte die Lizenz umgehend, an die von 
+Ihnen angegebene E-Mail Adresse, gesendet werden.</p>
+
+<p>Alternativ können Sie direkt die Registrierungs-Seite besuchen:
+<a href="http://www.rhino.io/register/" target="_blank">www.rhino.io/register/</a>. Sollten Komplikationen bei der Anforderung einer
+Lizenz auftreten besuchen Sie die <a href="http://www.rhino.io" target="_blank">
+Support-Seite</a> oder mailen Sie an <a href="mailto:info@rhino.io">info@rhino.io</a>.</p>
+
+<p>&nbsp;</p>
+
+<h2><a name="import">Rhino Import</a></h2>
+
+<p>&nbsp;</p>
+
+<h3><a name="importgeneral">Allgemeiner Ablauf</a></h3>
+
+<p class="important">Der Rhino Importer lädt Rhino Polygonnetze so wie sie sind, kann aber selbst keine NURBS Objekte in Polygonnetze umwandeln.
+Allerdings kann Rhino Rendernetze gemeinsam mit den NURBS Objekten in einer 3dm Datei speichern, welche dann für den Import
+verwendet werden können. Diese wird in Rhino automatisch erzeugt wenn das Objekt mindestens einmal gerendert oder im schattierten Modus
+in den Viewport gezeichnet wurde. Vergewissern Sie sich zudem beim Speichern der Datei in Rhino, dass die Option <i>Kompakt speichern</i> deaktiviert ist.
+Möglicherweise speichern einige andere Anwendungen, die das 3dm Dateiformat verwenden, Rendernetze nicht automatisch mit.
+In diesem Fall müssen sie die Objekte explizit tesselieren oder den Umweg über Rhino gehen. Sollten NURBS/Brep Objekte ohne Rendernetze in der
+zu importierenden Datei gefunden werden, wird eine Warnungsmeldung ausgegeben.</p>
+
+<p>Für einen korrekten Import, können NURBS Objekte vor dem Speichern in Rhino manuell in Polygonnetze umgewandelt werden. Es genügt jedoch
+die richtigen Einstellungen für das Rendernetz zu setzen. Diese Einstellung kann entweder global(<i>Qualität des Rendernetzes</i>  in den Rhino-Optionen) 
+oder für ein einzelnes Objekt (<i>Konfiguration des Rendernetzes</i> in den Objekteigenschaften) vorgenommen werden.</p>
+
+<p>Das konkrete Verhalten des Rhino Importers hängt von den Optionen des Importers ab, die jedesmal beim Import erscheinen oder
+unter <i>Bearbeiten -> Programm-Voreinstellungen -> Import/Export -> Rhino (*.3dm) Import</i> zu finden sind.</p>
+
+<p>&nbsp;</p>
+
+<h3><a name="importoptions">Import Optionen</a></h3>
+
+<p><img src="import_de.png" alt="Import Optionen"></p>
+
+<p><b>Dokument Skalierung</b> bestimmt wie das Rhino Model beim Importieren skaliert werden 
+soll. In jedem Fall wird die Geometrie so wie sie ist aus der Rhino Datei gelesen und die Einheit des Cinema4D Dokuments entsprechend gesetzt.
+Standardmäßig ist der Wert auf <i>Aus Rhino Datei</i> gesetzt, wobei nur der Wert des CINEMA 4D Dokuments auf den Wert aus der Rhino Datei gesetzt wird.
+Bei <i>Benutzerdefiniert</i> wird die Maßeinheit im CINEMA 4D Dokument auf die angegebene Einheit in der Zeile darunter gesetzt. Beachten Sie, dass bei
+Hinzuladen einer Rhino Datei in ein Dokument, die Objekte ausgehend von der Maßeinheit in der Datei skaliert werden oder Sie geben die Einheit
+des bestehenden Dokuments an..</p>
+<p><b>Ebenen Importieren</b> bestimmt auf welche Weise Rhino Ebenen importiert werden sollen. Standardmäßig ist die Option
+<i>Als Ebenen</i> aktiv, wodurch Rhino Ebenen direkt in CINEMA 4D Ebenen konvertiert werden. Manchmal könnte es
+geeigneter sein die Ebenen als Null-Objekte zu importieren und die zu der Ebene (und Unterebenen) gehörenden Objekte
+unter diesen zu gruppieren. Dies wird durch den Eintrag <i>Als Gruppen</i> ermöglicht. Ebenen, denen keine Objekte zugewiesen
+sind werden nicht berücksichtigt. Um alle Ebenen zu ignorieren, kann diese Option auf <i>Aus</i> gesetzt werden.</p>
+
+<p><b>Materialien Erzeugen</b> bewirkt die Erzeugung von Materialien in CINEMA 4D. Dabei können entweder Rhino Materialien direkt
+konvertiert werden (<i>Von Rhino Materialien</i>) oder es werden Materialien anhand der Ebenenfarben generiert(<i>Von Ebenenfarben</i>).
+Wenn Sie keine Erzeugung von Materialien wünschen, setzen Sie diese Option auf <i>Aus</i>.</p>
+
+<p><b>Materialien aufräumen</b> entfernt ungenutzte oder doppelte Materialien aus der Rhino-Szene.
+Ungenutzte Materialen können durch Objekte verursacht werden, die der Rhino Importer nicht unterstützt. Doppelte Materialien
+können häufig auftreten, wenn mehrere Objekte Materialien mit identischen Eigenschaften besitzen.</p>
+
+<p><b>Polygonnetze importieren</b> spezifiziert, ob Polygonnetze aus Rhino importiert werden sollen. Ist diese Option deaktiviert,
+werden Polygonnetze beim Import ignoriert.</p>
+
+<p><b>Rendernetze importieren</b> ist höchstwahrscheinlich die Funktion, mit der mit der Sie die meisten Ihrer Daten importieren werden. Ist
+diese Einstellung aktiv, werden Rendernetze, die auch bei NURBS-Objekten mitgespeichert werden, importiert.</p>
+
+<p><b>Gruppen importieren</b> ermöglicht, dass Rhino Gruppen als Selektion-Objekte in CINEMA 4D importiert werden.</p>
+
+<p><b>Kameras importieren</b> kontroliert, ob benannte Ansichten aus Rhino als Kamera importiert werden sollen.</p>
+
+<p><b>Lichter importieren</b> bestimmt, ob Lichter aus Rhino importiert werden sollen. Beachten Sie, dass die Position und Orientierung von Lichtern, die
+in Rhino im Kamerakoordinatensystem definiert wurden, möglicherweise nicht exakt übereinstimmen!</p>
+
+<p><b>Unsichtbare Objekte überspringen</b> führt bei Aktivierung dazu, dass der Importer alle Objekte, die nicht sichtbar, ignoriert. Ist diese
+Option nicht gewählt werden auch unsichtbare Rhino Objekte in CINEMA 4D importiert und ihre Sichtbarkeit deaktiviert.</p>
+
+<p><b>Kurven importieren</b> legt fest, ob NURBS-Kurven und Polylinien aus der Rhino-Datei als Splines importiert werden sollen.
+Während Polylinien präzise konvertiert werden können, werden NURBS-Kurven automatisch in Abhängigkeit von der Zahl der <b>Zwischenpunkte</b> 
+tesseliert.</p>
+
+<p>Objekte bestehen in Rhino gewöhnlich aus separaten NURBS-Flächen, diese sind oft über Flächengrenzen oder Trimmkurven verbunden.
+Die NURBS-Flächen werden unabhängig voneinander tesseliert, wodurch doppelte Punkte an Flächen- oder Trimmgrenzen auftreten können.
+Wenn in CINEMA 4D mit diesen Objekten gerarbeitet wird, zieht dies eine Verschwendung von Ressourcen mit sich und kann beim Editieren des Modells
+oder beim Zuweisen von Texturkoordinaten störend wirken. Um doppelte Punkte zu vermeiden kann der Befehl <i>Optimieren</i> nach dem Import
+aufgerufen werden. Ist die Option <b>Punkte zusammenfassen</b> aktiviert, geschieht dies bereits beim Importieren. Ist die zugehörige  Checkbox
+ausgewählt, werden je zwei Punkte, deren Abstand unterhalb der <b>Toleranz</b> liegt, zusammengefasst.</p>
+
+<p>Objekte besitzen in Rhino keine individuellen Koordinatenachsen, daher befinden sich die Achsen eines importierten Objekts normalerweise im Ursprung.
+Wird die Option <b>Objektachsen zentrieren</b> aktiviert, wird die Achse jedes Objekts in das Zentrum seiner Punkte bewegt.</p>
+
+<p>&nbsp;</p>
+
+<h3><a name="merge">Hinzuladen</a></h3>
+
+<p>Wird eine Rhino-Datei durch <i>Hinzuladen</i> geöffnet, prüft der Importer, ob das selbe Modell bereits in der aktuellen CINEMA 4D Szene existiert.
+Ist dies der Fall, erscheint ein Dialog mit der Frage, ob die Szene aktualisiert werden soll. Wenn dies gewünscht ist, werden Änderungen an Objekten an
+die existierenden Objekte in CINEMA 4D übertragen. Alle anderen Änderungen (z.B. an Materialien, Ebenenzuordnungen oder Umgruppierungen von Objekten im 
+Objekt-Manager) bleiben erhalten.</p>
+
+<p>Rhino legt für alle Objekte und Ebenen Identifikatoren (IDs) an. Diese können sie in Rhino unter dem Abschnitt <i>Details</i> in den Objekteigenschaften einsehen.
+Beim Import werden IDs mit den Objekten und Ebenen (bzw. Gruppen) in CINEMA 4D gespeichert. Wird die Szene aktiviert überprüft der Importer,
+ob irgendwelche Objekte in der hinzugeladenen Rhino-Datei bereits in der CINEMA 4D Szene existieren und aktualisiert die Geometrie. Dabei müssen einige Dinge
+beachtet werden:</p>
+<ul>
+  <li>Falls ein Objekt in CINEMA 4D entfernt wurde, aber noch in der Rhino Szene existiert, wird es erneut importiert. Ist dies nicht gewünscht, können sie
+     beispielsweise die Sichtbarkeit der Objekte abschalten und die Funktion <i>Unsichtbare Objekte überspringen</i> in den Optionen aktivieren.</li>
+  <li>Einige Opertionen in Rhino (z.B. Verbinden, Zerlegen, Extrahieren) können die ID eines Objekts verändern. In diesem Fall kann der Importer keinen
+	Bezug herstellen und importiert das Objekt daher erneut.</li>
+  <li>Wird ein Objekt importiert, das zuvor nicht existierte, versucht der Importer es in die selbe Ebene oder Gruppe einzufügen, sofern diese bereits existieren.
+    Neue Ebenen werden nicht hinzugefügt.</li>
+  <li>Einige Importeinstellungen sollten beim Aktualisieren einer Szene besonders beachtet werden. Falls beispielsweise in der ursprünglichen Szene Ebenen als
+    Gruppen importiert wurden und beim Hinzuladen einer weiteren Szene Ebenen tatsächlich als Ebenen übernommen werden sollen, so werden die Objekte nicht in die
+	existierenden Gruppen eingefügt. Dies liegt daran, dass der Importer diesmal nach bereits vorhanden Ebenen sucht, diese jedoch nicht existieren, da sie zuvor als
+	Gruppen importiert wurden.</li>
+</ul>
+
+<p>&nbsp;</p>
+
+<h3><a name="vertexcolors">Vertex Farben</a></h3>
+<p><img src="vertex_color_shader.png" alt="Vertex Color Shader"></p>
+<p>Falls <i>Vertex Farben</i> in dem zu importierenden Polygonnetz vorhanden sind, werden diese von rhino.io importiert, indem für jeden Farbkanal Vertex-Maps
+angelegt werden. Die Tags werden entsprechend der Farbe benannt, die sie repräsentieren.</p>
+
+<p>Die Beispieldatei <i>vertex_color_shader.c4d</i> im Ordner <i>examples</i> demonstriert eine mögliche Anwendung. In dieser Szene existiert ein Material, das einen
+Ebenen-Shader verwendet, um die drei Farben miteinander zu kombinieren. Jede dieser Ebenen besteht aus einem Colorizer-Shader, der die Werte der zugehörigen
+Vertex-Map auf die entsprechende Farbe abbildet.</p>
+
+<p>&nbsp;</p>
+
+<h2><a name="export">Rhino Export</a></h2>
+<h3><a name="exportgeneral">Allgemeiner Ablauf</a></h3>
+
+<p>Es wird stets eine Ebene mit der Bezeichnung "Standard" erzeugt. Alle Objekte in der CINEMA 4D Szene, die keiner Ebene zugeordnet sind, werden beim Export dieser
+Ebene zugeordnet.</p>
+<p>Der Exporter nutzt die Sichtbarkeit von Ebenen im Editor, um die Sichtbarkeit von Ebenen in Rhino festzulegen, d.h. die Sichtbarkeit beim Rendern wird nicht
+berücksichtigt.</p>
+
+<p>Für fortgeschrittene Benutzer: Beachten Sie, dass beim Exportieren von Polygonnetzen die Reihenfolge der Punkte nicht beibehalten wird.
+Rhino kann keine unterbrochenen Texturkoordinaten oder Normalen darstellen, daher wird das Netz so verarbeitet, dass Punkte in diesen Fällen aufgetrennt werden können.
+Dies hat den Nachteil, dass sich die Anzahl und die Reihenfolge der Punkte in den meisten Fällen unterscheiden wird.</p>
+
+<p>Die Einheit des Dokuments wird ebenfalls in der Rhino Datei gespeichert.</p>
+
+<p>Das konkrete Verhalten des Rhino Importers kann über diverse Einstellungen verändert werden. Diese Einstellungen erscheinen sobald eine Szene exportiert wird und sind
+jederzeit unter <i>Bearbeiten -> Programm-Voreinstellungen -> Import/Export ->  Rhino (*.3dm) Export</i> zu finden.</p> 
+
+<p>&nbsp;</p>
+
+<h3><a name="exportoptions">Export Options</a></h3>
+
+<p><img src="export_de.png" alt="Import Options"></p>
+
+<p><b>Splines Exportieren</b> bestimmt, ob Splines in der Szene als Polylinien exportiert oder ignoirert werden sollen.</p>
+
+<p>&nbsp;</p>
+
+
+<h2><a name="disclaimer">Impressum</a></h2>
+
+<p><small>Die rhino.io Import/Export Tools wurden in enger Zusammenarbeit mit der
+<a href="http://www.laublab.com" target="_blank">LAUBLab KG</a> und
+<a href="http://www.timmdapper.de" target="_blank">Timm Dapper</a>
+entwickelt. Copyright (C) 2009-2011 Timm Dapper</small></p>
+<p><small>Rhino und OpenNURBS sind eingetragene Warenzeichen von Robert McNeel & Associates.
+Copyright (C) 1993-2007 Robert McNeel & Associates.
+Alle Rechte vorbehalten.</small></p>
+<p><small>MAXON und CINEMA 4D sind eingetragene Warenzeichen der MAXON Computer GmbH.</small></p>
+<!--<p><small>All other stuff is trademark of their respective owners</small></p>-->
+
+</div>
+
+</BODY>
+</HTML>

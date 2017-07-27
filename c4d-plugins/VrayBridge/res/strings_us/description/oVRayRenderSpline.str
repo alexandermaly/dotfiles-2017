@@ -1,0 +1,10 @@
+STRINGTABLE OVRayRenderSpline
+{
+	OVRayRenderSpline "VRaySplineRender";
+
+	VRAYRENDERSPLINE_GROUP		"Parameters";
+	VRAYRENDERSPLINE_RADIUS		"Radius:";
+	VRAYRENDERSPLINE_SECTION	"Section:";	
+	VRAYRENDERSPLINE_START		"Start:";
+	VRAYRENDERSPLINE_END			"End:";
+}

@@ -1,0 +1,22 @@
+STRINGTABLE tVRaySelectionTag
+{
+	tVRaySelectionTag					"VRaySelectionTag";
+
+	VRAYSELECTIONTAG_SORTMODE									"Sort Mode";
+		VRAYSELECTIONTAG_MODE_RANDOM						"Random";
+		VRAYSELECTIONTAG_MODE_BOUND							"Bound";
+		VRAYSELECTIONTAG_MODE_NATURAL						"Natural";
+		VRAYSELECTIONTAG_MODE_CYCLIC							"Cyclic";
+
+
+	VRAYSELECTIONTAG_SEED												"Seed";	
+	VRAYSELECTIONTAG_FACEID_MIN									"Min. ID";	
+	VRAYSELECTIONTAG_FACEID_MAX									"Max. ID";
+	
+	VRAYSELECTIONTAG_SKIPEVERY									"Skip Every";
+
+	VRAYSELECTIONTAG_EXPORT_MODE								"Attribute Mode";
+    VRAYSELECTIONTAG_FACEID_MODE 								"Face Id mode";
+    VRAYSELECTIONTAG_OBJECTID_MODE 							"Object Id mode";
+
+}

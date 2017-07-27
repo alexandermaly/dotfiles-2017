@@ -1,0 +1,16 @@
+STRINGTABLE tVrayDispTag
+{
+	tVrayDispTag					"VrayDisplacement";
+	
+	VRAYDISPTAG_GLOBALS				"Geometry Parameters";
+	VRAYDISPTAG_COLOR				"Mapping Parameters";
+	VRAYDISPTAG_ON					"On";
+	VRAYDISPTAG_USEGLOBALS			"Use global parameters";
+	VRAYDISPTAG_TEXTURE				"Texture";
+	VRAYDISPTAG_AMOUNT				"Amount";
+	VRAYDISPTAG_SHIFT				"Shift";
+	VRAYDISPTAG_VIEWDEP				"View dependent";
+	VRAYDISPTAG_EDGELENGTH			"Edge length";
+	VRAYDISPTAG_MAXSUBDIV			"Max subdivs";
+	VRAYDISPTAG_KEEP				"Keep Continuity";
+}

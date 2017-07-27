@@ -1,0 +1,41 @@
+// C4D-DialogResource
+
+DIALOGSTRINGS IDD_DIALOG1
+{
+  IDS_DIALOG           "Vray Domelight Texture Viewer";
+  IDS_BTN_BE_VIEWTEX   "Preview Texture";
+  IDS_BTN_VIEWTEX      "Preview Texture";
+  IDS_BTN_BE_CLEARTEX  "Clear Preview";
+  IDS_BTN_CLEARTEX     "Clear Preview";
+  IDS_GRP_BE_BUTTON    "Preview Button";
+  IDS_GRP_BE_EXPADJ    "Exposure Adjust";
+  IDS_GRP_BE_TEXPATH   "Texture Path";
+  IDS_GRP_BE_TEXRES    "Texture Preview";
+  IDS_GRP_BGENV        "Background Environment";
+  IDS_GRP_BUTTON       "Preview Button";
+  IDS_GRP_DOMELIGHTS   "Active Dome Light";
+  IDS_GRP_DOMELIGHTS   "Active Dome Light";
+  IDS_GRP_EXPADJ       "Exposure Adjust";
+  IDS_GRP_TEXRES       "Texture Preview";
+  IDS_GRP_TEXTPATH     "Texture Path";
+  IDS_GRP_WRAPPER      "Wrapper";
+  IDS_LBL_BE_EXPOSURE  "Exposure:      ";
+  IDS_LBL_BE_TEXPATH   "Texture Path: ";
+  IDS_LBL_BE_TEXRES    "Texture Preview Size";
+  IDS_LBL_EXPOSURE     "Exposure:      ";
+  IDS_LBL_TEXPATH      "Texture Path: ";
+  IDS_LBL_TEXRES       "Texture Preview Size";
+  IDS_MATRES_1024      "1024x1024 (4 MB)";
+  IDS_MATRES_128       "128x128 (64 KB)";
+  IDS_MATRES_16384     "16384x16384 (1024 MB)";
+  IDS_MATRES_2048      "2048x2048 (16 MB)";
+  IDS_MATRES_256       "256x256 (256 KB)";
+  IDS_MATRES_4096      "4096x4096 (64 MB)";
+  IDS_MATRES_512       "512x512 (1 MB)";
+  IDS_MATRES_64        "64x64 (16 KB)";
+  IDS_MATRES_8192      "8096x8096 (256 MB)";
+  IDS_MATRES_DEF       "Default";
+  IDS_MATRES_NO_SCALE  "No Scaling";
+  IDS_ST_BE_TEXPATH    "C:\none_yet.png";
+  IDS_ST_TEXPATH       "C:\none_yet.jpg";
+}

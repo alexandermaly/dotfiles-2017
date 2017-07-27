@@ -1,0 +1,6 @@
+STRINGTABLE Opatch
+{
+	Opatch "Patch Object";
+
+	PATCHOBJECT_SUB		"Subdivision";
+}

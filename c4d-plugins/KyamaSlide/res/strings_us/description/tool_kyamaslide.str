@@ -1,0 +1,17 @@
+STRINGTABLE tool_KyamaSlide
+{
+	tool_KyamaSlide		"MultiSlide Antosha Marchenko, enhanced by Keith Young";
+	Kyama_MSLIDE_DIST	"Distance";
+	Kyama_MSLIDE_PROL	"On Prolonged Edges";
+	Kyama_MSLIDE_REL	"Relative";
+	Kyama_MSLIDE_CLAMP	"Clamp";
+	Kyama_MSLIDE_CTOL	"Clamp Tolerance";
+	Kyama_MSLIDE_CLR1	"Left Color";
+	Kyama_MSLIDE_CLR2	"Right Color";
+	Kyama_MSLIDE_DSCALE	"Distance Scale";
+	Kyama_MSLIDE_COMMANDS	"Actions";
+	Kyama_MSLIDE_CNTR_SMTH	"To Center (Smooth)";
+	Kyama_MSLIDE_CNTR_SHRP	"To Center (Sharp)";
+	Kyama_MSLIDE_CNTR_MIXD	"To Center (Mixed)";
+	Kyama_MSLIDE_CNTR_FLTN	"To Center (Flatten)";
+}

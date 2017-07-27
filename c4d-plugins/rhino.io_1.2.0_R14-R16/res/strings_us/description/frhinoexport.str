@@ -1,0 +1,9 @@
+STRINGTABLE Frhinoexport
+{
+	Frhinoexport				"Rhino Export";
+
+	RHINOEXPORT_EXPORTSPLINES		"Export Splines";
+	
+	RHINOEXPORT_HELP			"Help";
+	RHINOEXPORT_REGISTER			"Register";
+}

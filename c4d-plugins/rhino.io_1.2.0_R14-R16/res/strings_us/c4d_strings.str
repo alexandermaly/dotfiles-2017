@@ -1,0 +1,18 @@
+// C4D-StringResource
+// Identifier	Text
+
+STRINGTABLE
+{
+	IDS_RHINO			"Rhino (*.3dm)";
+	IDS_RHINO_SERIAL		"rhino.io";
+	IDS_RHINOEXPORT_APPNAME		"CINEMA 4D Rhino Exporter";
+	IDS_RHINOEXPORT_APPURL		"http://www.rhino.io";
+	IDS_RHINOEXPORT_APPDETAILS	"CINEMA 4D Rhino Exporter using the OpenNURBS toolkit.";
+	IDS_REGISTERRHINO		"Register rhino.io";
+	IDS_REGISTERWWW			"http://www.rhino.io/register/";
+	IDS_MERGEUPDATE			"Update Scene?";
+	IDS_BLOCKDEFINITIONS		"Block Definitions";
+	IDS_RENDERMESHESMISSING		"Skipped # NURBS Object(s) without Render Meshes!";
+	IDS_UNKNOWNENTITIESFOUND	"Skipped # Unknown Entities!";
+	IDS_DEFAULTLAYERNAME	"Default";
+}

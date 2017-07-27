@@ -1,0 +1,15 @@
+STRINGTABLE Xvraybitmap
+{
+	Xvraybitmap "Vray Checker";
+
+	VRAY_BITMAP				"Load file";
+	VRAY_BITMAP_FILTERTYPE	"Filter type";
+		VRAY_BITMAP_FILTERTYPE_0	"No filtering";
+		VRAY_BITMAP_FILTERTYPE_1	"Mip-Map";
+		VRAY_BITMAP_FILTERTYPE_2	"Summed area table";
+	VRAY_BITMAP_FILTERBLUR	"FIlter blur";
+	VRAY_BITMAP_TILE		"Tile";
+	VRAY_BITMAP_WRAPU		"Wrap U";
+	VRAY_BITMAP_WRAPV		"Wrap V";
+	
+}

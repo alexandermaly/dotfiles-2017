@@ -1,0 +1,5 @@
+STRINGTABLE Xieswrapper
+{
+	Xieswrapper "IES Wrapper";
+	IES_FILENAME 		"Ies FIle";
+}

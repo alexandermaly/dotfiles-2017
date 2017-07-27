@@ -1,0 +1,21 @@
+STRINGTABLE Mfastfurmaterial
+{
+	Mfastfurmaterial	"FastFur";
+
+	FASTFUR_ROOTCOLOR		"Root Color";
+	FASTFUR_TIPCOLOR		"Tip Color";
+	FASTFUR_SPECULARCOLOR	"Specular Color";
+	FASTFUR_MIXCOLOR		"Mix value";
+	
+	KA				"Ambient Multiplier";
+	KD				"Diffuse Multiplier";
+	KS				"Specular Multiplier";
+	
+	FASTFUR_DERIVECOLOR		"inherited Color";
+	
+	ROUGHNESS		"Roughness";
+	
+	FASTFUR_FFLINK	"Fast&Fur Object";
+	
+	//FASTFUR_SHADER	"Shader";
+}

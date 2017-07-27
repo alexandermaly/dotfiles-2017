@@ -1,0 +1,11 @@
+STRINGTABLE Xvraychecker
+{
+	Xvraychecker "Vray Checker";
+
+	TEXCHECKER_WHITECOLOR		"White Color";		
+	TEXCHECKER_WHITECOLOR_TEX	"Texture";
+	TEXCHECKER_BLACKCOLOR		"Black Color";
+	TEXCHECKER_BLACKCOLOR_TEX	"Texture";
+	TEXCHECKER_TILE_U			"Tile U";
+	TEXCHECKER_TILE_V			"Tile V";
+}

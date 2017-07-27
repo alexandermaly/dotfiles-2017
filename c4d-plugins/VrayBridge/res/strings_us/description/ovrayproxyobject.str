@@ -1,0 +1,7 @@
+STRINGTABLE Oinstanceproobject
+{
+	Oinstanceproobject "Rounded Tube Object";
+
+	POINTEDOBJECT	 		"Object";
+
+}

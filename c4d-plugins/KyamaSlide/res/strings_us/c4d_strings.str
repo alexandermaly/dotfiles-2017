@@ -1,0 +1,6 @@
+STRINGTABLE
+{
+	IDS_KyamaSlide_TOOL_MENU_NAME	"KyamaSlide";
+	IDS_KyamaSlide_TOOL_HLP			"MultiSlide Tool ... by Antosha Marchenko, enhanced by Keith Young";
+	IDS_KyamaSlide_TOOL_BBL			"Drag to slide. Hold down CTRL to slide on prolonged edges, SHIFT - on edges from current side.";
+}

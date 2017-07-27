@@ -1,0 +1,33 @@
+STRINGTABLE Frhinoimport
+{
+	Frhinoimport					"Rhino Importation";
+
+	RHINOIMPORT_DOCSCALEMODE			"Echelle du document";
+		RHINOIMPORT_DOCSCALEMODE_FROMRHINO	"A partir du fichier Rhino";
+		RHINOIMPORT_DOCSCALEMODE_CUSTOM		"Autre";
+	RHINOIMPORT_DOCSCALE				"";
+	RHINOIMPORT_LAYERMODE				"Importer les calques";
+		RHINOIMPORT_LAYERMODE_OFF		"Non";
+		RHINOIMPORT_LAYERMODE_LAYER		"Par calques";
+		RHINOIMPORT_LAYERMODE_GROUP		"Par groupes";
+	RHINOIMPORT_MATERIALMODE			"Cr\u00e9er les mat\u00e9riaux";
+		RHINOIMPORT_MATERIALMODE_OFF		"Non";
+		RHINOIMPORT_MATERIALMODE_MATERIALS	"D'apr\u00e8s les mat\u00e9riaux Rhino";
+		RHINOIMPORT_MATERIALMODE_LAYERCOLORS	"D'apr\u00e8s les couleurs de calques";
+	RHINOIMPORT_IMPORTGROUPS			"Importer les groupes";
+	RHINOIMPORT_AXISCENTER				"Centrer les axes d'objets";
+	RHINOIMPORT_CLEANUPMATERIALS			"Nettoyer les mat\u00e9riaux";
+	RHINOIMPORT_IMPORTCAMERAS			"Importer les cam\u00e9ras";
+	RHINOIMPORT_IMPORTLIGHTS			"Importer les lumi\u00e8res";
+	RHINOIMPORT_DROPEMPTYLAYERS			"Eviter les calques vides";
+	RHINOIMPORT_IMPORTSPLINES			"Importer les courbes";
+	RHINOIMPORT_IMPORTMESHOBJECTS			"Importer les maillages";
+	RHINOIMPORT_IMPORTRENDERMESHES			"Importer les maillages de rendu";
+	RHINOIMPORT_SKIPINVISIBLE			"Eviter les objets invisibles";
+	RHINOIMPORT_OPTIMIZE				"Souder les points proches";
+	RHINOIMPORT_OPTIMIZETHRESHOLD			"Tol\u00e9rance";
+	RHINOIMPORT_SPLINESUBDIV			"Points Interm\u00e9diaires";
+	
+	RHINOIMPORT_HELP				"Aide";
+	RHINOIMPORT_REGISTER				"Enregistrer";
+}

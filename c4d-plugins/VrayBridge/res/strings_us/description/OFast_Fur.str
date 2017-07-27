@@ -1,0 +1,201 @@
+STRINGTABLE OFast_Fur
+{
+	OFast_Fur					"Fast&Fur";
+	FAST_FUR_GEOMETRY			"Fur Generator";
+	FAST_FUR_FACETO				"FaceTo Geometry";
+	FAST_FUR_TOTPELI			"Total Fur:";
+	FAST_FUR_TOTPOLY			"";
+	FAST_FUR_DENSITY			"Fur Density         ";
+	FAST_FUR_DISPLAY			"Editor Fur Density";
+	
+	
+	FAST_FUR_GENUV				"Generate UVW";
+	FAST_FUR_FURUV				"Fur UVW";
+
+	FAST_FUR_LEN				"Fur Length        ";
+	FAST_FUR_LEN_VAR			"Fur Length Variation  ";
+	FAST_FUR_RADIUS				"Fur Radius        ";
+	FAST_FUR_RADIUS_VAR			"Fur Rnd Radius    ";
+	FAST_FUR_SUBDIVISION		"Fur Subdivision";
+	FAST_FUR_GRAVITY			"Fur Gravity";
+	FAST_FUR_SIZE_SP			"Fur Section";
+	FAST_FUR_DYN_COEFF			"Air Friction";
+	FAST_FUR_SCALE_DIVID		"Fur Scale divider ";
+	
+	FAST_FUR_NOR_VAR			"Random Direction";	
+	FAST_FUR_KINK				"Kink amount  ";
+	FAST_FUR_RND_DIRECTION		"Random Rotation ";
+	FAST_FUR_DYNAMICS			"Dynamics on/off";
+	
+	FAST_FUR_FRIZZPANEL			"Frizz Panel";
+	FAST_FUR_FRIZZ_VALUE		"Frizz Amount";
+	FAST_FUR_FRIZZ_SP			"Frizz Curve";
+	FAST_FUR_FRIZZ_NOISE_ANGLE	"Noise Angle";
+	FAST_FUR_FRIZZ_RND_STR		"Random Strength";
+	
+		
+	FAST_FUR_CURLPANEL			"Curl Panel";
+	FAST_FUR_CURL_VALUE			"Curl Value";
+	FAST_FUR_CURL_NOISE_ANGLE	"Noised Angle";
+	FAST_FUR_CURL_SP			"Curl Curve";
+	FAST_FUR_CURL_RND_STR		"Random Value";
+	FAST_FUR_CURL_SHIFT			"Curl Shift";
+	FAST_FUR_CURL_RADIUS		"Curl Radius";
+
+		
+	FAST_FUR_TAG_DENSITY		"Vertex Map Density";
+	FAST_FUR_TAG_VMAPCLUMP		"Clump Value";
+	//FAST_FUR_TAG_DIRECTIONY	"Vertex Map Direction Y";
+	//FAST_FUR_TAG_DIRECTIONZ	"Vertex Map Direction Z";
+	FAST_FUR_TAG_LEN			"Vertex Map Length";
+	FAST_FUR_SIZE				"Fur Rnd Size";
+	FAST_FUR_EDITOR_PELI		"internal";
+	FAST_FUR_OPTIMIZE_LEN		"Size Relative Length";
+
+	FAST_FUR_FROMSECTION		"From Section";
+
+	FAST_FUR_VERTEXMAP			"Vertex Map";
+	//FAST_FUR_SWAP_FUR_DIR		"Swap Orientation";
+	FAST_FUR_TOTALFUR			"Total Fur";
+	FAST_FUR_2FACE				" TriTube";
+	FAST_FUR_TAG_MATERIAL01		"TextureTag";
+	FAST_FUR_TAG_MATERIAL02		"TextureTag";
+	FAST_FUR_TAG_MATERIAL03		"Density Shader";
+	FAST_FUR_TARGET				"Fur Target Direction";
+	FAST_FUR_TARGET_MIX			"Blending";
+	FAST_FUR_INCLINAZIONE		"Direction to Camera";
+	FAST_FUR_CONOCAMERA			"Camera Cone Blending";
+	FAST_FUR_DISTANCE_MIN		"Min Distance";
+	FAST_FUR_DISTANCE_MAX		"Max Distance";
+	
+	FAST_FUR_TAB_OPTIMIZATION	"Optimization";
+	FAST_FUR_ENABLE_CONECAMERA	"Camera Cone";
+	FAST_FUR_ENABLE_BACKFACE	"BackFace";
+	FAST_FUR_ENABLE_DENSITYDIST	"Distance Density";
+	FAST_FUR_OFFRND				"Random Offset";
+	FAST_FUR_SEED				"Rnd SEED";
+	
+	FAST_FUR_ENABLE_PERPDENS	"Angle Density";
+	FAST_FUR_PERPDENS_MIN		"Min Angle";
+	FAST_FUR_PERPDENS_MAX		"Max Angle";
+	
+	FAST_FUR_SETTINGS			"Styling";
+	FAST_FUR_NORMAL_OFFSET		"Surface Offset";
+	
+	FAST_FUR_WIND				"Wind Effect";
+	FAST_FUR_WIND_STRENGHT		"Strength";
+	FAST_FUR_WIND_STRENGHT_VAR	"Wave Frequency";
+	FAST_FUR_WIND_DIR			"Direction";
+	FAST_FUR_WIND_DIR_VAR		"Direction Var.";
+	FAST_FUR_WIND_FREQ_STR		"Freq. Str.";
+	FAST_FUR_WIND_FREQ_DIR		"Strength Multiplier";
+	FAST_FUR_WIND_REFERENCE		"Wave Generator";
+	
+	FAST_FUR_WAVE				"Wave Intensity";
+	FAST_FUR_WAVE_FREQ			"Wave Frequency";
+	FAST_FUR_WAVE_NOISE_SIZE	"Noise Size";
+	FAST_FUR_WAVE_SPLINE		"Wave Curve";
+
+	FAST_FUR_GMIN				"Gravity Min";
+	FAST_FUR_GMAX				"Gravity Max";
+	FAST_FUR_GRND				"Random Gravity";
+	
+	FAST_FUR_CLUMP				"Clumping";
+	FAST_FUR_CLUMP_SPLINE		"Clump Spline";
+	FAST_FUR_CLUMP_ENABLE		"Clump Enable";	
+	FAST_FUR_CLUMP_MULT			"Clump Size";
+	FAST_FUR_CLUMP_MIX			"Clump Factor";
+	
+	FAST_FUR_COMBING			"Combing";
+	FAST_FUR_COMBING_MIX		"Combing Mix";
+	FAST_FUR_COMBING_SPLINE1	"Spline 1";
+	FAST_FUR_COMBING_SPLINE2	"Spline 2";
+	FAST_FUR_COMBING_FALLOFF1	"FallOff Spline 1";
+	FAST_FUR_COMBING_FALLOFF2	"FallOff Spline 2";
+	FAST_FUR_COMBING_PREC		"Spline Precision";
+	FAST_FUR_COMBING_ENABLE		"Combing Enable";
+
+	FAST_FUR_COMBING_SPLINE3	"Spline 3";
+	FAST_FUR_COMBING_FALLOFF3	"FallOff Spline 3";
+	FAST_FUR_COMBING_SPLINE4	"Spline 4";
+	FAST_FUR_COMBING_FALLOFF4	"FallOff Spline 4";
+	FAST_FUR_COMBING_SPLINE5	"Spline 5";
+	FAST_FUR_COMBING_FALLOFF5	"FallOff Spline 5";
+	FAST_FUR_COMBING_SPLINE6	"Spline 6";
+	FAST_FUR_COMBING_FALLOFF6	"FallOff Spline 6";
+	FAST_FUR_COMBING_SPLINE7	"Spline 7";
+	FAST_FUR_COMBING_FALLOFF7	"FallOff Spline 7";
+	FAST_FUR_COMBING_SPLINE8	"Spline 8";
+	FAST_FUR_COMBING_FALLOFF8	"FallOff Spline 8";
+	FAST_FUR_COMBING_SPLINE9	"Spline 9";
+	FAST_FUR_COMBING_FALLOFF9	"FallOff Spline 9";
+	FAST_FUR_COMBING_SPLINE10	"Spline 10";
+	FAST_FUR_COMBING_FALLOFF10	"FallOff Spline 10";
+
+	FAST_FUR_COMBING_PLANE		"Plane";
+	FAST_FUR_COMBING_PLANE_3D	"3D Space";
+	FAST_FUR_COMBING_PLANE_XY	"XY Plane";
+	FAST_FUR_COMBING_PLANE_XZ	"XZ Plane";
+	FAST_FUR_COMBING_PLANE_YZ	"YZ Plane";
+	
+	FAST_FUR_CACHE				"Animation";
+	FAST_FUR_CACHE_ENABLE		"Record Animation";	
+	FAST_FUR_CACHE_RESET		"Clear Animation";
+	FAST_FUR_CACHE_FR_START		"Start Frame";
+	FAST_FUR_CACHE_FR_END		"End Frame";
+	FAST_FUR_DELAY				"Delay";
+	FAST_FUR_DYPREVIEW			"Enable Delay";
+	FAST_FUR_MASSA				"Massa";
+	FAST_FUR_RETCACHE			"Skip Camera Refreshing - Type 'a' to refresh ";
+
+	
+	FAST_FUR_KINK_SP			"Kink Spline";
+	
+	FAST_FUR_VAR_GRAVITY		"Variable Gravity (Bounding Box)";
+	FAST_FUR_FUROFFSET_DIRECT	"Fur offset and direction";
+	FAST_FUR_KINKPANEL			"Kink";
+	FAST_FUR_WAVEPANEL			"Wave";
+	
+	//FAST_FUR_DYNAMIC_SUBDIVISION	"Dynamic Subdivision";
+	
+	FAST_FUR_STYLING_SP1_ON		"Enable Styling";
+	
+	FAST_FUR_SUBDDENSITY		"Variable Density";
+	
+	FAST_FUR_ENABLE_KINK		"Enable Kink";
+	FAST_FUR_ENABLE_FRIZZ		"Enable Frizz";
+	FAST_FUR_ENABLE_CURL		"Enable Curl";
+	FAST_FUR_ENABLE_WAVE		"Enable Wave";
+	FAST_FUR_ENABLE_WIND		"Enable Wind";
+		
+	FAST_FUR_PRESET				"Presets";
+	FAST_FUR_PRESET_SAVE		"Save Settings";
+	FAST_FUR_PRESET_LOAD		"Load Settings";
+	FAST_FUR_COLORMATERIAL		"TextureTag  (old compatibility)";
+	FAST_FUR_COLORMATERIALTAB	"Fur Color";
+	FAST_FUR_EXPORTVRAY			"Export To Vray";
+	
+	FAST_FUR_COLOR_SHADER		"Fur Color (UVW - C4DShader)";
+	
+	FAST_FUR_BRDF3_OVERALL_COLOR					"Overall Color Multiplier";	
+	FAST_FUR_BRDF3_TRANSPARENCY   					"Transparency";	
+	FAST_FUR_BRDF3_DIFFUSE_COLOR					"Diffuse Hair Color";	
+	FAST_FUR_BRDF3_DIFFUSE_AMOUNT					"Multiplier";	
+	FAST_FUR_BRDF3_PRIMARY_SPECULAR					"Primary Specular Color";
+	FAST_FUR_BRDF3_PRIMARY_SPECULAR_AMOUNT		    "Primary Specular Amount";
+	FAST_FUR_BRDF3_PRIMARY_GLOSSINESS			    "Primary Glossiness";
+	FAST_FUR_BRDF3_SECONDARY_SPECULAR			    "Secondary specular color";
+	FAST_FUR_BRDF3_SECONDARY_SPECULAR_AMOUNT		"Multiplier";
+	FAST_FUR_BRDF3_SECONDARY_GLOSSINESS			    "Seconday Glossiness";
+	FAST_FUR_BRDF3_SECONDARY_LOCK_TO_TRASMISSION    "Derive secondary spec. from transmission";
+	FAST_FUR_BRDF3_TRASMISSION					    "Transmission Color";
+	FAST_FUR_BRDF3_TRASMISSION_AMOUNT				"Multiplier";
+	FAST_FUR_BRDF3_TRASMISSION_GLOSSINESS_LENGTH    "Transmission Glossiness Along Strand Lenght";
+	FAST_FUR_BRDF3_TRASMISSION_GLOSSINESS_WIDTH	    "Transmission Glossiness Across Strand width";
+	FAST_FUR_BRDF3_OPAQUE_FOR_SHADOWS			    "Opaque For Shadows";
+	FAST_FUR_BRDF3_OPAQUE_FOR_GI					"Opaque For GI";
+	FAST_FUR_BRDF3_SIMPLIFY_FOR_GI				    "Simpler For GI";
+	FAST_FUR_BRDF3_USE_CACHED_GI				    "Use LC/IR";
+	
+}
+

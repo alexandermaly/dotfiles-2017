@@ -1,0 +1,45 @@
+STRINGTABLE oVRayParticleSystem
+{
+	oVRayParticleSystem "VRayParticleSystem";
+
+
+	//VRAYRENDERSPLINE_GROUP		"Parameters";
+	//VRAYRENDERSPLINE_RADIUS		"Radius:";
+	//VRAYRENDERSPLINE_SECTION	"Section:";	
+	//VRAYRENDERSPLINE_START		"Start:";
+	//VRAYRENDERSPLINE_END		"End:";
+
+	VRPARTSYS_PARTICLE_SYSTEM_LINK	"Particle System/Group";
+	VRPARTSYS_SUBGROUPS				"Sub Groups";
+
+	VRPARTSYS_MESH					"Mesh";					//: plugin, The triangle mesh that will be instanced.This is used only for some of the particle render types.
+	VRPARTSYS_RENDER_TYPE			"Render Type";			//: integer = 7, 3 - multipoints; 4 - multistreak; 6 - points; 7 - Spheres; 8 - Sprites; 9 - Streak.Everything else gives a warning and renders as spheres.
+		VRPARTSYS_RENDER_TYPE_0		 "0 ???";
+		VRPARTSYS_RENDER_TYPE_1		 "1 ???";
+		VRPARTSYS_RENDER_TYPE_2		 "2 ???";
+		VRPARTSYS_RENDER_TYPE_3		 "MultiPoints";
+		VRPARTSYS_RENDER_TYPE_4		 "MultiStreak";
+		VRPARTSYS_RENDER_TYPE_5		 "5 ???";
+		VRPARTSYS_RENDER_TYPE_6		 "Points";
+		VRPARTSYS_RENDER_TYPE_7		 "Spheres";
+		VRPARTSYS_RENDER_TYPE_8		 "Sprites";
+		VRPARTSYS_RENDER_TYPE_9		 "Streak";
+
+
+	VRPARTSYS_SPRITE_SIZE_X			"Sprite width";			//: float = 1, The width of sprite particles in world units.
+	VRPARTSYS_SPRITE_SIZE_Y			"Sprite height";		//: float = 1, The height of sprite particles in world units.
+	VRPARTSYS_SPRITE_TWIST			"Sprite twist";			//: float = 0, The twist of sprite particles in degrees.
+	VRPARTSYS_SPRITE_ORIENTATION	"Sprite orientation";	//: integer = 0, 0 - orient sprites towards the camera center, 1 - orient sprites parallel to the camera plane
+		VRPARTSYS_SPRITE_ORIENTATION_0	"towards the camera center";
+		VRPARTSYS_SPRITE_ORIENTATION_1	"parallel to the camera plane";
+
+	VRPARTSYS_POINT_SIZE			"Point size";			//: float = 1, The size of point and multipoint particles, in pixels.
+	VRPARTSYS_POINT_RADII			"Use Radii as Point size";		//: bool = false, If true, the point size will be taken form radii parameter
+	VRPARTSYS_POINT_WORLD_SIZE		"Point size is in world space";		//: bool = false, If true, the point size is in world space, not screen space
+
+	VRPARTSYS_MULTI_COUNT			"MultiParticles Count";		//: integer = 1, The number of particles generated for each input particle, when the render type is multipoints or multistreaks.
+	VRPARTSYS_MULTI_RADIUS			"MultiParticles Radius";	//: float = 0, The maximum distance between the original and a generated particle when the render type is multipoints or multistreaks.
+	VRPARTSYS_LINE_WIDTH			"Line Width";				//: float = 1, The width of streak particles, in pixels
+	VRPARTSYS_TAIL_LENGTH			"Tail Length";				//: float = 1, The length of streak particles, in world units, the actual length depends on the particle velocity as well.
+	VRPARTSYS_PRIMARY_VISIBILITY	"Primary visibility";		//: bool = true, If off, shading an intersection with this mesh will not generate a gbuffer.
+}

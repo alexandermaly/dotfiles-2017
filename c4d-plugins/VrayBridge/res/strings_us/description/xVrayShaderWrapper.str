@@ -1,0 +1,17 @@
+STRINGTABLE XVrayShaderWrapper
+{
+	XVrayShaderWrapper			"Vray Shader";
+	
+	VRAY_SHADERS_LIST			"Vray Shaders";
+	VRAY_SHADERS_LIST_FILTER	"Filter";
+
+	VRAY_SHADERS_EDITIMAGE		"Edit Image...";	
+	VRAY_SHADERS_RELOADIMAGE	"Reload Image...";
+
+    VRAY_SHADERS_PREVIEW_RES    "Preview Res";
+    VRAY_SHADERS_PREVIEW_RES_0  "Full (no Fx)";
+    VRAY_SHADERS_PREVIEW_RES_1  "256 x 256";
+    VRAY_SHADERS_PREVIEW_RES_2  "512 x 512";
+    VRAY_SHADERS_PREVIEW_RES_3  "1024 x 1024";
+    VRAY_SHADERS_PREVIEW_RES_4  "2048 x 2048";						
+}

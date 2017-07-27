@@ -1,0 +1,33 @@
+STRINGTABLE Frhinoimport
+{
+	Frhinoimport					"Rhino Import";
+
+	RHINOIMPORT_DOCSCALEMODE			"Dokument Skalierung";
+		RHINOIMPORT_DOCSCALEMODE_FROMRHINO	"Aus Rhino Datei";
+		RHINOIMPORT_DOCSCALEMODE_CUSTOM		"Benutzerdefiniert";
+	RHINOIMPORT_DOCSCALE				"";
+	RHINOIMPORT_LAYERMODE				"Layer importieren";
+		RHINOIMPORT_LAYERMODE_OFF		"Aus";
+		RHINOIMPORT_LAYERMODE_LAYER		"Als Layer";
+		RHINOIMPORT_LAYERMODE_GROUP		"Als Gruppen";
+	RHINOIMPORT_MATERIALMODE			"Materialien Erzeugen";
+		RHINOIMPORT_MATERIALMODE_OFF		"Aus";
+		RHINOIMPORT_MATERIALMODE_MATERIALS	"Von Rhino Materialien";
+		RHINOIMPORT_MATERIALMODE_LAYERCOLORS	"Von Ebenenfarben";
+	RHINOIMPORT_IMPORTGROUPS			"Gruppen importieren";
+	RHINOIMPORT_AXISCENTER				"Objektachsen Zentrieren";
+	RHINOIMPORT_CLEANUPMATERIALS			"Materialien aufr\u00e4umen";
+	RHINOIMPORT_IMPORTCAMERAS			"Kameras importieren";
+	RHINOIMPORT_IMPORTLIGHTS			"Lichter importieren";
+	RHINOIMPORT_DROPEMPTYLAYERS			"Leere Layer entfernen";
+	RHINOIMPORT_IMPORTSPLINES			"Kurven importieren";
+	RHINOIMPORT_IMPORTMESHOBJECTS			"Mesh Objekte Importieren";
+	RHINOIMPORT_IMPORTRENDERMESHES			"Render Meshes Importieren";
+	RHINOIMPORT_SKIPINVISIBLE			"Unsichtbare Objekte \u00fcberspringen";
+	RHINOIMPORT_OPTIMIZE				"Punkte zusammenfassen";
+	RHINOIMPORT_OPTIMIZETHRESHOLD			"Toleranz";
+	RHINOIMPORT_SPLINESUBDIV			"Zwischenpunkte";
+	
+	RHINOIMPORT_HELP				"Hilfe";
+	RHINOIMPORT_REGISTER				"Registrieren";
+}
